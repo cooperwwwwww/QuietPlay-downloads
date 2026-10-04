@@ -1,0 +1,15 @@
+{
+  "blank_issues_enabled": false,
+  "contact_links": [
+    {
+      "name": "Download QuietPlay",
+      "url": "https://github.com/cooperwwwwww/QuietPlay-downloads/releases",
+      "about": "Find the Windows installer, optional-driver bundle, and portable version."
+    },
+    {
+      "name": "Read the FAQ and setup help",
+      "url": "https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md",
+      "about": "Installation, Windows blocks, music downloads, metadata, privacy, and OBS."
+    }
+  ]
+}
