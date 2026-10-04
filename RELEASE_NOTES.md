@@ -1,10 +1,15 @@
-# QuietPlay 1.53.2 - Testing Build
+# QuietPlay 1.53.3 - Windows Installer Update
 
-This release removes account-style controls. Each person's copy stores their
-own profile and saved data on the computer where they use QuietPlay.
+One ready-to-use Windows installer, optional extras in setup, and a clearer
+first-use library. Each person's copy keeps its own saved data on their PC.
 
 ## Changes
 
+- The public download is a Windows Setup EXE, not app ZIPs or a developer kit.
+- Setup offers unchecked VB-CABLE and WebView2 options. VB-CABLE opens its
+  original signed installer with Windows administrator approval.
+- Empty libraries have Add files, Add folder and in-app Search music buttons.
+- Native Tcl/Tk file drops replace the legacy Windows drag-and-drop hook.
 - No accounts tab, sign-in, passcodes, switching or analytics-sharing toggle.
 - One local profile per Windows user, with display name, insights, export and
   clear-history controls in Settings > Library.
@@ -23,10 +28,10 @@ own profile and saved data on the computer where they use QuietPlay.
 
 ## Downloads
 
-Choose the Setup EXE for a normal installation. The testing ZIP bundles that
-installer with setup notes, the optional VB-CABLE audio driver package, and the
-WebView2 bootstrapper. The portable ZIP is available for use without a normal
-installation; extract all of it first.
+Choose **Download for Windows** for the complete app. Optional driver choices
+are inside setup. No Python, terminal commands or developer tools are needed.
+New releases publish only this installer and its verification files. Historical
+releases retain their original assets, but are not recommended current downloads.
 
 SHA256SUMS.txt lists the exact published file hashes. See the repository's user
 guide for search modes, complete playlists, audio routing, and troubleshooting.
