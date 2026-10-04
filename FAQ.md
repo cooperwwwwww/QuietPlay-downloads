@@ -4,7 +4,7 @@
 
 ## Which Download Should I Choose?
 
-Use **Download for Windows**. The Setup EXE is the complete end-user app with
+Use **Download QuietPlay for Windows**. The Setup EXE is the complete end-user app with
 optional driver choices in the installation wizard. Send that same file to a
 friend. Current releases do not offer app ZIP downloads or a developer kit.
 
@@ -23,10 +23,40 @@ does not contain your songs or your saved personal data.
 
 ## Why Does Windows Block QuietPlay?
 
-Current public packages are **unsigned development/testing builds**. Smart App
+Current public packages are **unsigned Beta builds**. Smart App
 Control can block an unsigned program. A published checksum verifies file
 identity; it does not replace a trusted publisher signature. Do not turn off
-Windows security or bypass a block. Trusted code signing is still outstanding.
+Windows security. Trusted code signing is still outstanding.
+
+## Windows Protected Your PC
+
+The blue **Windows protected your PC** screen is a Microsoft Defender
+SmartScreen warning. QuietPlay is a new, unsigned Beta app with limited download
+reputation; that can trigger this warning. It does not prove the file is safe
+or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation).
+
+1. Confirm you intentionally downloaded the installer from
+   [QuietPlay's official releases](https://github.com/cooperwwwwww/QuietPlay-downloads/releases).
+   Compare its SHA-256 with that release's SHA256SUMS.txt. This checks file
+   identity, not safety.
+2. Select **More info** to see the filename and publisher. The current unsigned
+   QuietPlay installer may show **Unknown publisher**.
+3. Only if you trust that specific file and accept the risk, choose
+   **Run anyway**, if offered. If you are unsure, choose **Don't run**.
+
+If **Smart App Control**, a malware detection, or your administrator's policy
+blocks it, or Run anyway is unavailable, stop. Do not disable antivirus,
+SmartScreen, Smart App Control or administrator protections. Smart App Control
+does not provide an individual-app override.
+[Microsoft's Smart App Control FAQ](https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions).
+
+## Why Is It Labeled Beta?
+
+QuietPlay Beta is the ready-to-use listener app, not a developer kit. Beta means
+it is a prerelease and may still have bugs. The installer is named
+`QuietPlay-<version>-Beta-Setup.exe`. Internal release tags and verification files
+may still use `development` to keep the existing unsigned-release safeguards;
+that does not mean you need development tools to use the app.
 
 ## Do I Need an Account, and Where Is My Data Saved?
 
