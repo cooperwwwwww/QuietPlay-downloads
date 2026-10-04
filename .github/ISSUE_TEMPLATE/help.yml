@@ -1,0 +1,29 @@
+{
+  "name": "Setup or usage question",
+  "description": "Get help installing QuietPlay, using downloads, or setting up OBS.",
+  "title": "[Help] ",
+  "labels": ["question", "needs triage"],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {"value": "The [FAQ](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md) and [user guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/USER_GUIDE.md) may have the answer. This question is public: keep passwords, private paths, music files, and personal information out of it."}
+    },
+    {
+      "type": "textarea",
+      "id": "question",
+      "attributes": {"label": "What do you need help with?", "description": "Tell us what you want to do and where you got stuck."},
+      "validations": {"required": true}
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {"label": "QuietPlay version (optional)", "description": "Settings > Updates, or 'Not sure' if you cannot open it."},
+      "validations": {"required": false}
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {"label": "Before posting", "options": [{"label": "I have removed private information from this question and any screenshots.", "required": true}]}
+    }
+  ]
+}
