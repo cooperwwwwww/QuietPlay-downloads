@@ -12,26 +12,29 @@ Still stuck? [Ask a setup question](https://github.com/cooperwwwwww/QuietPlay-do
 
 ## Install and Open
 
-1. Open the newest release and download its Setup file, or the testing ZIP if
-   you also want the optional prerequisite packages.
-2. For a ZIP, extract everything. Do not run the installer or portable app from
-   inside the compressed folder.
-3. Run the installer and use the QuietPlay desktop or Start menu shortcut.
+1. Use **Download for Windows** on the main page. Download the Setup EXE, not
+   GitHub's automatically generated source-code archives.
+2. Run setup. Optional extras are unchecked by default: VB-CABLE is only for
+   separate OBS audio; WebView2 is only for embedded web tools. Selecting the
+   driver opens its original setup and administrator prompt. See the
+   [optional extras guide](OPTIONAL_DRIVERS.md).
+3. Use the QuietPlay desktop or Start menu shortcut.
 4. Check Settings > Updates for the version and build channel.
 
 If Windows Smart App Control blocks an unsigned build, stop there. A checksum
 confirms file identity, not trusted publisher status. Do not disable Smart App
 Control or other protections to bypass the block.
 
-The portable archive contains a complete app folder. Keep its `_internal`
-directory next to QuietPlay.exe. Copying only the EXE will not work.
+The download is a complete end-user app, not a development kit. The runtime,
+FFmpeg, playback libraries and optional downloader are included. No separate
+Python, terminal commands or developer tools are needed.
 
 ## Your Data on This PC
 
 There are no QuietPlay accounts, passwords, sign-in or account switching.
 Each PC/Windows user keeps its own library, playlists, preferences, session and
 listening data. Installing an update preserves that local data. Sending the
-installer or download ZIP to a friend does not send your personal data.
+installer to a friend does not send your personal data.
 
 Settings > Library > **Your data on this PC** lets you change a local display
 name, view listening insights, export those insights as JSON, or clear that
@@ -45,13 +48,16 @@ file is preserved in a local migration backup; other profiles are not merged
 into the selected history. Nothing from that migration is uploaded.
 
 Local data is in **%APPDATA%/QuietPlay/Data-v1**, separate from the installed app
-folder. Portable builds use this same Windows-user location; personal data does
-not travel simply by copying the portable executable folder.
+folder. Copying an installed app folder does not copy this personal data.
 
 ## Add Existing Music
 
-Use Add music > Choose files to select several songs, or Choose folder to import
-a folder. Importing registers the files in the library; it is not a guarantee
+On an empty Home library, choose **Add files** or **Add folder**. **Search music**
+opens the optional downloader inside QuietPlay. No songs are included with the
+app. The sidebar's Add music also opens the integrated import/download panel.
+
+Choose files can select several songs; Choose folder imports a folder.
+Importing registers the files in the library; it is not a guarantee
 that copies are made in a new location. Avoid moving original files behind the
 app's back. Rescan or relink moved files if a song becomes unavailable.
 
