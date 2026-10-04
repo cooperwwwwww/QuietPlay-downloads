@@ -1,6 +1,14 @@
 # QuietPlay User Guide
 
-[Back to QuietPlay](README.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Back to QuietPlay](README.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases) | [FAQ](FAQ.md)
+
+## Jump to a Topic
+
+[Install](#install-and-open) | [Add music](#add-existing-music) |
+[Playlists](#playlists) | [Full collection downloads](#download-a-complete-playlist-or-album) |
+[Shuffle history](#shuffle-and-previous) | [OBS](#obs)
+
+Still stuck? [Ask a setup question](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
 
 ## Install and Open
 
