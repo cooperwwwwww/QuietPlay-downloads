@@ -1,10 +1,14 @@
-# QuietPlay 1.53.3 - Windows Installer Update
+# QuietPlay 1.53.4 Beta
 
 One ready-to-use Windows installer, optional extras in setup, and a clearer
 first-use library. Each person's copy keeps its own saved data on their PC.
 
 ## Changes
 
+- Consistent QuietPlay Beta branding for the download, installer and app version.
+- The download file is QuietPlay-1.53.4-Beta-Setup.exe, not a development kit.
+- Added SmartScreen guidance: inspect More info, verify the source, and only
+  choose Run anyway for a file you trust. Smart App Control blocks remain distinct.
 - The public download is a Windows Setup EXE, not app ZIPs or a developer kit.
 - Setup offers unchecked VB-CABLE and WebView2 options. VB-CABLE opens its
   original signed installer with Windows administrator approval.
@@ -28,7 +32,7 @@ first-use library. Each person's copy keeps its own saved data on their PC.
 
 ## Downloads
 
-Choose **Download for Windows** for the complete app. Optional driver choices
+Choose **Download QuietPlay for Windows** for the complete app. Optional driver choices
 are inside setup. No Python, terminal commands or developer tools are needed.
 New releases publish only this installer and its verification files. Historical
 releases retain their original assets, but are not recommended current downloads.
@@ -38,7 +42,7 @@ guide for search modes, complete playlists, audio routing, and troubleshooting.
 
 ## Important Limits
 
-This is an **unsigned development build**, published as a prerelease, not a
+This is an **unsigned Beta build**, published as a prerelease, not a
 signed production release. Smart App Control may block it. Do not disable
 Windows protections. Trusted Authenticode signing remains outstanding, and
 automatic in-app production updates remain disabled.
