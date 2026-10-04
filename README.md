@@ -23,36 +23,38 @@ integrated into the app, not a separate setup project.
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Current public build: 1.53.2 / Development testing**
+**Current public build: 1.53.3 / Development testing**
 
 | Download | Best for |
 | --- | --- |
-| **[Windows installer](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.2-development/QuietPlay-1.53.2-development-Setup.exe)** | The simplest normal installation. Creates desktop and Start menu shortcuts. |
-| **[Windows installer + optional drivers (ZIP)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.2-development/QuietPlay-for-testing-1.53.2-development.zip)** | Sharing with a friend, or setting up separate OBS audio. Includes the installer, setup notes, optional VB-CABLE, and WebView2 bootstrapper. |
-| [Portable ZIP](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.2-development/QuietPlay-1.53.2-development-portable.zip) | Running without a normal installation. Extract the whole archive. |
+| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.3-development/QuietPlay-1.53.3-development-Setup.exe)** | Ready-to-use app with optional driver choices in setup. No ZIP extraction, Python, or developer tools needed. |
 
-[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.2-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.3-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
 ### Windows Installer + Optional Drivers
 
-Choose **Windows installer + optional drivers (ZIP)** in the table above for
-the all-in-one download. Extract it, then run **Install QuietPlay.exe**.
+Choose **Download for Windows**. One Setup EXE installs the ready-to-use app;
+there is no ZIP to extract and no developer environment to configure.
 
-The bundle also includes the **optional VB-CABLE driver package** for separate
-OBS audio and **Microsoft's WebView2 setup** for embedded web components. These
-are optional installers, not drivers installed automatically with QuietPlay.
-You do not need VB-CABLE just to listen to music.
+In setup, the **Optional extras** checkboxes let you choose **VB-CABLE for
+separate OBS audio** or **Microsoft WebView2 for embedded web tools** if it is
+missing. Both are off by default. Normal music playback needs neither extra.
+Selecting VB-CABLE opens its original signed setup with Windows administrator
+approval; complete or cancel that setup before QuietPlay installation continues.
 
 **[Open the optional-driver setup guide](OPTIONAL_DRIVERS.md)** for exact steps
 and the difference between installing QuietPlay and enabling stream audio.
 
 ### Start Listening
 
-1. Download the installer, or extract the installer bundle first.
+1. Download **Download for Windows** and run the Setup EXE.
 2. Install and open the **QuietPlay** shortcut. If Windows blocks the unsigned
    build, stop and read the [installation FAQ](FAQ.md#why-does-windows-block-quietplay).
-3. Choose **Add music** or **Add folder**, then play a song from Home.
+3. On the empty Home library, choose **Add files**, **Add folder**, or
+   **Search music**. Search opens the optional in-app downloader. Only download
+   recordings you have permission to save. No music collection is included.
+4. Added songs appear in Home. Choose a song and press Play.
 
 **Windows 10/11, 64-bit. No separate Python installation. No accounts or sign-in.**
 
@@ -67,7 +69,7 @@ install Python, spotDL, or a command-line tool separately.
 
 Normal music playback does not need a virtual audio driver. The optional
 VB-CABLE package is for routing music separately to OBS. Driver installation
-requires administrator approval and may require a restart. The bundle also
+requires administrator approval and may require a restart. Setup also
 contains Microsoft's WebView2 bootstrapper for optional embedded web tools.
 
 VB-CABLE is **VB-Audio donationware**, not QuietPlay software. Donations are
@@ -81,9 +83,9 @@ welcome; its own licensing terms apply. [VB-Audio licensing](https://vb-audio.co
 | Live bass, mid, treble, volume, and playback speed | Artwork and genre lookups with manual review | Real-audio visualizer controls |
 | In-app lyrics and an always-on-top mini player | Optional song, album, and full-playlist downloads | OBS overlay and separate stream audio routing |
 
-**New in 1.53.2:** removed account-style controls in favor of one local profile
-per Windows user, with local data export, history controls and safe migration.
-Shuffle history, full-playlist downloads and the integrated downloader remain.
+**New in 1.53.3:** one ready-to-use Windows installer with optional driver
+choices, no public ZIP downloads, and a clearer first-use library. Each Windows
+user still has one private local profile, with no accounts or sign-in.
 [Read the changelog](CHANGELOG.md).
 
 ## Your Music
