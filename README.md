@@ -15,26 +15,39 @@ integrated into the app, not a separate setup project.
 [User guide](USER_GUIDE.md) | [FAQ](FAQ.md) | [What's new](CHANGELOG.md) |
 [Development priorities](ROADMAP.md) | [Ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml)
 
-> Current public builds are **unsigned development/testing builds**. Windows
-> Smart App Control may block them. Do not turn off Windows security to install
+> QuietPlay is currently in **Beta** and is **unsigned**. Windows
+> Smart App Control may block it. Do not turn off Windows security to install
 > QuietPlay. A trusted code-signing identity is still needed for a normal signed
 > public release and automatic in-app updates.
 
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Current public build: 1.53.3 / Development testing**
+**QuietPlay 1.53.4 / Beta**
 
 | Download | Best for |
 | --- | --- |
-| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.3-development/QuietPlay-1.53.3-development-Setup.exe)** | Ready-to-use app with optional driver choices in setup. No ZIP extraction, Python, or developer tools needed. |
+| **[Download QuietPlay for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.4-development/QuietPlay-1.53.4-Beta-Setup.exe)** | Ready-to-use app with optional driver choices in setup. No ZIP extraction, Python, or developer tools needed. |
 
-[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.3-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.4-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
+
+### Windows Security Notice
+
+You may see **Windows protected your PC** because QuietPlay is unsigned and
+does not yet have established download reputation. A new app is not
+automatically safe. Download only from this repository's releases and check
+the published checksum. Select **More info** to inspect the app details. If you
+trust this specific download and accept the risk, **Run anyway** may be
+available; otherwise choose **Don't run**.
+
+**Smart App Control or administrator-policy blocks are different.** If there
+is no Run anyway option, stop; do not disable Windows security.
+[Read the Windows warning guide](FAQ.md#windows-protected-your-pc).
 
 ### Windows Installer + Optional Drivers
 
-Choose **Download for Windows**. One Setup EXE installs the ready-to-use app;
+Choose **Download QuietPlay for Windows**. One Setup EXE installs the ready-to-use app;
 there is no ZIP to extract and no developer environment to configure.
 
 In setup, the **Optional extras** checkboxes let you choose **VB-CABLE for
@@ -48,9 +61,9 @@ and the difference between installing QuietPlay and enabling stream audio.
 
 ### Start Listening
 
-1. Download **Download for Windows** and run the Setup EXE.
-2. Install and open the **QuietPlay** shortcut. If Windows blocks the unsigned
-   build, stop and read the [installation FAQ](FAQ.md#why-does-windows-block-quietplay).
+1. Choose **Download QuietPlay for Windows** and run the Setup EXE.
+2. Install and open the **QuietPlay** shortcut. For a Windows warning, read the
+   [installation FAQ](FAQ.md#windows-protected-your-pc) before proceeding.
 3. On the empty Home library, choose **Add files**, **Add folder**, or
    **Search music**. Search opens the optional in-app downloader. Only download
    recordings you have permission to save. No music collection is included.
@@ -83,9 +96,10 @@ welcome; its own licensing terms apply. [VB-Audio licensing](https://vb-audio.co
 | Live bass, mid, treble, volume, and playback speed | Artwork and genre lookups with manual review | Real-audio visualizer controls |
 | In-app lyrics and an always-on-top mini player | Optional song, album, and full-playlist downloads | OBS overlay and separate stream audio routing |
 
-**New in 1.53.3:** one ready-to-use Windows installer with optional driver
-choices, no public ZIP downloads, and a clearer first-use library. Each Windows
-user still has one private local profile, with no accounts or sign-in.
+**New in 1.53.4:** a consistent QuietPlay Beta label on the download, installer,
+and app. The ready-to-use Windows installer still includes optional driver
+choices and a clear first-use library. Each Windows user has one private local
+profile, with no accounts or sign-in.
 [Read the changelog](CHANGELOG.md).
 
 ## Your Music
