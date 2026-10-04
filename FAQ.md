@@ -4,14 +4,22 @@
 
 ## Which Download Should I Choose?
 
-Use the **Windows installer** for a normal installation. To send QuietPlay to a
-friend, use the **Installer + optional drivers ZIP**. It includes the same
-installer plus setup notes and optional prerequisite packages. Extract it first.
+Use **Download for Windows**. The Setup EXE is the complete end-user app with
+optional driver choices in the installation wizard. Send that same file to a
+friend. Current releases do not offer app ZIP downloads or a developer kit.
 
-The **Portable ZIP** is a complete app folder for running without a normal
-installation. Keep its `_internal` directory next to the EXE. Downloading only
-GitHub's automatically generated "Source code" ZIP does not install the app:
-that archive contains this repository's public documentation, not QuietPlay.
+GitHub may still display automatically generated "Source code" archives;
+those contain this repository's public documentation, not an installable app.
+Historical releases retain their original assets, but are not the current
+recommended downloads.
+
+## Why Is My Library Empty?
+
+QuietPlay does not include a music collection. On Home, use **Add files** or
+**Add folder** for songs you already have, or **Search music** for the optional
+in-app downloader. Only save recordings you have permission to download.
+Added or automatically imported downloads appear in Home. Your friend's copy
+does not contain your songs or your saved personal data.
 
 ## Why Does Windows Block QuietPlay?
 
