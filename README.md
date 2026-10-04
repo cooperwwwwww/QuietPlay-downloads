@@ -1,15 +1,18 @@
 # QuietPlay
 
-**A Windows music player built around your own library.**
+**Your music. Your desktop. Your way.**
 
-QuietPlay brings local playback, playlists, lyrics, a real audio visualizer,
-an always-on-top mini player, live EQ, and OBS tools into one desktop app.
-Optional online search and spotDL downloads help you add music without leaving
-the app.
+QuietPlay is a Windows music player for your own library, with playlists,
+synchronized lyrics, a real audio visualizer, live EQ, a compact mini player,
+and tools for streaming with OBS. Optional online search and downloads are
+integrated into the app, not a separate setup project.
 
-[Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases) |
-[User guide](USER_GUIDE.md) | [What's new](CHANGELOG.md) |
-[Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues)
+**[Download QuietPlay](#get-quietplay)** &nbsp; / &nbsp;
+**[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
+**[Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)**
+
+[User guide](USER_GUIDE.md) | [FAQ](FAQ.md) | [What's new](CHANGELOG.md) |
+[Development priorities](ROADMAP.md) | [Ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml)
 
 > Current public builds are **unsigned development/testing builds**. Windows
 > Smart App Control may block them. Do not turn off Windows security to install
@@ -18,14 +21,26 @@ the app.
 
 ## Get QuietPlay
 
-Open **Downloads** above and choose the newest version.
+<!-- release-summary:start -->
+**Current public build: 1.53.1 / Development testing**
 
-| File | Use it for |
+| Download | Best for |
 | --- | --- |
-| `QuietPlay-<version>-development-Setup.exe` | Normal installation with desktop and Start menu shortcuts. |
-| `QuietPlay-for-testing-<version>-development.zip` | Shareable installer bundle with optional prerequisites and setup notes. |
-| `QuietPlay-<version>-development-portable.zip` | Run without a normal installation; extract the entire archive first. |
-| `SHA256SUMS.txt` | Check that your download matches the published files. |
+| **[Windows installer](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-1.53.1-development-Setup.exe)** | The simplest normal installation. Creates desktop and Start menu shortcuts. |
+| **[Installer + optional drivers ZIP](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-for-testing-1.53.1-development.zip)** | Sharing with a friend, or setting up separate OBS audio. Includes the installer, setup notes, optional VB-CABLE, and WebView2 bootstrapper. |
+| [Portable ZIP](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-1.53.1-development-portable.zip) | Running without a normal installation. Extract the whole archive. |
+
+[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.1-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+<!-- release-summary:end -->
+
+### Start Listening
+
+1. Download the installer, or extract the installer bundle first.
+2. Install and open the **QuietPlay** shortcut. If Windows blocks the unsigned
+   build, stop and read the [installation FAQ](FAQ.md#why-does-windows-block-quietplay).
+3. Choose **Add music** or **Add folder**, then play a song from Home.
+
+**Windows 10/11, 64-bit. No separate Python installation. No required account.**
 
 Use the installer for the simplest setup. The application runtime, audio
 libraries, FFmpeg, and spotDL companion are included. You do **not** need to
@@ -38,6 +53,18 @@ contains Microsoft's WebView2 bootstrapper for optional embedded web tools.
 
 VB-CABLE is **VB-Audio donationware**, not QuietPlay software. Donations are
 welcome; its own licensing terms apply. [VB-Audio licensing](https://vb-audio.com/Services/licensing.htm).
+
+## At a Glance
+
+| Listen | Organize | Make It Yours |
+| --- | --- | --- |
+| Local playback and a listening-history-aware shuffle | Artists, albums, playlists, and multi-select actions | Themes, custom colors, and reduced motion |
+| Live bass, mid, treble, volume, and playback speed | Artwork and genre lookups with manual review | Real-audio visualizer controls |
+| In-app lyrics and an always-on-top mini player | Optional song, album, and full-playlist downloads | OBS overlay and separate stream audio routing |
+
+**New in 1.53.1:** shuffle Previous/Next history, clearer download settings,
+complete collection downloads, and new-playlist download destinations.
+[Read the changelog](CHANGELOG.md).
 
 ## Your Music
 
@@ -134,6 +161,28 @@ please report failures with the QuietPlay version and steps to reproduce.
 Every published version has release notes and versioned downloads. Unsigned
 testing builds are explicitly marked as prereleases. Automatic in-app production
 updates remain disabled until the trusted signing requirements are met.
+
+## Help Shape QuietPlay
+
+Have an idea that would make listening easier? Use the
+**[feature-request form](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)**.
+Describe the problem and the improvement you want; coding experience is not
+needed. You can also
+[browse existing ideas](https://github.com/cooperwwwwww/QuietPlay-downloads/issues?q=is%3Aissue%20label%3A%22feature%20request%22)
+and add a reaction to one you would use.
+
+Found a problem? [Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
+with your app version and the steps that trigger it, or
+[ask for setup help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
+Requests are reviewed, not automatically promised for the next release.
+
+**Issues are public.** Do not upload music files, account credentials, OBS
+passwords, or unredacted diagnostic logs. Crop personal details out of screenshots.
+See the [feedback guide](CONTRIBUTING.md) for reporting tips and status labels.
+
+This is a **downloads and documentation repository**, not a public source-code
+repository. Visitors can submit feedback, but they do not gain permission to
+change QuietPlay's files or access the private development workspace.
 
 ## Credits
 
