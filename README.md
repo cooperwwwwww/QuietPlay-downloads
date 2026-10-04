@@ -8,6 +8,7 @@ and tools for streaming with OBS. Optional online search and downloads are
 integrated into the app, not a separate setup project.
 
 **[Download QuietPlay](#get-quietplay)** &nbsp; / &nbsp;
+**[Windows installer + optional drivers](#windows-installer--optional-drivers)** &nbsp; / &nbsp;
 **[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
 **[Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)**
 
@@ -27,11 +28,24 @@ integrated into the app, not a separate setup project.
 | Download | Best for |
 | --- | --- |
 | **[Windows installer](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-1.53.1-development-Setup.exe)** | The simplest normal installation. Creates desktop and Start menu shortcuts. |
-| **[Installer + optional drivers ZIP](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-for-testing-1.53.1-development.zip)** | Sharing with a friend, or setting up separate OBS audio. Includes the installer, setup notes, optional VB-CABLE, and WebView2 bootstrapper. |
+| **[Windows installer + optional drivers (ZIP)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-for-testing-1.53.1-development.zip)** | Sharing with a friend, or setting up separate OBS audio. Includes the installer, setup notes, optional VB-CABLE, and WebView2 bootstrapper. |
 | [Portable ZIP](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-1.53.1-development-portable.zip) | Running without a normal installation. Extract the whole archive. |
 
 [Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.1-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
+
+### Windows Installer + Optional Drivers
+
+Choose **Windows installer + optional drivers (ZIP)** in the table above for
+the all-in-one download. Extract it, then run **Install QuietPlay.exe**.
+
+The bundle also includes the **optional VB-CABLE driver package** for separate
+OBS audio and **Microsoft's WebView2 setup** for embedded web components. These
+are optional installers, not drivers installed automatically with QuietPlay.
+You do not need VB-CABLE just to listen to music.
+
+**[Open the optional-driver setup guide](OPTIONAL_DRIVERS.md)** for exact steps
+and the difference between installing QuietPlay and enabling stream audio.
 
 ### Start Listening
 
