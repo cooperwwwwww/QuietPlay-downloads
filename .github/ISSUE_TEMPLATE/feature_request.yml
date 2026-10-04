@@ -1,0 +1,35 @@
+{
+  "name": "Feature request",
+  "description": "Suggest a new feature or an easier way to use QuietPlay.",
+  "title": "[Feature] ",
+  "labels": ["feature request", "needs triage"],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {"value": "Thanks for helping shape QuietPlay. Search existing ideas first. This form is public: do not include music files, passwords, tokens, private paths, or personal information. Requests are reviewed, not automatically promised."}
+    },
+    {
+      "type": "textarea",
+      "id": "idea",
+      "attributes": {"label": "What would you like QuietPlay to do?", "description": "Describe one feature or improvement in your own words.", "placeholder": "I would like to..."},
+      "validations": {"required": true}
+    },
+    {
+      "type": "textarea",
+      "id": "benefit",
+      "attributes": {"label": "How would this make listening easier?", "description": "Tell us about the problem or workflow. Optional sketches or public-safe screenshots are welcome.", "placeholder": "Right now I have to... This would help because..."},
+      "validations": {"required": false}
+    },
+    {
+      "type": "dropdown",
+      "id": "area",
+      "attributes": {"label": "Which part of the app?", "options": ["Playback or audio", "Library or playlists", "Search or downloads", "Lyrics or metadata", "UI, themes, or mini player", "OBS or streaming", "Performance or accessibility", "Something else / not sure"]},
+      "validations": {"required": false}
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {"label": "Before posting", "options": [{"label": "I have removed private information from this request and any screenshots.", "required": true}]}
+    }
+  ]
+}
