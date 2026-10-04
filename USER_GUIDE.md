@@ -12,7 +12,7 @@ Still stuck? [Ask a setup question](https://github.com/cooperwwwwww/QuietPlay-do
 
 ## Install and Open
 
-1. Use **Download for Windows** on the main page. Download the Setup EXE, not
+1. Use **Download QuietPlay for Windows** on the main page. Download the Setup EXE, not
    GitHub's automatically generated source-code archives.
 2. Run setup. Optional extras are unchecked by default: VB-CABLE is only for
    separate OBS audio; WebView2 is only for embedded web tools. Selecting the
@@ -20,6 +20,11 @@ Still stuck? [Ask a setup question](https://github.com/cooperwwwwww/QuietPlay-do
    [optional extras guide](OPTIONAL_DRIVERS.md).
 3. Use the QuietPlay desktop or Start menu shortcut.
 4. Check Settings > Updates for the version and build channel.
+
+You may see a blue **Windows protected your PC** SmartScreen warning. Read the
+[Windows warning guide](FAQ.md#windows-protected-your-pc) first. It explains
+**More info**, the optional **Run anyway** choice for a file you trust, and when
+to stop. Being a new app does not guarantee safety.
 
 If Windows Smart App Control blocks an unsigned build, stop there. A checksum
 confirms file identity, not trusted publisher status. Do not disable Smart App
