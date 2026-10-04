@@ -1,5 +1,16 @@
 # QuietPlay Changes
 
+## 1.53.3 - Windows Installer Update
+
+- Public downloads now use one ready-to-use Windows installer, not app ZIPs.
+- Optional driver/runtime choices are in setup, off by default. VB-CABLE uses
+  its original signed interactive installer and Windows administrator approval.
+- Empty libraries offer Add files, Add folder and in-app Search music actions.
+- Updated first-use instructions and optional-driver guide for ordinary users.
+- Replaced the legacy Windows file-drop hook with native Tcl/Tk drag-and-drop.
+- Local data stays on each PC; no accounts or personal data are distributed.
+- Unsigned packages remain development prereleases pending trusted signing.
+
 ## 1.53.2 - Development / Testing
 
 - Removed the Profiles/accounts settings tab, profile switching, account
