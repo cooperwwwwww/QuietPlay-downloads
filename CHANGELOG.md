@@ -1,5 +1,19 @@
 # QuietPlay Changes
 
+## 1.53.2 - Development / Testing
+
+- Removed the Profiles/accounts settings tab, profile switching, account
+  creation/deletion, passcodes and the unused analytics-sharing toggle.
+- Kept one local profile and listening history per PC/Windows user. No sign-in
+  or uploading personal data to another computer or GitHub.
+- Added local display name, listening insights, export and clear-history
+  controls under Library settings.
+- Safely migrates the selected legacy profile after preserving the original
+  file in a local backup. Unselected histories are not mixed together.
+- Included local profiles in library backup/restore and added a distribution
+  gate rejecting personal profile/library/settings/session files in ZIPs.
+- Old saved Profiles/Accounts settings pages now restore to Library.
+
 ## 1.53.1 - Development / Testing
 
 - Fixed Previous with shuffle: it follows actual listening history instead of
