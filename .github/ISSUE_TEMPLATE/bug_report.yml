@@ -1,0 +1,47 @@
+{
+  "name": "Bug report",
+  "description": "Report a crash, playback problem, lag, or something that looks wrong.",
+  "title": "[Bug] ",
+  "labels": ["bug", "needs triage"],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {"value": "Please check existing issues first. This report is public. Do not attach music files, full unredacted logs, credentials, OBS passwords, or personal details. If Windows blocks an unsigned build, do not disable its protections."}
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {"label": "QuietPlay version", "description": "Find it in Settings > Updates. Enter 'Not sure' if the app will not open.", "placeholder": "Example: 1.53.1-development"},
+      "validations": {"required": true}
+    },
+    {
+      "type": "textarea",
+      "id": "problem",
+      "attributes": {"label": "What happened?", "description": "What were you trying to do, and what happened instead?", "placeholder": "I expected... Instead..."},
+      "validations": {"required": true}
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {"label": "How can we reproduce it?", "description": "List the clicks or actions, and whether it happens every time. 'Not sure' is fine for an intermittent issue.", "placeholder": "1. Open...\n2. Click...\n3. The problem appears..."},
+      "validations": {"required": true}
+    },
+    {
+      "type": "input",
+      "id": "environment",
+      "attributes": {"label": "Windows and display details (optional)", "description": "For layout problems, include screen size and display scaling if known. For audio problems, mention the output device.", "placeholder": "Example: Windows 11, 1920x1080, 125% scaling"},
+      "validations": {"required": false}
+    },
+    {
+      "type": "textarea",
+      "id": "evidence",
+      "attributes": {"label": "Screenshot or extra details (optional)", "description": "Crop personal information. For incorrect metadata, include only song title, credited artists, album, and the expected label; do not upload the recording."},
+      "validations": {"required": false}
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {"label": "Before posting", "options": [{"label": "I have removed private information from this report and any attachments.", "required": true}]}
+    }
+  ]
+}
