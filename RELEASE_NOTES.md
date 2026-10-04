@@ -1,10 +1,18 @@
-# QuietPlay 1.53.1 - Testing Build
+# QuietPlay 1.53.2 - Testing Build
 
-This release includes the 1.53.0 integrated downloader plus the shuffle-history,
-playlist download, and settings improvements below.
+This release removes account-style controls. Each person's copy stores their
+own profile and saved data on the computer where they use QuietPlay.
 
 ## Changes
 
+- No accounts tab, sign-in, passcodes, switching or analytics-sharing toggle.
+- One local profile per Windows user, with display name, insights, export and
+  clear-history controls in Settings > Library.
+- Existing selected profile history is retained; the original multi-profile
+  file is backed up locally before migration. No personal data is uploaded.
+- Library backups now include the local profile, and public ZIP verification
+  rejects bundled personal profile, library, settings and session files.
+- Legacy saved account settings pages redirect to Library.
 - Previous follows the songs you actually heard while shuffle is enabled.
 - Next can replay forward listening history after going back.
 - History restores with the playback session. Reopening waits for Play by default.
