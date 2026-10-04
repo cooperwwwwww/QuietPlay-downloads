@@ -2,7 +2,7 @@
 
 [QuietPlay downloads](README.md#get-quietplay) | [User guide](USER_GUIDE.md) | [FAQ](FAQ.md)
 
-Use **Download for Windows** on the main page. One Setup EXE includes the app
+Use **Download QuietPlay for Windows** on the main page. One Setup EXE includes the app
 and optional extras. There is no ZIP to extract or developer setup to configure.
 
 ## Install QuietPlay
@@ -11,6 +11,9 @@ and optional extras. There is no ZIP to extract or developer setup to configure.
 2. On **Optional extras**, choose only the extras you need. Both are unchecked
    by default: VB-CABLE for separate OBS audio, and WebView2 if missing.
 3. Open the **QuietPlay** desktop or Start menu shortcut.
+
+For the blue **Windows protected your PC** screen, read the
+[Windows warning guide](FAQ.md#windows-protected-your-pc) before proceeding.
 
 The bundled app already includes its runtime, audio libraries, FFmpeg, and
 spotDL companion. Do not install Python or spotDL separately. If Smart App
