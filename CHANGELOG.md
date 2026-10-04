@@ -1,5 +1,15 @@
 # QuietPlay Changes
 
+## 1.53.4 - Beta
+
+- Listener-facing downloads, installer windows and app versions use QuietPlay
+  Beta branding instead of development/testing wording.
+- The Windows installer filename uses Beta, with optional driver choices retained.
+- Added clear SmartScreen guidance and separate instructions for Smart App
+  Control or administrator-policy blocks, without disabling Windows security.
+- No developer environment is needed. Signing warnings remain clear; internal
+  development-channel safeguards and prerelease status are unchanged.
+
 ## 1.53.3 - Windows Installer Update
 
 - Public downloads now use one ready-to-use Windows installer, not app ZIPs.
