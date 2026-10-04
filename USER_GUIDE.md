@@ -6,7 +6,7 @@
 
 [Install](#install-and-open) | [Add music](#add-existing-music) |
 [Playlists](#playlists) | [Full collection downloads](#download-a-complete-playlist-or-album) |
-[Shuffle history](#shuffle-and-previous) | [OBS](#obs)
+[Shuffle history](#shuffle-and-previous) | [Local data](#your-data-on-this-pc) | [OBS](#obs)
 
 Still stuck? [Ask a setup question](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
 
@@ -25,6 +25,28 @@ Control or other protections to bypass the block.
 
 The portable archive contains a complete app folder. Keep its `_internal`
 directory next to QuietPlay.exe. Copying only the EXE will not work.
+
+## Your Data on This PC
+
+There are no QuietPlay accounts, passwords, sign-in or account switching.
+Each PC/Windows user keeps its own library, playlists, preferences, session and
+listening data. Installing an update preserves that local data. Sending the
+installer or download ZIP to a friend does not send your personal data.
+
+Settings > Library > **Your data on this PC** lets you change a local display
+name, view listening insights, export those insights as JSON, or clear that
+listening history. Clearing insights does not remove music, playlists or the
+library's Recently played list. Library backup/restore also includes the local
+profile, so keep exported backups private.
+
+When upgrading from the old Profiles section, QuietPlay retains the selected
+profile's name and history and removes switching/passcodes. The complete old
+file is preserved in a local migration backup; other profiles are not merged
+into the selected history. Nothing from that migration is uploaded.
+
+Local data is in **%APPDATA%/QuietPlay/Data-v1**, separate from the installed app
+folder. Portable builds use this same Windows-user location; personal data does
+not travel simply by copying the portable executable folder.
 
 ## Add Existing Music
 
