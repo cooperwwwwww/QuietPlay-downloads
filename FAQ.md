@@ -20,6 +20,14 @@ Control can block an unsigned program. A published checksum verifies file
 identity; it does not replace a trusted publisher signature. Do not turn off
 Windows security or bypass a block. Trusted code signing is still outstanding.
 
+## Do I Need an Account, and Where Is My Data Saved?
+
+No QuietPlay account is needed or available. Your copy saves your profile,
+history, playlists and settings on your own PC, for your Windows user. It does
+not send that personal data to the creator's PC or GitHub. A friend's copy uses
+their own independent data. Settings > Library has the local name, insights,
+export and history controls. See [local data](USER_GUIDE.md#your-data-on-this-pc).
+
 ## Do I Need Python, spotDL, or Extra Audio Drivers?
 
 No separate Python or spotDL installation is required. The app runtime,
