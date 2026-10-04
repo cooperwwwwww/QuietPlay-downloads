@@ -23,15 +23,15 @@ integrated into the app, not a separate setup project.
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Current public build: 1.53.1 / Development testing**
+**Current public build: 1.53.2 / Development testing**
 
 | Download | Best for |
 | --- | --- |
-| **[Windows installer](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-1.53.1-development-Setup.exe)** | The simplest normal installation. Creates desktop and Start menu shortcuts. |
-| **[Windows installer + optional drivers (ZIP)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-for-testing-1.53.1-development.zip)** | Sharing with a friend, or setting up separate OBS audio. Includes the installer, setup notes, optional VB-CABLE, and WebView2 bootstrapper. |
-| [Portable ZIP](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.1-development/QuietPlay-1.53.1-development-portable.zip) | Running without a normal installation. Extract the whole archive. |
+| **[Windows installer](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.2-development/QuietPlay-1.53.2-development-Setup.exe)** | The simplest normal installation. Creates desktop and Start menu shortcuts. |
+| **[Windows installer + optional drivers (ZIP)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.2-development/QuietPlay-for-testing-1.53.2-development.zip)** | Sharing with a friend, or setting up separate OBS audio. Includes the installer, setup notes, optional VB-CABLE, and WebView2 bootstrapper. |
+| [Portable ZIP](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.2-development/QuietPlay-1.53.2-development-portable.zip) | Running without a normal installation. Extract the whole archive. |
 
-[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.1-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.2-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
 ### Windows Installer + Optional Drivers
@@ -54,7 +54,12 @@ and the difference between installing QuietPlay and enabling stream audio.
    build, stop and read the [installation FAQ](FAQ.md#why-does-windows-block-quietplay).
 3. Choose **Add music** or **Add folder**, then play a song from Home.
 
-**Windows 10/11, 64-bit. No separate Python installation. No required account.**
+**Windows 10/11, 64-bit. No separate Python installation. No accounts or sign-in.**
+
+Each installation keeps its own profile, listening history, playlists and
+preferences on the PC where it is used, under that Windows user's app data.
+Your friend's copy starts with their own data, not yours. QuietPlay does not
+upload this personal data to another PC or to GitHub.
 
 Use the installer for the simplest setup. The application runtime, audio
 libraries, FFmpeg, and spotDL companion are included. You do **not** need to
@@ -76,8 +81,9 @@ welcome; its own licensing terms apply. [VB-Audio licensing](https://vb-audio.co
 | Live bass, mid, treble, volume, and playback speed | Artwork and genre lookups with manual review | Real-audio visualizer controls |
 | In-app lyrics and an always-on-top mini player | Optional song, album, and full-playlist downloads | OBS overlay and separate stream audio routing |
 
-**New in 1.53.1:** shuffle Previous/Next history, clearer download settings,
-complete collection downloads, and new-playlist download destinations.
+**New in 1.53.2:** removed account-style controls in favor of one local profile
+per Windows user, with local data export, history controls and safe migration.
+Shuffle history, full-playlist downloads and the integrated downloader remain.
 [Read the changelog](CHANGELOG.md).
 
 ## Your Music
