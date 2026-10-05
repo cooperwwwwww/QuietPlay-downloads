@@ -1,7 +1,8 @@
 # QuietPlay 1.53.4 Beta
 
 One ready-to-use Windows installer, optional extras in setup, and a clearer
-first-use library. Each person's copy keeps its own saved data on their PC.
+first-use library. Libraries and listening data are stored locally for each
+Windows user.
 
 ## Changes
 
