@@ -1,24 +1,26 @@
 # QuietPlay
 
-**Your music. Your desktop. Your way.**
+**A Windows music player for everyday listening.**
 
-QuietPlay is a Windows music player for your own library, with playlists,
-synchronized lyrics, a real audio visualizer, live EQ, a compact mini player,
-and tools for streaming with OBS. Optional online search and downloads are
-integrated into the app, not a separate setup project.
+QuietPlay brings a local music library, playlists, synchronized lyrics, live
+EQ, and a real-audio visualizer into one desktop app. An always-on-top mini
+player keeps playback close at hand, and optional OBS tools support streaming.
+Anyone can download the Windows installer below; no QuietPlay account or
+programming tools are required.
 
 **[Download QuietPlay](#get-quietplay)** &nbsp; / &nbsp;
-**[Windows installer + optional drivers](#windows-installer--optional-drivers)** &nbsp; / &nbsp;
+**[Installation guide](#install-quietplay)** &nbsp; / &nbsp;
+**[Start listening](#start-listening)** &nbsp; / &nbsp;
 **[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
 **[Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)**
 
 [User guide](USER_GUIDE.md) | [FAQ](FAQ.md) | [What's new](CHANGELOG.md) |
-[Development priorities](ROADMAP.md) | [Ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml)
+[Roadmap](ROADMAP.md) | [Get help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml)
 
-> QuietPlay is currently in **Beta** and is **unsigned**. Windows
-> Smart App Control may block it. Do not turn off Windows security to install
-> QuietPlay. A trusted code-signing identity is still needed for a normal signed
-> public release and automatic in-app updates.
+> **Beta release:** QuietPlay is available for public testing and may still
+> contain bugs. The installer is currently **unsigned**, so Windows may show a
+> warning or block it. Review the [Windows security notice](#windows-security-notice)
+> before installing. Do not disable Windows security.
 
 ## Get QuietPlay
 
@@ -32,200 +34,190 @@ integrated into the app, not a separate setup project.
 [Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.4-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
+**Requirements:** Windows 10 or 11, 64-bit, and a working audio output. An
+internet connection is needed for online search, downloads, and metadata
+lookups, not for playing songs already stored on the PC.
+
+## Install QuietPlay
+
+1. Select **Download QuietPlay for Windows** above. The file is named
+   `QuietPlay-<version>-Beta-Setup.exe`.
+2. Open the downloaded installer. If a Windows warning appears, read the steps
+   below before continuing.
+3. Follow setup and choose only the optional extras needed. Leave them
+   unchecked for normal listening.
+4. Open **QuietPlay** from the desktop or Start menu shortcut.
+
+The app runtime, playback libraries, FFmpeg, and optional spotDL downloader are
+included. There is no ZIP to extract and no separate Python or command-line
+setup. GitHub's automatically generated source-code archives contain this
+repository's documentation, not the installable app.
+
 ### Windows Security Notice
 
-You may see **Windows protected your PC** because QuietPlay is unsigned and
-does not yet have established download reputation. A new app is not
-automatically safe. Download only from this repository's releases and check
-the published checksum. Select **More info** to inspect the app details. If you
-trust this specific download and accept the risk, **Run anyway** may be
-available; otherwise choose **Don't run**.
+Windows may show the following **Microsoft Defender SmartScreen** screen.
+QuietPlay is a new, unsigned Beta app without established download reputation;
+that can trigger a warning. A new app is not automatically safe.
 
-**Smart App Control or administrator-policy blocks are different.** If there
-is no Run anyway option, stop; do not disable Windows security.
-[Read the Windows warning guide](FAQ.md#windows-protected-your-pc).
+![Microsoft Defender SmartScreen warning with More info at the left and Don't run at the bottom](assets/windows-smartscreen.png)
+
+1. Confirm the installer came from this repository's
+   [official releases](https://github.com/cooperwwwwww/QuietPlay-downloads/releases).
+   [Compare the file with the published SHA-256 checksum](FAQ.md#check-the-downloaded-file);
+   this verifies identity, not safety.
+2. Select **More info**, shown on the left of the warning, to inspect the
+   filename and publisher. The current unsigned installer may show
+   **Unknown publisher**.
+3. Only if the file is trusted and the risk is acceptable, select **Run anyway**
+   if Windows offers it. This button is not visible in the first screen above;
+   it may appear after selecting More info. Otherwise choose **Don't run**.
+
+**Stop if Smart App Control, antivirus, or an administrator policy blocks the
+file, or if Run anyway is unavailable.** Do not turn off those protections.
+Smart App Control is different from this SmartScreen warning and has no
+individual-app override. [Full Windows warning guide](FAQ.md#windows-protected-your-pc).
 
 ### Windows Installer + Optional Drivers
 
-Choose **Download QuietPlay for Windows**. One Setup EXE installs the ready-to-use app;
-there is no ZIP to extract and no developer environment to configure.
+Both optional extras are **off by default**. Normal music playback needs
+neither one.
 
-In setup, the **Optional extras** checkboxes let you choose **VB-CABLE for
-separate OBS audio** or **Microsoft WebView2 for embedded web tools** if it is
-missing. Both are off by default. Normal music playback needs neither extra.
-Selecting VB-CABLE opens its original signed setup with Windows administrator
-approval; complete or cancel that setup before QuietPlay installation continues.
+| Optional Extra | When to Choose It |
+| --- | --- |
+| VB-CABLE | Separate music audio for OBS when a suitable routing device is not already installed. |
+| Microsoft WebView2 | Embedded web tools when the runtime is missing. |
 
-**[Open the optional-driver setup guide](OPTIONAL_DRIVERS.md)** for exact steps
-and the difference between installing QuietPlay and enabling stream audio.
+Selecting VB-CABLE opens its original signed installer and a Windows
+administrator prompt. Complete or cancel that installer before QuietPlay setup
+continues. A restart may be required. VB-CABLE is third-party VB-Audio
+donationware with its own terms; it is not QuietPlay software.
 
-### Start Listening
+[Optional-extras setup guide](OPTIONAL_DRIVERS.md) |
+[VB-Audio licensing](https://vb-audio.com/Services/licensing.htm)
 
-1. Choose **Download QuietPlay for Windows** and run the Setup EXE.
-2. Install and open the **QuietPlay** shortcut. For a Windows warning, read the
-   [installation FAQ](FAQ.md#windows-protected-your-pc) before proceeding.
-3. On the empty Home library, choose **Add files**, **Add folder**, or
-   **Search music**. Search opens the optional in-app downloader. Only download
-   recordings you have permission to save. No music collection is included.
-4. Added songs appear in Home. Choose a song and press Play.
+## Start Listening
 
-**Windows 10/11, 64-bit. No separate Python installation. No accounts or sign-in.**
+**QuietPlay starts with an empty library. No music collection is included.**
 
-Each installation keeps its own profile, listening history, playlists and
-preferences on the PC where it is used, under that Windows user's app data.
-Your friend's copy starts with their own data, not yours. QuietPlay does not
-upload this personal data to another PC or to GitHub.
+1. Open Home and choose **Add files** for individual songs or **Add folder**
+   for an existing music folder. Multiple files can be imported together.
+2. Songs appear in Home. Select a song and press **Play**.
+3. Use **Playlists**, **Artists**, **Albums**, or the search bar to organize and
+   find music. Use Like and Dislike to shape local recommendations.
+4. For optional online downloads, choose **Search music** on the empty Home
+   screen, or open **Add music**. Only save recordings with permission to download.
 
-Use the installer for the simplest setup. The application runtime, audio
-libraries, FFmpeg, and spotDL companion are included. You do **not** need to
-install Python, spotDL, or a command-line tool separately.
+No account or sign-in is required. Each Windows user has an independent local
+library, profile, playlists, preferences, and listening history.
+[Read the getting-started guide](USER_GUIDE.md#add-existing-music).
 
-Normal music playback does not need a virtual audio driver. The optional
-VB-CABLE package is for routing music separately to OBS. Driver installation
-requires administrator approval and may require a restart. Setup also
-contains Microsoft's WebView2 bootstrapper for optional embedded web tools.
+## What QuietPlay Can Do
 
-VB-CABLE is **VB-Audio donationware**, not QuietPlay software. Donations are
-welcome; its own licensing terms apply. [VB-Audio licensing](https://vb-audio.com/Services/licensing.htm).
+| Feature | What It Offers |
+| --- | --- |
+| Library and playlists | Multi-file imports, search, artist and album browsing, multi-select actions, and local song/artist mixes. |
+| Playback | Queue, shuffle with actual listening history, speed controls, sleep timer, and Windows media controls. |
+| Live audio controls | Volume, bass, midrange, and treble changes during playback. |
+| Lyrics | In-app synchronized lyrics, line follow, and per-song timing adjustment when the provider's timing differs. |
+| Visualizer | Visualization driven by real audio, with adjustable style, color, density, sensitivity, and response. |
+| Mini player | Compact always-on-top playback, volume control, and adjustable opacity. |
+| Metadata | Public artwork and genre lookups, cached results, and manual review for ambiguous recordings. |
+| Personalization | Themes, custom colors, contrast options, and reduced motion. |
+| OBS | Local now-playing overlay, separate stream audio, and optional dual output for local listening. |
 
-## At a Glance
-
-| Listen | Organize | Make It Yours |
-| --- | --- | --- |
-| Local playback and a listening-history-aware shuffle | Artists, albums, playlists, and multi-select actions | Themes, custom colors, and reduced motion |
-| Live bass, mid, treble, volume, and playback speed | Artwork and genre lookups with manual review | Real-audio visualizer controls |
-| In-app lyrics and an always-on-top mini player | Optional song, album, and full-playlist downloads | OBS overlay and separate stream audio routing |
-
-**New in 1.53.4:** a consistent QuietPlay Beta label on the download, installer,
-and app. The ready-to-use Windows installer still includes optional driver
-choices and a clear first-use library. Each Windows user has one private local
-profile, with no accounts or sign-in.
-[Read the changelog](CHANGELOG.md).
-
-## Your Music
-
-- Import multiple files or a whole folder; search the library immediately.
-- Browse by song, artist, album, genre, favorites, or recent listening.
-- Songs with several credited artists appear under each recognized artist.
-- Build and edit playlists, add multiple selected tracks, and create local
-  song/artist mixes from music already in your library.
-- Like or dislike songs from playback controls. Dislikes affect automatic
-  selection and local recommendations.
-- Remove songs from the library without requiring you to delete the originals.
-- Resume the saved song and position after reopening, waiting for Play by
-  default rather than unexpectedly starting audio.
-
-## Playback and Lyrics
-
-- Previous follows actual listening history when shuffle is on. Next can replay
-  the forward history after going back.
-- Seek, shuffle, queue songs, change playback speed, and set a sleep timer.
-- Adjust bass, midrange, treble, and volume while the song is playing.
-- Use Windows taskbar/media controls and compatible headset media buttons.
-- Keep a compact mini player above other windows, with playback and volume
-  controls and adjustable opacity.
-- Display synchronized lyrics inside the app. Follow the active line or adjust
-  a song's timing offset when its lyric source is early or late.
-- Customize the visualizer's style, colors, density, sensitivity, and response.
-  Its playback animation comes from actual audio, not a decorative loop.
+Reopening restores the saved song and playback position and waits for Play by
+default. Removing a song from the library does not have to delete its original
+file; read the confirmation before choosing an action.
 
 ## Optional Online Search and Downloads
 
-The main search bar searches saved music first. If no local songs match, it can
-also show online results. Already-saved songs have Play; online-only songs show
-**Download to listen**.
+The main search bar searches saved music first and can also show online
+matches. Local songs have **Play**; online-only results show
+**Download to listen**. Completed downloads can be imported into Home or a
+selected playlist.
 
-Paste a public Spotify song, playlist, or album link into search. Playlist and
-album results offer **Download full playlist/album**, not just the small search
-preview. In Add music, choose Home, an existing playlist, or a new playlist.
-Completed downloads appear in the library without interrupting current playback.
+For a complete collection, paste a public Spotify playlist or album link into
+search and choose **Download full playlist/album**. The search preview's size
+does not limit the full collection job. Individual tracks may be unavailable.
 
-Settings > **Search & Downloads** controls automatic/manual searching, format,
-quality, audio sources, lyrics, artwork, and the download folder. More technical
-filename, matching, and network options are grouped under **Show advanced**.
+Open **Settings > Search & Downloads** to choose search behavior, file format,
+quality, providers, artwork, lyrics, and the destination folder. Advanced
+matching and network options are grouped under **Show advanced**.
 
-![Search and download settings with a demonstration library](assets/search-settings.png)
+![QuietPlay Search and Downloads settings, shown with a demonstration library](assets/search-settings.png)
 
-spotDL uses Spotify **metadata** and matches audio from other providers. It does
-not download Spotify's protected audio, provide every Spotify recording, or
-grant music rights. Only download recordings you have permission to save.
-Availability, provider rules, matching accuracy, and lyrics timing can vary.
+**This is not access to Spotify's streaming catalog.** The optional spotDL
+integration uses Spotify metadata and matches audio from other providers. It
+does not download protected Spotify audio, guarantee every recording, or grant
+music rights. Only download recordings with permission to save them. Online
+availability, matching, artwork, genres, and lyric timing can vary.
+[Download settings and full-collection guide](USER_GUIDE.md#download-a-complete-playlist-or-album).
 
-## Metadata and Artwork
+## Use With OBS
 
-QuietPlay can look up missing artwork and genre information using public music
-metadata sources. Matching considers recording and artist information rather
-than guessing a genre from the filename alone. It caches results and runs
-lookups away from the UI thread.
+Open **Settings > Streaming** for guided OBS setup. A **Browser Source** shows
+the local now-playing overlay. Music audio uses a separate audio source and,
+when needed, an optional routing device such as VB-CABLE. Dual output can send
+music to OBS and the listening device at the same time.
 
-Ambiguous recordings can still need manual review. A genre is not always a
-single objective label, and public databases do not cover every song. QuietPlay
-should not silently present an unsupported guess as verified metadata. The
-guide explains reviewing matches and writing changes back to supported files.
+[OBS setup guide](USER_GUIDE.md#obs). Displaying a song title does not grant
+permission to broadcast the recording.
 
-## OBS and Personalization
+## Data and Privacy
 
-- A localhost now-playing overlay exposes song information to an OBS Browser
-  Source without publishing your library to a music server.
-- Stream routing can send music to a separate output and, optionally, your
-  headphones at the same time.
-- Themes, visual color selection, contrast options, and reduced-motion settings
-  let you tailor the interface.
-- Audio, library, lyrics, appearance, streaming, and download preferences live
-  in separate settings categories.
+- Library records, playlists, settings, listening history, and OBS connection
+  details are stored locally for each Windows user.
+- The installer contains no personal library or listening data. Installing on
+  another computer creates a separate local setup.
+- QuietPlay does not automatically upload music or personal listening data to
+  a public library server or GitHub.
+- Enabled online providers receive the searches and song details needed for
+  the requested service. Offline playback does not need those providers.
 
-Displaying a song title in OBS does not grant streaming or copyright permission.
+[Local data and backups](USER_GUIDE.md#your-data-on-this-pc).
 
-## Requirements and Privacy
+## Updates and Support
 
-Windows 10 or 11, 64-bit, with a working Windows audio output. Online search,
-downloads, and metadata lookups need an internet connection. Offline playback
-of your existing music does not.
+Release notes and versioned installers are published on the
+[Releases page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases).
+Use GitHub's **Watch > Custom > Releases** option for
+[release notifications](https://docs.github.com/en/subscriptions-and-notifications/get-started/configuring-notifications).
+Check **Settings > Updates** for the installed version. Normal installer
+upgrades preserve local data, but back up important files first.
 
-Your library, playlists, and preferences are stored on your PC. Current QuietPlay
-does not require an account and does not automatically upload your music to a
-public library server. Enabled online services receive the queries or song
-details needed for that service. OBS connection settings stay local.
+**Beta limitations:** the packages are unsigned prereleases. Automatic in-app
+production updates remain disabled until trusted signing is available. Lyrics
+and metadata may need manual review, and online providers can change
+independently. Beta does not mean every feature or external service is faultless.
 
-## Testing and Updates
+Published app builds go through automated tests, native Windows UI checks,
+package-integrity checks, and dependency vulnerability scans. These checks
+reduce risk; they do not guarantee the absence of bugs.
 
-Published packages are built from pinned dependencies and go through automated
-tests, native Windows UI checks, archive-integrity checks, and dependency
-vulnerability scans. External providers can still change independently, so
-please report failures with the QuietPlay version and steps to reproduce.
+| Need Help With | Where to Go |
+| --- | --- |
+| Getting started or a common question | [User guide](USER_GUIDE.md) and [FAQ](FAQ.md) |
+| An installation or setup question | [Ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml) |
+| A broken feature, slow operation, or visual problem | [Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml) |
+| An idea for an improvement | [Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml) |
+| Recent changes and planned priorities | [Changelog](CHANGELOG.md) and [roadmap](ROADMAP.md) |
 
-Every published version has release notes and versioned downloads. Unsigned
-testing builds are explicitly marked as prereleases. Automatic in-app production
-updates remain disabled until the trusted signing requirements are met.
+GitHub requires an account to submit feedback; QuietPlay itself does not.
+Include the app version, the steps taken, and the expected result. Requests
+are reviewed, but no implementation date or response time is guaranteed.
 
-## Help Shape QuietPlay
+**Feedback is public.** Do not attach music files, passwords, tokens, OBS
+connection secrets, or unredacted logs. Remove personal details from screenshots.
+[Feedback guide](CONTRIBUTING.md).
 
-Have an idea that would make listening easier? Use the
-**[feature-request form](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)**.
-Describe the problem and the improvement you want; coding experience is not
-needed. You can also
-[browse existing ideas](https://github.com/cooperwwwwww/QuietPlay-downloads/issues?q=is%3Aissue%20label%3A%22feature%20request%22)
-and add a reaction to one you would use.
-
-Found a problem? [Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
-with your app version and the steps that trigger it, or
-[ask for setup help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
-Requests are reviewed, not automatically promised for the next release.
-
-**Issues are public.** Do not upload music files, account credentials, OBS
-passwords, or unredacted diagnostic logs. Crop personal details out of screenshots.
-See the [feedback guide](CONTRIBUTING.md) for reporting tips and status labels.
-
-This is a **downloads and documentation repository**, not a public source-code
-repository. Visitors can submit feedback, but they do not gain permission to
-change QuietPlay's files or access the private development workspace.
+This repository hosts public downloads, documentation, and feedback. It does
+not publish the app's private source or provide access to any music library.
+Submitting feedback does not grant permission to modify the repository.
 
 ## Credits
 
 Created and product-directed by **Cooper W.** Engineering and product design
 developed in collaboration with **OpenAI Codex**.
 
-QuietPlay is independent, not affiliated with Spotify, and not endorsed by
-OpenAI. Third-party notices and licenses are included in the distribution.
-This repository hosts the public documentation and app downloads; the private
-development workspace and personal music files are not published here.
+QuietPlay is independent, is not affiliated with Spotify, and is not endorsed
+by OpenAI. Third-party notices and licenses are included in the distribution.
