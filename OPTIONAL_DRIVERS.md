@@ -17,7 +17,7 @@ For the blue **Windows protected your PC** screen, read the
 
 The bundled app already includes its runtime, audio libraries, FFmpeg, and
 spotDL companion. Do not install Python or spotDL separately. If Smart App
-Control blocks this unsigned testing build, stop. Do not turn off Windows
+Control blocks this unsigned Beta build, stop. Do not turn off Windows
 protections to run it.
 
 ## Optional: Separate Music Audio for OBS
