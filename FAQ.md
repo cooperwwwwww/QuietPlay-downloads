@@ -4,9 +4,9 @@
 
 ## Which Download Should I Choose?
 
-Use **Download QuietPlay for Windows**. The Setup EXE is the complete end-user app with
-optional driver choices in the installation wizard. Send that same file to a
-friend. Current releases do not offer app ZIP downloads or a developer kit.
+Use **Download QuietPlay for Windows** on the main page. The Setup EXE installs
+the complete app and offers optional extras in the installation wizard.
+Current releases do not require ZIP extraction or a developer environment.
 
 GitHub may still display automatically generated "Source code" archives;
 those contain this repository's public documentation, not an installable app.
@@ -18,8 +18,9 @@ recommended downloads.
 QuietPlay does not include a music collection. On Home, use **Add files** or
 **Add folder** for songs you already have, or **Search music** for the optional
 in-app downloader. Only save recordings you have permission to download.
-Added or automatically imported downloads appear in Home. Your friend's copy
-does not contain your songs or your saved personal data.
+Added or automatically imported downloads appear in Home. Every Windows user
+starts with an independent local library; the installer contains no songs or
+personal listening data.
 
 ## Why Does Windows Block QuietPlay?
 
@@ -35,20 +36,37 @@ SmartScreen warning. QuietPlay is a new, unsigned Beta app with limited download
 reputation; that can trigger this warning. It does not prove the file is safe
 or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation).
 
+![Initial Microsoft Defender SmartScreen warning: select More info to inspect the app details](assets/windows-smartscreen.png)
+
 1. Confirm you intentionally downloaded the installer from
    [QuietPlay's official releases](https://github.com/cooperwwwwww/QuietPlay-downloads/releases).
    Compare its SHA-256 with that release's SHA256SUMS.txt. This checks file
    identity, not safety.
-2. Select **More info** to see the filename and publisher. The current unsigned
+2. Select **More info**, on the left of the pictured screen, to see the filename
+   and publisher. The current unsigned
    QuietPlay installer may show **Unknown publisher**.
 3. Only if you trust that specific file and accept the risk, choose
-   **Run anyway**, if offered. If you are unsure, choose **Don't run**.
+   **Run anyway**, if offered after More info. It is not visible in the initial
+   screen above. If you are unsure, choose **Don't run**.
 
 If **Smart App Control**, a malware detection, or your administrator's policy
 blocks it, or Run anyway is unavailable, stop. Do not disable antivirus,
 SmartScreen, Smart App Control or administrator protections. Smart App Control
 does not provide an individual-app override.
 [Microsoft's Smart App Control FAQ](https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions).
+
+### Check the Downloaded File
+
+Open that release's **SHA256SUMS.txt** and find the installer filename. In
+PowerShell, run the following with the actual path to the downloaded file:
+
+```powershell
+Get-FileHash -LiteralPath "<downloaded-installer-path>" -Algorithm SHA256
+```
+
+The displayed hash must match the installer entry in SHA256SUMS.txt, ignoring
+letter case. A mismatch means the file is not the published installer: do not
+run it. Matching verifies identity, not publisher trust or absence of malware.
 
 ## Why Is It Labeled Beta?
 
@@ -60,11 +78,12 @@ that does not mean you need development tools to use the app.
 
 ## Do I Need an Account, and Where Is My Data Saved?
 
-No QuietPlay account is needed or available. Your copy saves your profile,
-history, playlists and settings on your own PC, for your Windows user. It does
-not send that personal data to the creator's PC or GitHub. A friend's copy uses
-their own independent data. Settings > Library has the local name, insights,
-export and history controls. See [local data](USER_GUIDE.md#your-data-on-this-pc).
+QuietPlay does not require an account. Each Windows user has a local profile,
+history, playlists and settings saved on that computer. Installing on another
+computer creates an independent setup; it does not copy another listener's data.
+Personal listening data is not uploaded to GitHub or a public library server.
+Settings > Library contains the local display name, insights, export and
+history controls. See [local data](USER_GUIDE.md#your-data-on-this-pc).
 
 ## Do I Need Python, spotDL, or Extra Audio Drivers?
 
