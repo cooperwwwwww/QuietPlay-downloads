@@ -38,8 +38,9 @@ Python, terminal commands or developer tools are needed.
 
 There are no QuietPlay accounts, passwords, sign-in or account switching.
 Each PC/Windows user keeps its own library, playlists, preferences, session and
-listening data. Installing an update preserves that local data. Sending the
-installer to a friend does not send your personal data.
+listening data. Installing an update preserves that local data. The installer
+does not contain personal data, and each installation on another computer
+starts independently.
 
 Settings > Library > **Your data on this PC** lets you change a local display
 name, view listening insights, export those insights as JSON, or clear that
