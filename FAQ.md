@@ -8,6 +8,10 @@ Use **Download QuietPlay for Windows** on the main page. The Setup EXE installs
 the complete app and offers optional extras in the installation wizard.
 Current releases do not require ZIP extraction or a developer environment.
 
+For experimental Mac/Linux downloads and Chromebook Linux installation, read
+the [platform guide](PLATFORMS.md). Choose the package for the correct operating
+system and CPU. Do not run Windows installers or VB-CABLE drivers on those systems.
+
 GitHub may still display automatically generated "Source code" archives;
 those contain this repository's public documentation, not an installable app.
 Historical releases retain their original assets, but are not the current
@@ -58,12 +62,25 @@ does not provide an individual-app override.
 ### Check the Downloaded File
 
 Open that release's **SHA256SUMS.txt** and find the installer filename. In
-PowerShell, run the following with the actual path to the downloaded file:
+Windows PowerShell, run the following with the actual path to the downloaded file:
 
 ```powershell
 Get-FileHash -LiteralPath "<downloaded-installer-path>" -Algorithm SHA256
 ```
 
+On Mac, use Terminal:
+
+```sh
+shasum -a 256 "<downloaded-installer-path>"
+```
+
+On Linux or a Chromebook's Linux Terminal:
+
+```sh
+sha256sum "<downloaded-installer-path>"
+```
+
+Replace the placeholder with the downloaded EXE, DMG or DEB path.
 The displayed hash must match the installer entry in SHA256SUMS.txt, ignoring
 letter case. A mismatch means the file is not the published installer: do not
 run it. Matching verifies identity, not publisher trust or absence of malware.
@@ -71,14 +88,15 @@ run it. Matching verifies identity, not publisher trust or absence of malware.
 ## Why Is It Labeled Beta?
 
 QuietPlay Beta is the ready-to-use listener app, not a developer kit. Beta means
-it is a prerelease and may still have bugs. The installer is named
-`QuietPlay-<version>-Beta-Setup.exe`. Internal release tags and verification files
+it is a prerelease and may still have bugs. The Windows installer is named
+`QuietPlay-<version>-Beta-Setup.exe`; experimental Mac/Linux installers use DMG/DEB.
+Internal release tags and verification files
 may still use `development` to keep the existing unsigned-release safeguards;
 that does not mean you need development tools to use the app.
 
 ## Do I Need an Account, and Where Is My Data Saved?
 
-QuietPlay does not require an account. Each Windows user has a local profile,
+QuietPlay does not require an account. Each operating-system user has a local profile,
 history, playlists and settings saved on that computer. Installing on another
 computer creates an independent setup; it does not copy another listener's data.
 Personal listening data is not uploaded to GitHub or a public library server.
@@ -90,10 +108,11 @@ history controls. See [local data](USER_GUIDE.md#your-data-on-this-pc).
 No separate Python or spotDL installation is required. The app runtime,
 companion downloader, FFmpeg, and playback libraries are bundled.
 
-Normal playback uses your existing Windows audio device. VB-CABLE is optional
+Normal playback uses your existing system audio device. On Windows, VB-CABLE is optional
 for sending a separate music output to OBS. It is third-party donationware,
 with its own terms; installing a driver can require administrator approval and
-a restart. QuietPlay does not install it silently.
+a restart. QuietPlay does not install it silently. Mac/Linux use their native
+audio backends; Windows drivers are not needed there. See [platform limits](PLATFORMS.md#feature-differences).
 
 ## Does QuietPlay Stream the Whole Spotify Catalog?
 
