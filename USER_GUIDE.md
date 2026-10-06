@@ -12,6 +12,9 @@ Still stuck? [Ask a setup question](https://github.com/cooperwwwwww/QuietPlay-do
 
 ## Install and Open
 
+These installation steps apply to Windows. For experimental Mac/Linux packages
+and Chromebook Linux setup, use the [platform guide](PLATFORMS.md).
+
 1. Use **Download QuietPlay for Windows** on the main page. Download the Setup EXE, not
    GitHub's automatically generated source-code archives.
 2. Run setup. Optional extras are unchecked by default: VB-CABLE is only for
@@ -37,7 +40,7 @@ Python, terminal commands or developer tools are needed.
 ## Your Data on This PC
 
 There are no QuietPlay accounts, passwords, sign-in or account switching.
-Each PC/Windows user keeps its own library, playlists, preferences, session and
+Each operating-system user keeps their own library, playlists, preferences, session and
 listening data. Installing an update preserves that local data. The installer
 does not contain personal data, and each installation on another computer
 starts independently.
