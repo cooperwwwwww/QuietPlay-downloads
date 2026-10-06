@@ -4,12 +4,12 @@
     {
       "name": "Download QuietPlay",
       "url": "https://github.com/cooperwwwwww/QuietPlay-downloads/releases",
-      "about": "Find the Windows installer, optional-driver bundle, and portable version."
+      "about": "Find verified end-user installers, platform requirements, and optional Windows driver choices."
     },
     {
       "name": "Read the FAQ and setup help",
       "url": "https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md",
-      "about": "Installation, Windows blocks, music downloads, metadata, privacy, and OBS."
+      "about": "Platform installation, security notices, music downloads, metadata, privacy, and OBS."
     }
   ]
 }
