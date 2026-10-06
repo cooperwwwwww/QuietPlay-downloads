@@ -34,7 +34,7 @@ listed, use native runtimes. Chromebook support uses the Linux environment.
 | **[Download for Linux / Chromebook Linux environment (ARM64)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-Linux-arm64.deb)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
 | **[Download for Linux / Chromebook Linux environment (Intel / AMD 64-bit)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-Linux-x86_64.deb)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
 | **[Download for macOS (Apple Silicon)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-macOS-arm64.dmg)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
-| **[Download for macOS (Intel / AMD 64-bit)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-macOS-x86_64.dmg)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
+| **[Download for macOS (Intel)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-macOS-x86_64.dmg)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
 
 [Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.0-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
