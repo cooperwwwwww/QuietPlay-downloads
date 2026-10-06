@@ -1,5 +1,24 @@
 # QuietPlay Changes
 
+## 1.54.0 - Cross-Platform Beta
+
+- Added native Mac and Linux build targets, with separate Intel/AMD and ARM64
+  packages gated by native runner checks. Availability is listed on the release.
+- Chromebook installation uses a compatible ChromeOS Linux environment, not
+  an Android app or Chrome extension; physical Chromebook checks remain pending.
+- Native CoreAudio on Mac and PulseAudio/ALSA on Linux replace Windows-only
+  backend selection. Existing Windows WASAPI behavior is preserved.
+- Local data uses the operating system's standard user-data directory, while
+  preserving existing legacy Unix data. No accounts or personal data are bundled.
+- Native file opening, Trash removal, file drops, single-instance activation
+  and downloader cancellation now have platform-specific implementations.
+- Mac Command shortcuts, manual native update links and platform-appropriate
+  settings replace unavailable Windows integrations.
+- Private native builders receive source-only snapshots, not music, profiles,
+  credentials or workspace history. Public downloads remain installer-only.
+- Added platform installation instructions, feature differences and explicit
+  unsigned/notarized and hardware-testing limitations.
+
 ## 1.53.4 - Beta
 
 - Listener-facing downloads, installer windows and app versions use QuietPlay
