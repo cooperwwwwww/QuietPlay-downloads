@@ -11,7 +11,7 @@
     {
       "type": "input",
       "id": "version",
-      "attributes": {"label": "QuietPlay version", "description": "Find it in Settings > Updates. Enter 'Not sure' if the app will not open.", "placeholder": "Example: 1.53.1-development"},
+      "attributes": {"label": "QuietPlay version", "description": "Find it in Settings > Updates. Enter 'Not sure' if the app will not open.", "placeholder": "Example: 1.54.0 Beta"},
       "validations": {"required": true}
     },
     {
@@ -29,7 +29,7 @@
     {
       "type": "input",
       "id": "environment",
-      "attributes": {"label": "Windows and display details (optional)", "description": "For layout problems, include screen size and display scaling if known. For audio problems, mention the output device.", "placeholder": "Example: Windows 11, 1920x1080, 125% scaling"},
+      "attributes": {"label": "Operating system, CPU and display details (optional)", "description": "Include Windows/macOS/Linux version or Chromebook Linux environment, Intel/AMD or ARM CPU, screen size and scaling if known. For audio problems, mention the output device.", "placeholder": "Example: Windows 11, x64, 1920x1080, 125% scaling; or macOS 14, Apple Silicon"},
       "validations": {"required": false}
     },
     {
