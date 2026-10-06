@@ -1,12 +1,13 @@
 # QuietPlay
 
-**A Windows music player for everyday listening.**
+**A desktop music player for everyday listening.**
 
 QuietPlay brings a local music library, playlists, synchronized lyrics, live
 EQ, and a real-audio visualizer into one desktop app. An always-on-top mini
 player keeps playback close at hand, and optional OBS tools support streaming.
-Anyone can download the Windows installer below; no QuietPlay account or
-programming tools are required.
+Anyone can download the ready-to-use installer below; no QuietPlay account or
+programming tools are required. Experimental Mac and Linux packages, when
+listed, use native runtimes. Chromebook support uses the Linux environment.
 
 **[Download QuietPlay](#get-quietplay)** &nbsp; / &nbsp;
 **[Installation guide](#install-quietplay)** &nbsp; / &nbsp;
@@ -15,7 +16,7 @@ programming tools are required.
 **[Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)**
 
 [User guide](USER_GUIDE.md) | [FAQ](FAQ.md) | [What's new](CHANGELOG.md) |
-[Roadmap](ROADMAP.md) | [Get help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml)
+[Platforms](PLATFORMS.md) | [Roadmap](ROADMAP.md) | [Get help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml)
 
 > **Beta release:** QuietPlay is available for public testing and may still
 > contain bugs. The installer is currently **unsigned**, so Windows may show a
@@ -25,20 +26,28 @@ programming tools are required.
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**QuietPlay 1.53.4 / Beta**
+**QuietPlay 1.54.0 / Beta**
 
 | Download | Best for |
 | --- | --- |
-| **[Download QuietPlay for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.53.4-development/QuietPlay-1.53.4-Beta-Setup.exe)** | Ready-to-use app with optional driver choices in setup. No ZIP extraction, Python, or developer tools needed. |
+| **[Download QuietPlay for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-Setup.exe)** | Ready-to-use app with optional driver choices in setup. No ZIP extraction, Python, or developer tools needed. |
+| **[Download for Linux / Chromebook Linux environment (ARM64)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-Linux-arm64.deb)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
+| **[Download for Linux / Chromebook Linux environment (Intel / AMD 64-bit)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-Linux-x86_64.deb)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
+| **[Download for macOS (Apple Silicon)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-macOS-arm64.dmg)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
+| **[Download for macOS (Intel / AMD 64-bit)](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v1.54.0-development/QuietPlay-1.54.0-Beta-macOS-x86_64.dmg)** | Experimental Beta. [Requirements and platform limits](PLATFORMS.md). |
 
-[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.53.4-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksums](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.0-development) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
-**Requirements:** Windows 10 or 11, 64-bit, and a working audio output. An
+**Windows requirements:** Windows 10 or 11, 64-bit, and a working audio output. An
 internet connection is needed for online search, downloads, and metadata
-lookups, not for playing songs already stored on the PC.
+lookups, not for playing songs already stored on the PC. See the
+[platform guide](PLATFORMS.md) for Mac, Linux and Chromebook requirements,
+installation, availability and feature differences.
 
 ## Install QuietPlay
+
+The steps below are for Windows. [Mac, Linux and Chromebook installation](PLATFORMS.md).
 
 1. Select **Download QuietPlay for Windows** above. The file is named
    `QuietPlay-<version>-Beta-Setup.exe`.
@@ -107,7 +116,7 @@ donationware with its own terms; it is not QuietPlay software.
 4. For optional online downloads, choose **Search music** on the empty Home
    screen, or open **Add music**. Only save recordings with permission to download.
 
-No account or sign-in is required. Each Windows user has an independent local
+No account or sign-in is required. Each operating-system user has an independent local
 library, profile, playlists, preferences, and listening history.
 [Read the getting-started guide](USER_GUIDE.md#add-existing-music).
 
@@ -166,7 +175,7 @@ permission to broadcast the recording.
 ## Data and Privacy
 
 - Library records, playlists, settings, listening history, and OBS connection
-  details are stored locally for each Windows user.
+  details are stored locally for each operating-system user.
 - The installer contains no personal library or listening data. Installing on
   another computer creates a separate local setup.
 - QuietPlay does not automatically upload music or personal listening data to
@@ -190,8 +199,10 @@ production updates remain disabled until trusted signing is available. Lyrics
 and metadata may need manual review, and online providers can change
 independently. Beta does not mean every feature or external service is faultless.
 
-Published app builds go through automated tests, native Windows UI checks,
-package-integrity checks, and dependency vulnerability scans. These checks
+Published Windows builds go through automated tests, native UI checks,
+package-integrity checks, and dependency vulnerability scans. Experimental
+Mac/Linux packages have native runner checks, with untested hardware and
+provider behavior clearly identified in their verification file. These checks
 reduce risk; they do not guarantee the absence of bugs.
 
 | Need Help With | Where to Go |
