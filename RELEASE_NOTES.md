@@ -1,10 +1,19 @@
-# QuietPlay 1.54.0 Beta
+# QuietPlay 1.54.1 Beta
 
 Native platform support without changing QuietPlay's familiar layout or local
 library model. Each user keeps independent saved data on their own computer.
 
 ## Changes
 
+- Added macOS Now Playing and Linux MPRIS system-media controls, with track title,
+  artist credits, playback state and seeking. Platform hardware behavior still
+  needs physical-device checks; ChromeOS may not forward host media keys to Linux.
+- Explicit system Play/Pause commands are idempotent; stale queued seeks cannot
+  affect a different song after a track change. Media callbacks never touch Tk.
+- Added Command+Return to the Mac mini player.
+- Expanded packaged checks to 11 shared feature workflows at every window size,
+  keeping a populated library for every pass and checking native media registration.
+- Fixed frozen package validation so optimized Python cannot remove its checks.
 - Native Mac and Linux build targets, with separate Intel/AMD and ARM64 packages.
 - CoreAudio on Mac and PulseAudio/ALSA on Linux, while retaining Windows WASAPI.
 - Standard local-data locations, with legacy Unix folders preserved.
@@ -37,8 +46,9 @@ Automatic production updates remain disabled pending trusted signing.
 
 Native runner checks do not substitute for physical Mac/Linux/Chromebook
 testing. Headsets, hardware outputs, OBS audio routing and real provider
-downloads remain unverified on those platforms. Windows taskbar/global media
-integration and WebView2 are not offered on Mac/Linux. Virtual audio devices
+downloads remain unverified on those platforms. Windows taskbar controls and
+WebView2 are not offered on Mac/Linux; native system-media adapters replace
+Windows global media integration. Virtual audio devices
 must be set up separately for each OS; Windows drivers are not shipped with
 Mac/Linux packages.
 
