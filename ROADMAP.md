@@ -32,6 +32,9 @@ start with `needs triage`; only accepted work is marked `planned`.
 ## Distribution and Support
 
 - Obtain a trusted signing identity for normal public Windows releases.
+- Validate the experimental native Mac and Linux packages on physical devices,
+  including Chromebook Linux, headsets, audio routing and provider downloads.
+- Obtain Mac Developer ID signing and notarization before a production Mac release.
 - Complete the signed update path without weakening Windows security.
 - Keep installers, optional prerequisites, setup instructions, and release
   verification easy to find and understand.
