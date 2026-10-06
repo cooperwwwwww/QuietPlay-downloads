@@ -1,52 +1,46 @@
-# QuietPlay 1.53.4 Beta
+# QuietPlay 1.54.0 Beta
 
-One ready-to-use Windows installer, optional extras in setup, and a clearer
-first-use library. Libraries and listening data are stored locally for each
-Windows user.
+Native platform support without changing QuietPlay's familiar layout or local
+library model. Each user keeps independent saved data on their own computer.
 
 ## Changes
 
-- Consistent QuietPlay Beta branding for the download, installer and app version.
-- The download file is QuietPlay-1.53.4-Beta-Setup.exe, not a development kit.
-- Added SmartScreen guidance: inspect More info, verify the source, and only
-  choose Run anyway for a file you trust. Smart App Control blocks remain distinct.
-- The public download is a Windows Setup EXE, not app ZIPs or a developer kit.
-- Setup offers unchecked VB-CABLE and WebView2 options. VB-CABLE opens its
-  original signed installer with Windows administrator approval.
-- Empty libraries have Add files, Add folder and in-app Search music buttons.
-- Native Tcl/Tk file drops replace the legacy Windows drag-and-drop hook.
-- No accounts tab, sign-in, passcodes, switching or analytics-sharing toggle.
-- One local profile per Windows user, with display name, insights, export and
-  clear-history controls in Settings > Library.
-- Existing selected profile history is retained; the original multi-profile
-  file is backed up locally before migration. No personal data is uploaded.
-- Library backups now include the local profile, and public ZIP verification
-  rejects bundled personal profile, library, settings and session files.
-- Legacy saved account settings pages redirect to Library.
-- Previous follows the songs you actually heard while shuffle is enabled.
-- Next can replay forward listening history after going back.
-- History restores with the playback session. Reopening waits for Play by default.
-- Clearer Search & Downloads settings, with advanced controls tucked away.
-- Download complete public playlists and albums directly from their search link.
-- Save a download job into Home, an existing playlist, or a new playlist.
-- Bundled spotDL, FFmpeg, and companion dependencies: no separate Python setup.
+- Native Mac and Linux build targets, with separate Intel/AMD and ARM64 packages.
+- CoreAudio on Mac and PulseAudio/ALSA on Linux, while retaining Windows WASAPI.
+- Standard local-data locations, with legacy Unix folders preserved.
+- Native file opening, safe Trash removal and single-instance activation.
+- Bundled native spotDL, FFmpeg and Deno; no separate Python setup for listeners.
+- Mac Command shortcuts and platform-appropriate integrations/update settings.
+- Background downloader cancellation terminates only its owned process group.
+- Windows installer retains optional VB-CABLE and WebView2 choices, off by default.
+- No accounts, public music servers, personal data uploads or bundled songs.
+- Empty Home offers Add files, Add folder and optional in-app Search music.
+- Added platform requirements, installation instructions and feature differences.
 
 ## Downloads
 
-Choose **Download QuietPlay for Windows** for the complete app. Optional driver choices
-are inside setup. No Python, terminal commands or developer tools are needed.
-New releases publish only this installer and its verification files. Historical
-releases retain their original assets, but are not recommended current downloads.
+Use the installers actually listed on this release. Windows uses a Setup EXE;
+experimental Mac packages use DMG and Ubuntu/Debian Linux packages use DEB.
+Chromebooks require a compatible Linux environment and the matching Linux DEB.
+No source ZIP or developer environment is required.
 
-SHA256SUMS.txt lists the exact published file hashes. See the repository's user
-guide for search modes, complete playlists, audio routing, and troubleshooting.
+[Platform guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/PLATFORMS.md).
+SHA256SUMS.txt identifies each published package. VERIFICATION.json records the
+checks and untested areas for that particular build.
 
 ## Important Limits
 
-This is an **unsigned Beta build**, published as a prerelease, not a
-signed production release. Smart App Control may block it. Do not disable
-Windows protections. Trusted Authenticode signing remains outstanding, and
-automatic in-app production updates remain disabled.
+This is a Beta prerelease. Windows packages remain unsigned and may be blocked
+by Smart App Control. Mac packages are not Developer ID signed or notarized.
+Do not disable operating-system security protections to run these packages.
+Automatic production updates remain disabled pending trusted signing.
+
+Native runner checks do not substitute for physical Mac/Linux/Chromebook
+testing. Headsets, hardware outputs, OBS audio routing and real provider
+downloads remain unverified on those platforms. Windows taskbar/global media
+integration and WebView2 are not offered on Mac/Linux. Virtual audio devices
+must be set up separately for each OS; Windows drivers are not shipped with
+Mac/Linux packages.
 
 spotDL uses Spotify metadata and matches audio from other providers; it does not
 retrieve protected Spotify audio or grant music rights. Only download recordings
