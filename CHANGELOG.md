@@ -1,5 +1,22 @@
 # QuietPlay Changes
 
+## 1.54.1 - Cross-Platform Feature Checks
+
+- Native macOS Now Playing and Linux MPRIS adapters expose playback metadata,
+  play/pause, next/previous and seeking without touching Tk from system callbacks.
+- Linux desktop controls also route volume, shuffle, repeat and speed changes
+  through the actual player, not a separate playback implementation.
+- Repeated system Play/Pause requests are idempotent and stale queued seeks
+  cannot affect the next song. Native adapters unregister during shutdown.
+- Mac mini-player Return-to-app shortcut supports Command+Return.
+- Packaged native checks now exercise 11 shared feature workflows at all three
+  supported sizes, including search, playlists/cancel, ratings, lyrics, mini-player
+  volume/opacity, session checkpointing, file drops, settings and shuffle history.
+- Publication rejects native packages that lack those workflow checks or fail
+  native system-media registration. Headsets, OS media-key delivery, hardware
+  audio, provider downloads and physical Chromebook behavior still need testing.
+- Frozen validation uses explicit checks that remain active in optimized builds.
+
 ## 1.54.0 - Cross-Platform Beta
 
 - Added native Mac and Linux build targets, with separate Intel/AMD and ARM64
