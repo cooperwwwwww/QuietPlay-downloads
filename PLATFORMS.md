@@ -76,7 +76,8 @@ hardware verification. [Google's file-sharing guide](https://support.google.com/
 | In-app search and optional spotDL downloads | Bundled | Native bundled companion; provider availability can vary |
 | Mini player and opacity | Available | Included; behavior depends on the window manager |
 | Song/position restoration | Local | Local; waits for Play by default |
-| Windows taskbar controls and global Windows media integration | Available | Not available |
+| Windows taskbar thumbnail buttons | Available | Windows-only; native media controls are listed below |
+| System Now Playing / desktop media controls | Windows media integration | macOS Now Playing / Linux MPRIS adapters; headset delivery depends on the OS |
 | In-app keyboard controls | Control shortcuts | Command on Mac; Control on Linux |
 | OBS now-playing Browser Source | Local overlay | Local overlay; OBS integration needs platform testing |
 | Separate OBS audio and dual output | Supported routing devices | Needs an OS-specific virtual device; no Windows drivers included |
@@ -88,6 +89,30 @@ empty-library actions, isolated saved data, FFmpeg decoding, live EQ calculation
 and downloader startup. They do not verify physical speakers, Bluetooth headsets,
 OBS audio routing, or a real provider download on Mac/Linux. Read each release's
 verification file for the actual packages and checks.
+
+Starting with 1.54.1, each native package must also pass library search, playlist
+creation/cancel, likes/dislikes, shuffle history, lyrics view, mini-player volume
+and opacity, session checkpointing, file drops, settings, audio controls and
+system-media command checks at all three window sizes. Native media registration
+is checked too. Linux has a real session-bus roundtrip test for MPRIS metadata,
+transport, seeking and volume. This is not a guarantee that a particular headset
+or desktop delivers media keys. Chromebook host keys may not reach the Linux app.
+
+## Shared Features and OS Exceptions
+
+Every installer uses the same library, playlists, artist/album views, local mixes,
+ratings, queue/history, playback speed, sleep timer, lyrics, artwork/genre
+matching, live EQ, real-audio visualizer, themes, mini player, optional spotDL
+downloads, backups and saved-session code. Metadata/provider services can still
+fail or return ambiguous results on any OS; manual correction remains available.
+
+Some integrations cannot be identical: Windows taskbar thumbnail buttons,
+WebView2 and VB-CABLE are Windows-specific. Mac and Linux use native media
+frameworks and their own audio-device configuration. OBS overlay support is
+included, but virtual audio routing requires a suitable device on the relevant
+OS. Automatic signed production updates remain disabled on all current Beta
+packages. No native ChromeOS/Android app is included; Chromebook support uses
+the Linux environment and inherits its window/audio limitations.
 
 ## Local Data
 
