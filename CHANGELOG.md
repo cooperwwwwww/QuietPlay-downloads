@@ -1,5 +1,16 @@
 # QuietPlay Changes
 
+## 2.1.0 - Crossfade and Global Shortcuts
+
+- Crossfade between songs (3 to 12 seconds, off by default).
+- Ctrl+Alt global shortcuts for play/pause, next/previous and volume from any app.
+- Edit genre, album or artist for several songs at once, including all songs by
+  an artist; genre fields suggest existing genres.
+- Reopening goes back to the page you were on instead of lyrics or search.
+- Discover shows whole rows of mixes with Show all.
+- Songs with no artist get one when their title includes a known artist.
+- The genre fill keeps going through catalog rate limits.
+
 ## 2.0.0 - First Official Release
 
 - Completely redesigned app with a black, white and grey interface, a Now
