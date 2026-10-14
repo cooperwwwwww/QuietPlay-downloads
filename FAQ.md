@@ -4,13 +4,13 @@
 
 ## Which Download Should I Choose?
 
-Use **Download QuietPlay for Windows** on the main page. The Setup EXE installs
-the complete app and offers optional extras in the installation wizard.
-Current releases do not require ZIP extraction or a developer environment.
+Use **Download for Windows** on the main page. The file is named
+`QuietPlay-<version>-Windows-Setup.exe` and installs the complete app. There is
+no ZIP to extract and no developer setup.
 
-For experimental Mac/Linux downloads and Chromebook Linux installation, read
-the [platform guide](PLATFORMS.md). Choose the package for the correct operating
-system and CPU. Do not run Windows installers or VB-CABLE drivers on those systems.
+QuietPlay 2.0 is Windows-only. For Mac, Linux and Chromebook, the experimental
+1.54.1 Beta packages remain available; read the [platform guide](PLATFORMS.md).
+Do not run Windows installers or VB-CABLE drivers on those systems.
 
 GitHub may still display automatically generated "Source code" archives;
 those contain this repository's public documentation, not an installable app.
@@ -19,25 +19,25 @@ recommended downloads.
 
 ## Why Is My Library Empty?
 
-QuietPlay does not include a music collection. On Home, use **Add files** or
-**Add folder** for songs you already have, or **Search music** for the optional
-in-app downloader. Only save recordings you have permission to download.
+QuietPlay does not include a music collection. Use **Add music** or
+**Add folder** for songs you already have, drag files onto the window, or use
+the search bar for the optional in-app downloader. Only save recordings you have permission to download.
 Added or automatically imported downloads appear in Home. Every Windows user
 starts with an independent local library; the installer contains no songs or
 personal listening data.
 
 ## Why Does Windows Block QuietPlay?
 
-Current public packages are **unsigned Beta builds**. Smart App
-Control can block an unsigned program. A published checksum verifies file
-identity; it does not replace a trusted publisher signature. Do not turn off
-Windows security. Trusted code signing is still outstanding.
+QuietPlay is **not code-signed yet**. Smart App Control can block an unsigned
+program, and SmartScreen may warn about a new download. A published checksum
+verifies file identity; it does not replace a trusted publisher signature. Do
+not turn off Windows security. Code signing is planned.
 
 ## Windows Protected Your PC
 
 The blue **Windows protected your PC** screen is a Microsoft Defender
-SmartScreen warning. QuietPlay is a new, unsigned Beta app with limited download
-reputation; that can trigger this warning. It does not prove the file is safe
+SmartScreen warning. QuietPlay is a new app without a code signature or much
+download reputation yet; that can trigger this warning. It does not prove the file is safe
 or malicious. [Microsoft explains SmartScreen reputation](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation).
 
 ![Initial Microsoft Defender SmartScreen warning: select More info to inspect the app details](assets/windows-smartscreen.png)
@@ -85,14 +85,18 @@ The displayed hash must match the installer entry in SHA256SUMS.txt, ignoring
 letter case. A mismatch means the file is not the published installer: do not
 run it. Matching verifies identity, not publisher trust or absence of malware.
 
-## Why Is It Labeled Beta?
+## Is QuietPlay Still a Beta?
 
-QuietPlay Beta is the ready-to-use listener app, not a developer kit. Beta means
-it is a prerelease and may still have bugs. The Windows installer is named
-`QuietPlay-<version>-Beta-Setup.exe`; experimental Mac/Linux installers use DMG/DEB.
-Internal release tags and verification files
-may still use `development` to keep the existing unsigned-release safeguards;
-that does not mean you need development tools to use the app.
+No. **QuietPlay 2.0 is the first official release.** Versions 1.x were Beta
+prereleases; their release tags end in `-development`. The Mac and Linux
+packages are still the experimental 1.54.1 Beta. "Official" means this is the
+recommended, supported version, not that the installer is code-signed yet.
+
+## Do I Need WebView2?
+
+Yes. QuietPlay 2.0 draws its interface with the Microsoft Edge WebView2
+Runtime, which comes with Windows 11 and most up-to-date Windows 10 PCs. If it
+is missing, setup offers to install Microsoft's signed runtime.
 
 ## Do I Need an Account, and Where Is My Data Saved?
 
@@ -100,7 +104,7 @@ QuietPlay does not require an account. Each operating-system user has a local pr
 history, playlists and settings saved on that computer. Installing on another
 computer creates an independent setup; it does not copy another listener's data.
 Personal listening data is not uploaded to GitHub or a public library server.
-Settings > Library contains the local display name, insights, export and
+Settings > Library contains the local display name, your stats, export and
 history controls. See [local data](USER_GUIDE.md#your-data-on-this-pc).
 
 ## Do I Need Python, spotDL, or Extra Audio Drivers?
@@ -123,9 +127,8 @@ you have permission to download.
 
 ## Can I Download a Whole Playlist?
 
-Paste a public Spotify playlist or album link into the main search bar and
-request an online search, then choose **Download full playlist/album**. In Add
-music, choose Home, an existing playlist, or a new playlist as the destination.
+Paste a public Spotify playlist or album link into the main search bar,
+then choose **Download full playlist/album** and pick the destination playlist.
 Search preview limits do not limit full collection jobs. Unavailable tracks
 can fail individually; completed tracks remain available.
 
@@ -141,8 +144,8 @@ credited artists, album if known, and expected metadata. Do not upload the song.
 
 ## Why Do Lyrics Run Early or Late?
 
-The lyrics may belong to a different recording or edit. Use the in-app timing
-adjustment for that song. Line-synchronized lyrics do not necessarily include
+The lyrics may belong to a different recording or edit. Use **Earlier/Later**
+in the lyrics view for that song; each song keeps its own timing. Line-synchronized lyrics do not necessarily include
 accurate timestamps for each individual word. Report persistent issues with
 the song details and approximately where the timing drifts.
 
@@ -155,6 +158,18 @@ music on your PC too. See [OBS setup](USER_GUIDE.md#obs).
 
 Showing a song title does not grant permission to broadcast the recording.
 
+## How Are Mixes and Recommendations Made?
+
+On your PC, from your own listening: what you play, finish, skip, like and
+dislike, which songs you play one after another, and the time of day you
+listen. Nothing about your listening is uploaded. Dislike a song, or review
+**Often skipped** in Discover, to steer them.
+
+**New from your artists** is the only part that looks online: it sends the names
+of your most-played artists (not your songs or history) to Apple's public music
+catalog to find songs you don't have. Turn it off in Settings > Search &
+Downloads > **Suggest new songs**.
+
 ## Will Updating Delete My Library?
 
 QuietPlay keeps user data separate from installed app files. Normal upgrades
@@ -164,11 +179,12 @@ audio file are different actions. Read confirmation dialogs carefully.
 
 ## How Do I Get Update News?
 
-Check the [Releases page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
-and [changelog](CHANGELOG.md). GitHub's Watch menu can subscribe to release
-notifications. Automatic in-app production updates remain disabled until
-trusted signing requirements are met; a new GitHub release is not a forced
-installation on your PC.
+In QuietPlay, open **Settings > Updates > Check for updates**. It tells you
+when a newer version is published here and opens the download page. Installing
+is manual until QuietPlay is code-signed; a new release is never installed
+without you. You can also check the
+[Releases page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+and [changelog](CHANGELOG.md), or use GitHub's Watch menu for release notifications.
 
 ## Can Other People Change the App or See My Music Here?
 
