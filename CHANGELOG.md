@@ -1,5 +1,23 @@
 # QuietPlay Changes
 
+## 2.0.0 - First Official Release
+
+- Completely redesigned app with a black, white and grey interface, a Now
+  Playing panel with lyrics and visualizer, and themes including custom colors.
+- Discover mixes, song radio, artist mixes, autoplay and smart shuffle built
+  from your own listening history on your PC.
+- New from your artists: songs you don't have by your most-played artists, with
+  30-second previews and download. Artist pages show popular missing songs.
+- Your listening stats page, per-song listening stats and a full play History.
+- Duplicate songs merge, automatic reconnection of moved songs, missing-song
+  repair and Tidy up playlists (with backup and undo).
+- Faster search that ignores accents and punctuation, ranks results and
+  tolerates typos. Album sorting and a full-albums filter.
+- Per-song lyric timing with reset, full lyrics view for any song.
+- Update check against the official downloads page. Windows-only; the 1.54.1
+  Beta packages remain available for Mac and Linux.
+- Not yet code-signed; SmartScreen may warn. Your data carries over from 1.x.
+
 ## 1.54.1 - Cross-Platform Feature Checks
 
 - Native macOS Now Playing and Linux MPRIS adapters expose playback metadata,
