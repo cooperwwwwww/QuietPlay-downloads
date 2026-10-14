@@ -1,61 +1,36 @@
-# QuietPlay 2.0.0
+# QuietPlay 2.1.0
 
-The first official QuietPlay release: a completely redesigned app with
-recommendations, stats and library tools built from your own listening.
-Your existing library, playlists, likes, history and settings carry over.
+Smoother listening and faster library fixes. Install over 2.0: your library,
+playlists, likes, history and settings carry over.
 
-## New look
+## New
 
-- A new interface with a black, white and grey theme (plus light, midnight,
-  colorful, high-contrast and custom themes). The title bar follows the theme.
-- Home shows your rotation and mixes made for you; a Now Playing panel shows
-  cover art, synced lyrics, the visualizer and what plays next.
-- Opens quickly and stays responsive with large libraries.
+- **Crossfade.** Settings → Playback → Crossfade blends the end of each song
+  into the start of the next over 3, 6, 9 or 12 seconds. Off by default; short
+  clips always play in full.
+- **Global shortcuts.** Control music from any app, even in a full-screen game:
+  Ctrl+Alt+Space play/pause, Ctrl+Alt+Right/Left next/previous and
+  Ctrl+Alt+Up/Down volume. If another app already uses one, QuietPlay picks a
+  backup (Ctrl+Alt+P, N or B) and shows it in Settings → Integrations.
+- **Edit several songs at once.** Select songs and choose *Edit info for N
+  songs…*, or use **Edit genre…** on an artist page, to set the genre, album or
+  artist for all of them. Genre fields suggest the genres already in your library.
 
-## Made from your listening
+## Fixed and improved
 
-- **Discover**: Made for you, a time-of-day mix, On repeat, Because you
-  played…, Forgotten favorites, Deep cuts, New to you, Never skipped, genre
-  mixes and your top artist's essentials, refreshed daily.
-- **New from your artists**: songs by the artists you play most that you
-  don't have yet, with 30-second previews and one-click download. Artist pages
-  show popular songs you're missing too.
-- **Song radio and artist mixes** use the songs you actually play after each
-  other. **Autoplay** keeps the music going when a list ends.
-- **Smart shuffle** plays recently heard songs last and avoids the same artist
-  twice in a row.
-- **Your listening**: minutes, plays, top songs, artists and genres, minutes per
-  day, favorite hour and listening streak. **Listening stats** for any song
-  show its plays by month and the songs you pair it with.
-- **Recently played** has a full History view of every play by day.
-- **Often skipped** review lets you dislike or remove songs you keep skipping.
-
-## Library tools
-
-- **Duplicate songs** finds songs you have more than once, keeps the best
-  quality copy and combines plays, likes and playlist spots.
-- Songs moved out of Downloads reconnect to their new copies automatically.
-- **Missing songs** can be found in a folder or removed.
-- **Tidy up playlists** finds copies, empty playlists and old auto-saved radios.
-  A backup is saved first and deletes can be undone.
-- Search ignores accents and punctuation, ranks the best match first and
-  tolerates typos. Albums sort by most played and can hide singles.
-
-## Also
-
-- Lyrics: per-song timing adjustment with a reset for all songs, a full lyrics
-  view for any song, and the next song's lyrics fetched early.
-- Updates: Settings → Updates checks this page for a newer version.
-- Windows taskbar buttons, media keys, mini player, sleep timer, EQ, output
-  device choice and OBS tools all carry over from 1.x.
+- Reopening QuietPlay goes back to the page you were on, not the lyrics or
+  search screen.
+- Discover shows whole rows of mixes, with *Show all* for the rest.
+- Songs with no artist whose title includes an artist from your library (for
+  example "Lil Nas X-MONTERO") are split into artist and title automatically.
+- Missing genres keep filling in when Apple's music catalog is slow or rate
+  limited, instead of stopping after the first failures.
 
 ## Good to know
 
-- Windows 10 or 11, 64-bit. Setup installs the Microsoft Edge WebView2 Runtime
-  if it is missing. Mac and Linux users can keep using the 1.54.1 Beta packages.
-- QuietPlay is not code-signed yet. Windows SmartScreen may show
-  "Windows protected your PC"; see the README's security notice. Updates are
-  manual: download the new installer from this page.
+- Windows 10 or 11, 64-bit. QuietPlay is not code-signed yet, so Windows
+  SmartScreen may show "Windows protected your PC"; see the README's security
+  notice. Settings → Updates tells you when a new version is here.
 - Online search and downloads use the bundled spotDL companion. It does not
   download protected Spotify audio. Only save music you have permission to download.
 
