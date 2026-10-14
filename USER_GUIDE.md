@@ -78,6 +78,8 @@ Everything here is calculated on your PC from what you play, finish and skip.
   (Settings → Search & Downloads → **Suggest new songs**.)
 - **Song radio** and **Artist mix** start from songs you usually play together.
 - **Autoplay** (Settings → Playback) keeps playing similar songs when a list ends.
+- **Crossfade** (Settings → Playback) blends each song into the next over 3 to
+  12 seconds. Songs shorter than three times the crossfade play in full.
 - **Shuffle** plays recently heard songs last and avoids the same artist twice in a row.
 - **Dislike** keeps a song out of shuffle, autoplay and mixes. **Often skipped**
   in Discover lists songs you keep skipping.
@@ -116,6 +118,9 @@ Settings → Library:
 - **Removed songs**: restore songs you removed.
 - **Cover artwork** and **genre checks** fill in missing covers and genres
   online. Edit a song's details with **Edit song info**.
+- **Edit several songs at once**: select songs (Ctrl or Shift click), right-click
+  and choose **Edit info for N songs**, or select **Edit genre…** on an artist
+  page. Fill in only what should change; blank fields keep each song as it is.
 
 ## Lyrics
 
@@ -191,8 +196,14 @@ Integrations, Updates and Advanced (Gaming Mode, caches, diagnostics).
 | Ctrl+O / Ctrl+Shift+O | Add files / add a folder |
 | Alt+Left / Alt+Right | Back / forward |
 | Ctrl+Shift+G | Gaming Mode |
+| Ctrl+Alt+Space | Play or pause from any app |
+| Ctrl+Alt+Left / Ctrl+Alt+Right | Previous / next song from any app |
+| Ctrl+Alt+Up / Ctrl+Alt+Down | Volume from any app |
 
-Press **F1** to see every shortcut.
+The Ctrl+Alt shortcuts work while another app or a game is in front. If another
+app already owns one, QuietPlay uses a backup (Ctrl+Alt+P, Ctrl+Alt+N or
+Ctrl+Alt+B) and Settings → Integrations → **Global shortcuts** shows which; turn
+them off there too. Press **F1** to see every shortcut.
 
 ## Updates and Help
 
