@@ -9,7 +9,7 @@ streaming tools. No account, no subscription and no upload of what you play.
 
 **[Download QuietPlay 2.0 for Windows](#get-quietplay)** &nbsp; / &nbsp;
 **[Install guide](#install-quietplay)** &nbsp; / &nbsp;
-**[What's new in 2.0](CHANGELOG.md)** &nbsp; / &nbsp;
+**[What's new](CHANGELOG.md)** &nbsp; / &nbsp;
 **[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
 **[Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)**
 
@@ -21,13 +21,13 @@ streaming tools. No account, no subscription and no upload of what you play.
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Latest release: QuietPlay 2.0.0** (October 2026)
+**Latest release: QuietPlay 2.1.0** (October 2026)
 
 | Download | For | File |
 | --- | --- | --- |
-| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.0.0/QuietPlay-2.0.0-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.0.0-Windows-Setup.exe` |
+| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.1.0/QuietPlay-2.1.0-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.1.0-Windows-Setup.exe` |
 
-[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.0.0) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.1.0) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
 **Mac, Linux and Chromebook:** QuietPlay 2.0 is Windows-only. The older
@@ -43,7 +43,7 @@ online search and downloads, not for playing your songs.
 ## Install QuietPlay
 
 1. Select **Download for Windows** above. The file is
-   `QuietPlay-2.0.0-Windows-Setup.exe`.
+   `QuietPlay-2.1.0-Windows-Setup.exe`.
 2. Open it. Windows may show a SmartScreen warning because QuietPlay is not
    code-signed yet; read the [security notice](#windows-security-notice).
 3. Follow setup. The optional VB-CABLE driver is only for separate OBS audio;
@@ -82,9 +82,9 @@ stop. Do not turn those protections off. [Full guide](FAQ.md#windows-protected-y
 | **Recently played** | Every play, grouped by day, with what you finished and what you skipped. |
 | **Search** | Finds songs, artists, albums and playlists as you type, ignores accents and punctuation, and still finds "jak jonson" when you misspell it. Ctrl+K plays anything instantly. |
 | **Lyrics** | Synced lyrics that follow the song, saved with your files when possible, with a per-song timing adjustment. |
-| **Library care** | Finds duplicate copies of songs and keeps the best one, reconnects songs you moved, tidies up empty and copied playlists, finds missing covers and genres. |
+| **Library care** | Finds duplicate copies of songs and keeps the best one, reconnects songs you moved, tidies up empty and copied playlists, finds missing covers and genres, and lets you set the genre or album for many songs at once. |
 | **Playlists** | Create, reorder, pin, import and export (M3U8 or JSON), and undo deletes. |
-| **Playback** | Queue, speed control, live EQ, normalization, sleep timer, output device choice, mini player, media keys and taskbar buttons. |
+| **Playback** | Crossfade, queue, speed control, live EQ, normalization, sleep timer, output device choice, mini player, media keys, taskbar buttons and Ctrl+Alt shortcuts that work from any app, even in games. |
 | **Look and feel** | Black, grey, light, midnight, colorful, high-contrast and custom themes, a real-audio visualizer and reduced motion. |
 | **OBS** | Guided OBS setup, a now-playing overlay and separate stream audio. |
 
