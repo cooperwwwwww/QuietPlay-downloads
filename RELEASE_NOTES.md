@@ -1,63 +1,65 @@
-# QuietPlay 1.54.1 Beta
+# QuietPlay 2.0.0
 
-Native platform support without changing QuietPlay's familiar layout or local
-library model. Each user keeps independent saved data on their own computer.
+The first official QuietPlay release: a completely redesigned app with
+recommendations, stats and library tools built from your own listening.
+Your existing library, playlists, likes, history and settings carry over.
 
-## Changes
+## New look
 
-- Added macOS Now Playing and Linux MPRIS system-media controls, with track title,
-  artist credits, playback state and seeking. Platform hardware behavior still
-  needs physical-device checks; ChromeOS may not forward host media keys to Linux.
-- Explicit system Play/Pause commands are idempotent; stale queued seeks cannot
-  affect a different song after a track change. Media callbacks never touch Tk.
-- Added Command+Return to the Mac mini player.
-- Expanded packaged checks to 11 shared feature workflows at every window size,
-  keeping a populated library for every pass and checking native media registration.
-- Fixed frozen package validation so optimized Python cannot remove its checks.
-- Native Mac and Linux build targets, with separate Intel/AMD and ARM64 packages.
-- CoreAudio on Mac and PulseAudio/ALSA on Linux, while retaining Windows WASAPI.
-- Standard local-data locations, with legacy Unix folders preserved.
-- Native file opening, safe Trash removal and single-instance activation.
-- Bundled native spotDL, FFmpeg and Deno; no separate Python setup for listeners.
-- Mac Command shortcuts and platform-appropriate integrations/update settings.
-- Background downloader cancellation terminates only its owned process group.
-- Windows installer retains optional VB-CABLE and WebView2 choices, off by default.
-- No accounts, public music servers, personal data uploads or bundled songs.
-- Empty Home offers Add files, Add folder and optional in-app Search music.
-- Added platform requirements, installation instructions and feature differences.
+- A new interface with a black, white and grey theme (plus light, midnight,
+  colorful, high-contrast and custom themes). The title bar follows the theme.
+- Home shows your rotation and mixes made for you; a Now Playing panel shows
+  cover art, synced lyrics, the visualizer and what plays next.
+- Opens quickly and stays responsive with large libraries.
 
-## Downloads
+## Made from your listening
 
-Use the installers actually listed on this release. Windows uses a Setup EXE;
-experimental Mac packages use DMG and Ubuntu/Debian Linux packages use DEB.
-Chromebooks require a compatible Linux environment and the matching Linux DEB.
-No source ZIP or developer environment is required.
+- **Discover**: Made for you, a time-of-day mix, On repeat, Because you
+  played…, Forgotten favorites, Deep cuts, New to you, Never skipped, genre
+  mixes and your top artist's essentials, refreshed daily.
+- **New from your artists**: songs by the artists you play most that you
+  don't have yet, with 30-second previews and one-click download. Artist pages
+  show popular songs you're missing too.
+- **Song radio and artist mixes** use the songs you actually play after each
+  other. **Autoplay** keeps the music going when a list ends.
+- **Smart shuffle** plays recently heard songs last and avoids the same artist
+  twice in a row.
+- **Your listening**: minutes, plays, top songs, artists and genres, minutes per
+  day, favorite hour and listening streak. **Listening stats** for any song
+  show its plays by month and the songs you pair it with.
+- **Recently played** has a full History view of every play by day.
+- **Often skipped** review lets you dislike or remove songs you keep skipping.
 
-[Platform guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/PLATFORMS.md).
-SHA256SUMS.txt identifies each published package. VERIFICATION.json records the
-checks and untested areas for that particular build.
+## Library tools
 
-## Important Limits
+- **Duplicate songs** finds songs you have more than once, keeps the best
+  quality copy and combines plays, likes and playlist spots.
+- Songs moved out of Downloads reconnect to their new copies automatically.
+- **Missing songs** can be found in a folder or removed.
+- **Tidy up playlists** finds copies, empty playlists and old auto-saved radios.
+  A backup is saved first and deletes can be undone.
+- Search ignores accents and punctuation, ranks the best match first and
+  tolerates typos. Albums sort by most played and can hide singles.
 
-This is a Beta prerelease. Windows packages remain unsigned and may be blocked
-by Smart App Control. Mac packages are not Developer ID signed or notarized.
-Do not disable operating-system security protections to run these packages.
-Automatic production updates remain disabled pending trusted signing.
+## Also
 
-Native runner checks do not substitute for physical Mac/Linux/Chromebook
-testing. Headsets, hardware outputs, OBS audio routing and real provider
-downloads remain unverified on those platforms. Windows taskbar controls and
-WebView2 are not offered on Mac/Linux; native system-media adapters replace
-Windows global media integration. Virtual audio devices
-must be set up separately for each OS; Windows drivers are not shipped with
-Mac/Linux packages.
+- Lyrics: per-song timing adjustment with a reset for all songs, a full lyrics
+  view for any song, and the next song's lyrics fetched early.
+- Updates: Settings → Updates checks this page for a newer version.
+- Windows taskbar buttons, media keys, mini player, sleep timer, EQ, output
+  device choice and OBS tools all carry over from 1.x.
 
-spotDL uses Spotify metadata and matches audio from other providers; it does not
-retrieve protected Spotify audio or grant music rights. Only download recordings
-you have permission to save. Matching and lyrics depend on public providers and
-cannot be guaranteed for every recording. Public music servers and the retired
-Find Music page are not restored by this release.
+## Good to know
 
-Created and product-directed by Cooper W., with engineering and design developed
-in collaboration with OpenAI Codex. Independent of Spotify and not endorsed by
-OpenAI.
+- Windows 10 or 11, 64-bit. Setup installs the Microsoft Edge WebView2 Runtime
+  if it is missing. Mac and Linux users can keep using the 1.54.1 Beta packages.
+- QuietPlay is not code-signed yet. Windows SmartScreen may show
+  "Windows protected your PC"; see the README's security notice. Updates are
+  manual: download the new installer from this page.
+- Online search and downloads use the bundled spotDL companion. It does not
+  download protected Spotify audio. Only save music you have permission to download.
+
+Created and product-directed by Cooper W. Engineering and design developed in
+collaboration with OpenAI Codex; the 2.0 redesign developed in collaboration
+with Claude by Anthropic. Independent of Spotify and Apple, and not endorsed by
+OpenAI or Anthropic.
