@@ -6,6 +6,18 @@ This is a direction for future work, not a schedule or a claim that unfinished
 features already exist. Scope is decided after feedback and testing. New ideas
 start with `needs triage`; only accepted work is marked `planned`.
 
+## Shipped in 2.0
+
+The redesigned app, Discover mixes, radio and autoplay from your own listening,
+listening stats, suggestions from your artists, duplicate and missing-song
+tools, playlist tidy-up and a faster, typo-tolerant search.
+See the [changelog](CHANGELOG.md).
+
+## Next
+
+- Crossfade and gapless playback between songs.
+- Bringing the 2.0 interface to Mac and Linux.
+
 ## Reliability Before More Controls
 
 - Keep long-running playback stable, including rapid song changes, shuffle
