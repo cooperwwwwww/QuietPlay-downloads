@@ -2,20 +2,22 @@
 
 [QuietPlay](README.md) | [Downloads](README.md#get-quietplay) | [User guide](USER_GUIDE.md)
 
-Use only the installers listed in the current release. A build target in this
-guide does not mean a download is available: packages are published only after
-their checks pass. All current packages are Beta releases.
+**QuietPlay 2.0 is a Windows app.** Mac, Linux and Chromebook users can keep
+using the experimental **1.54.1 Beta** packages from its
+[release page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.1-development).
+Those packages have the previous interface and are not updated to 2.0.
 
-## Windows
+## Windows (QuietPlay 2.0)
 
-Windows 10 or 11, Intel/AMD 64-bit. Use the Setup EXE. The installer contains
-the player runtime, FFmpeg and optional spotDL downloader. Optional VB-CABLE
-and WebView2 choices are off by default and apply only to Windows.
+Windows 10 or 11, Intel/AMD 64-bit, with the Microsoft Edge WebView2 Runtime
+(included with Windows 11; setup installs it when missing). Use
+`QuietPlay-<version>-Windows-Setup.exe`. The installer contains the app, FFmpeg
+and the optional spotDL downloader. VB-CABLE is an optional extra for OBS.
 
 See the [Windows installation and security guide](README.md#install-quietplay).
-Unsigned packages may be blocked; do not disable Windows security.
+QuietPlay is not code-signed yet; do not disable Windows security.
 
-## macOS
+## macOS (1.54.1 Beta)
 
 Experimental native build targets: Apple Silicon on macOS 14 or newer, and
 Intel on macOS 15 or newer. These are the native runner versions used for
@@ -30,7 +32,7 @@ them. Do not disable Gatekeeper or run commands that remove security protection.
 Follow Apple's guidance only for a specific app you trust, or wait for a signed
 release: [opening apps safely](https://support.apple.com/en-us/102445).
 
-## Linux
+## Linux (1.54.1 Beta)
 
 Experimental native build targets: Ubuntu 22.04+ or Debian 12+, Intel/AMD
 64-bit and ARM64, with a graphical desktop and an audio service. Other
@@ -50,7 +52,7 @@ administrator approval. The app runtime and downloader are included; a separate
 Python installation is not required. QuietPlay uses PulseAudio or ALSA through
 miniaudio; PipeWire desktops may provide PulseAudio compatibility.
 
-## Chromebook
+## Chromebook (1.54.1 Beta)
 
 There is no native ChromeOS, Android or browser version. The Linux package is
 the Chromebook route, for devices that support the Linux development environment.
@@ -70,7 +72,7 @@ hardware verification. [Google's file-sharing guide](https://support.google.com/
 
 ## Feature Differences
 
-| Feature | Windows | Experimental Mac / Linux |
+| Feature | Windows (2.0) | Experimental Mac / Linux (1.54.1 Beta) |
 | --- | --- | --- |
 | Local music, playlists, lyrics, live EQ and real-audio visualizer | Available | Included in native build targets |
 | In-app search and optional spotDL downloads | Bundled | Native bundled companion; provider availability can vary |
