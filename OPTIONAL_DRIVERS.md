@@ -7,9 +7,10 @@ and optional extras. There is no ZIP to extract or developer setup to configure.
 
 ## Install QuietPlay
 
-1. Open the downloaded **QuietPlay Setup EXE**.
-2. On **Optional extras**, choose only the extras you need. Both are unchecked
-   by default: VB-CABLE for separate OBS audio, and WebView2 if missing.
+1. Open the downloaded **QuietPlay Windows Setup EXE**.
+2. If your PC is missing the Microsoft Edge WebView2 Runtime, setup offers to
+   install it; QuietPlay 2.0 needs it. VB-CABLE, for separate OBS audio, is
+   optional and unchecked by default.
 3. Open the **QuietPlay** desktop or Start menu shortcut.
 
 For the blue **Windows protected your PC** screen, read the
@@ -17,7 +18,7 @@ For the blue **Windows protected your PC** screen, read the
 
 The bundled app already includes its runtime, audio libraries, FFmpeg, and
 spotDL companion. Do not install Python or spotDL separately. If Smart App
-Control blocks this unsigned Beta build, stop. Do not turn off Windows
+Control blocks this not-yet-signed build, stop. Do not turn off Windows
 protections to run it.
 
 ## Optional: Separate Music Audio for OBS
