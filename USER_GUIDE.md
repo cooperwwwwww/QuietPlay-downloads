@@ -1,274 +1,205 @@
 # QuietPlay User Guide
 
-[Back to QuietPlay](README.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases) | [FAQ](FAQ.md)
+[QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+
+This guide is for **QuietPlay 2.0** on Windows.
 
 ## Jump to a Topic
 
-[Install](#install-and-open) | [Add music](#add-existing-music) |
-[Playlists](#playlists) | [Full collection downloads](#download-a-complete-playlist-or-album) |
-[Shuffle history](#shuffle-and-previous) | [Local data](#your-data-on-this-pc) | [OBS](#obs)
-
-Still stuck? [Ask a setup question](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
+[Install and open](#install-and-open) · [Your data](#your-data-on-this-pc) ·
+[Add music](#add-existing-music) · [Find and play](#find-and-play) ·
+[Discover and radio](#discover-radio-and-autoplay) · [Your listening](#your-listening) ·
+[Playlists](#playlists) · [Library care](#library-care) · [Lyrics](#lyrics) ·
+[Search and download](#search-and-download-music) · [Audio and mini player](#audio-and-mini-player) ·
+[OBS](#obs) · [Settings](#settings) · [Shortcuts](#keyboard-shortcuts) · [Updates and help](#updates-and-help)
 
 ## Install and Open
 
-These installation steps apply to Windows. For experimental Mac/Linux packages
-and Chromebook Linux setup, use the [platform guide](PLATFORMS.md).
+1. Download `QuietPlay-<version>-Windows-Setup.exe` from the
+   [Releases page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases).
+2. Open it and follow setup. If Windows shows **Windows protected your PC**,
+   read the [warning guide](FAQ.md#windows-protected-your-pc) first.
+3. Setup installs the Microsoft Edge WebView2 Runtime if your PC doesn't have it.
+   VB-CABLE is optional and only for separate OBS audio.
+4. Open **QuietPlay** from the desktop or Start menu.
 
-1. Use **Download QuietPlay for Windows** on the main page. Download the Setup EXE, not
-   GitHub's automatically generated source-code archives.
-2. Run setup. Optional extras are unchecked by default: VB-CABLE is only for
-   separate OBS audio; WebView2 is only for embedded web tools. Selecting the
-   driver opens its original setup and administrator prompt. See the
-   [optional extras guide](OPTIONAL_DRIVERS.md).
-3. Use the QuietPlay desktop or Start menu shortcut.
-4. Check Settings > Updates for the version and build channel.
-
-You may see a blue **Windows protected your PC** SmartScreen warning. Read the
-[Windows warning guide](FAQ.md#windows-protected-your-pc) first. It explains
-**More info**, the optional **Run anyway** choice for a file you trust, and when
-to stop. Being a new app does not guarantee safety.
-
-If Windows Smart App Control blocks an unsigned build, stop there. A checksum
-confirms file identity, not trusted publisher status. Do not disable Smart App
-Control or other protections to bypass the block.
-
-The download is a complete end-user app, not a development kit. The runtime,
-FFmpeg, playback libraries and optional downloader are included. No separate
-Python, terminal commands or developer tools are needed.
+Only one QuietPlay window runs at a time; opening it again brings it to the
+front. Reopening restores the last song and position and waits for Play
+(turn on **Start music automatically** in Settings → Playback to change that).
 
 ## Your Data on This PC
 
-There are no QuietPlay accounts, passwords, sign-in or account switching.
-Each operating-system user keeps their own library, playlists, preferences, session and
-listening data. Installing an update preserves that local data. The installer
-does not contain personal data, and each installation on another computer
-starts independently.
+Your library, playlists, likes, listening history, lyrics and artwork caches
+and settings are stored in `%APPDATA%\QuietPlay`. Upgrades keep them.
 
-Settings > Library > **Your data on this PC** lets you change a local display
-name, view listening insights, export those insights as JSON, or clear that
-listening history. Clearing insights does not remove music, playlists or the
-library's Recently played list. Library backup/restore also includes the local
-profile, so keep exported backups private.
-
-When upgrading from the old Profiles section, QuietPlay retains the selected
-profile's name and history and removes switching/passcodes. The complete old
-file is preserved in a local migration backup; other profiles are not merged
-into the selected history. Nothing from that migration is uploaded.
-
-Local data is in **%APPDATA%/QuietPlay/Data-v1**, separate from the installed app
-folder. Copying an installed app folder does not copy this personal data.
+- **Settings → Library → Library data**: back up, restore, export or import
+  your library, playlists and settings.
+- **Settings → Library → Listening history**: see your stats, export, or clear history.
+- QuietPlay never deletes your music files. Removing songs only removes them
+  from the library; they are listed under **Removed songs** and can be restored.
 
 ## Add Existing Music
 
-On an empty Home library, choose **Add files** or **Add folder**. **Search music**
-opens the optional downloader inside QuietPlay. No songs are included with the
-app. The sidebar's Add music also opens the integrated import/download panel.
+- Select **Add music** or **Add folder** at the bottom of the sidebar, or drag
+  files and folders onto the window.
+- **Watch the Music folder** (Settings → Library, on by default) adds new
+  songs from your Music folder automatically.
+- **Watch Downloads** can import new audio from Downloads into a playlist and
+  move it into Music so it isn't lost when Downloads is cleaned.
 
-Choose files can select several songs; Choose folder imports a folder.
-Importing registers the files in the library; it is not a guarantee
-that copies are made in a new location. Avoid moving original files behind the
-app's back. Rescan or relink moved files if a song becomes unavailable.
+Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
-Downloaded songs are saved in Music / QuietPlay Downloads by default. Change
-that destination in Search & Downloads before starting new downloads.
+## Find and Play
 
-## Search, Play, and Browse
+- **Home** shows your rotation, mixes made for you and your whole library.
+  Filter by genre and sort by recently added, title, artist and more.
+- **Search** (Ctrl+F or the search bar) finds songs, artists, albums and
+  playlists, ranks the best matches first, ignores accents and punctuation,
+  and shows similar spellings when nothing matches exactly.
+- **Ctrl+K** opens quick play: type and press Enter to play a song or run a command.
+- Right-click any song for Play next, Add to queue, Add to playlist, Song
+  radio, Show lyrics, **Listening stats**, Edit song info and more.
+- **Artists** and **Albums** sort by most played; Albums can show only full
+  albums. Artist pages list your most played songs by that artist.
+- **Recently played** has a Songs view and a **History** view of every play by
+  day, showing what you finished and what you skipped.
 
-Use the top search bar for song titles, artists, and albums. Clearing search
-restores the unfiltered library. Click a local song's Play action to listen.
+## Discover, Radio and Autoplay
 
-Artists and Albums group saved songs by their metadata. Multi-artist songs can
-appear in more than one artist view. Unknown Album is kept when no reliable
-album information is available.
+Everything here is calculated on your PC from what you play, finish and skip.
 
-Use Back and Forward beside search to navigate pages. They are different from
-the Previous and Next playback controls at the bottom of the app.
+- **Discover** has Made for you, a time-of-day mix, On repeat, Because you
+  played…, Forgotten favorites, Deep cuts, New to you, Never skipped, Recently
+  added, genre mixes and your top artist's essentials. Mixes refresh daily.
+  Save any mix as a playlist.
+- **New from your artists** shows songs by the artists you play most that
+  aren't in your library. Point at a card to preview 30 seconds, download it,
+  or dismiss it. Artist pages show popular songs you're missing too.
+  (Settings → Search & Downloads → **Suggest new songs**.)
+- **Song radio** and **Artist mix** start from songs you usually play together.
+- **Autoplay** (Settings → Playback) keeps playing similar songs when a list ends.
+- **Shuffle** plays recently heard songs last and avoids the same artist twice in a row.
+- **Dislike** keeps a song out of shuffle, autoplay and mixes. **Often skipped**
+  in Discover lists songs you keep skipping.
+
+## Your Listening
+
+**Your listening** in the sidebar shows listening time, plays, how many songs
+you finish, your favorite hour, your streak, top songs, artists and genres,
+minutes per day (or per week for a year), and plays by hour. Choose 7 days,
+30 days, a year or all time.
+
+For one song, right-click it and choose **Listening stats**: plays, time
+listened, first and last play, plays by month, songs you often play it after,
+and songs that go well with it.
 
 ## Playlists
 
-Create a playlist in Playlists, then select tracks and add the selection to it.
-The playlist picker and creation screens have a way back; cancelling should not
-change the library. Existing songs can belong to multiple playlists without
-requiring extra copies of their audio files.
+- Create playlists with **New playlist** or by right-clicking songs.
+- Drag songs to reorder, pin playlists to the sidebar, rename, describe,
+  duplicate, export (M3U8 or JSON) and import.
+- Removing songs from a playlist and deleting a playlist can be undone.
+- **Tidy up** on the Playlists page finds copies of the same playlist, empty
+  playlists and radios the previous version saved automatically. A backup is
+  saved before anything is deleted.
 
-Song/artist Radio actions create mixes from your saved music. They are not an
-unlimited licensed online catalog and are separate from any public radio stream.
+## Library Care
 
-For downloading into a playlist, Add music has an Add to menu. Pick an existing
-playlist, or New playlist and enter a name. All successfully saved tracks from
-that job go to the selected playlist and Home. An unavailable track is reported
-without discarding the tracks that succeeded.
+Settings → Library:
 
-## Shuffle and Previous
-
-Previous returns to the song actually heard before the current song, even with
-shuffle enabled. If the current song has played for more than four seconds,
-Previous restarts it first. Press Previous again near its start to go back.
-
-Next after going back replays the forward listening history before choosing a
-new shuffled song. Deleted or unavailable files are skipped. The recent-history
-page is a browsing view, not the transport's chronological history trail.
-
-## Reopen Where You Left Off
-
-Playback settings include session restoration. By default, reopening restores
-the song, position, shuffle state, queue/context, and supported current page,
-but waits for you to press Play. Automatic audio resumption is a separate option.
-
-Do not expect an in-progress download job to survive closing the app. Completed
-files remain; retry the song or public playlist link after reopening.
-
-## Online Search
-
-Online search is optional and uses the main search bar, not a separate browser.
-The default is local-first: if saved music matches, it stays a local search. Use
-the online-search icon beside the bar to request an online search directly.
-
-Online-only songs show Download to listen. Downloading adds a file; it does not
-interrupt the song already playing. When ready, the file can be played from Home.
-
-### Search Settings
-
-| Setting | What it changes |
-| --- | --- |
-| Include online music | Enables online searches. Does not affect offline saved music. |
-| When nothing is saved | Automatically searches online only when local results are empty. |
-| Every search | Includes online results even when local results exist. |
-| Only on request | Searches online only when you use the online-search action. |
-| Wait after typing | Avoids repeated network requests while you type. Balanced is a short pause. |
-| Results per search | Number of preview results, not the number downloaded from a full playlist. |
-
-## Download a Complete Playlist or Album
-
-1. Copy a public Spotify playlist or album link.
-2. Paste it in the main search bar and request an online search.
-3. Choose Download full playlist or Download full album.
-4. In Add music, choose the file format and destination playlist.
-5. Press Download. The entire collection is resolved, not only the preview rows.
-
-You can also paste the link straight into Add music. Song links, artist links,
-Spotify URIs, and supported Spotify short links are accepted there. Private
-playlists or removed/unavailable recordings may not work without access; this
-integration does not use your personal account cookies to bypass restrictions.
-
-The queue shows saved counts and errors. Cancel stops remaining work and keeps
-finished files. Retry keeps already matching files rather than overwriting them.
-Existing output files are not deleted as part of download synchronization.
-
-## Download Defaults
-
-MP3 is the most broadly compatible format. Opus is efficient, while M4A, OGG,
-FLAC, and WAV are also available. FLAC/WAV conversion does not turn lossy internet
-audio into genuine lossless source audio.
-
-Match source (auto) uses a bitrate appropriate to the source. Choosing a higher
-encoding bitrate may make a larger file without improving its detail.
-
-Spotify provides recording information. Audio is matched on the selected audio
-provider. YouTube + Music tries both providers in order; results and availability
-depend on the provider and recording.
-
-Include lyrics saves available text and timed lyrics. Embed album artwork stores
-the selected recording's cover when provided. Add downloads to Home controls
-automatic import; choosing a destination playlist explicitly imports that job
-into Home and the playlist even if automatic import is otherwise off.
-
-### Advanced Options
-
-Show advanced exposes filename layout, ASCII-safe filenames, artist tag
-separators, lyric providers, explicit-content filtering, network limits, and
-audio matching rules. They are not needed for ordinary use.
-
-Use Lightest download performance while gaming. Higher concurrency uses more
-network, CPU, and disk resources. Verified matches only may exclude songs that
-have a valid audio match but no provider verification badge.
-
-Reset defaults changes preferences, not downloaded songs or existing playlists.
-Preferences are snapshotted when a job is queued, so later changes apply to new
-jobs rather than modifying a running job halfway through.
-
-Only download recordings you have permission to save. spotDL does not supply
-Spotify's protected audio or guarantee the same recording for every title.
-
-## Genres and Covers
-
-Library settings contain metadata repair controls. Automatic lookups prioritize
-new tracks and missing information, use cached public music data, and avoid
-blocking playback or the UI while waiting for the network.
-
-Check artist/title/album information if a match is wrong. Remasters, covers,
-slowed versions, collaborations, and compilations may have different metadata.
-Review a reliable match before writing tags to files. A missing or ambiguous
-genre is preferable to a fabricated confident label. Some formats do not support
-all tag fields, and read-only files cannot be updated.
-
-Online artwork lookup searches for the identified recording's cover. A generic
-fallback image is not the original album cover. Online sources may be incomplete
-or unavailable, so not every unknown recording can be matched automatically.
+- **Duplicate songs**: songs you have more than once (for example in Music and
+  Downloads). QuietPlay suggests the best quality copy; plays, likes and
+  playlist spots from the others move to it. Extra files stay on disk.
+- **Missing songs**: songs whose file moved or was deleted. **Find in a folder**
+  looks for them by file name, then by title and artist. Songs moved into your
+  library again reconnect automatically.
+- **Removed songs**: restore songs you removed.
+- **Cover artwork** and **genre checks** fill in missing covers and genres
+  online. Edit a song's details with **Edit song info**.
 
 ## Lyrics
 
-Open Show lyrics to view the current song. Timed lyrics follow the playback
-position; plain lyrics do not have real timing. Earlier/Later changes a per-song
-offset, and Resume follow returns to automatic line following after manual
-scrolling. Different recordings may need different offsets.
+Lyrics appear in the Now Playing panel; **Open** shows the full view. Timed
+lyrics follow the song. Use **Earlier/Later** if a song's lyrics are early or
+late; each song remembers its own timing (Settings → Lyrics → **Reset all**).
+Lyrics come from files saved beside the song, the song's tags, or LRCLIB
+online. The next song's lyrics are fetched ahead of time.
 
-If the words are consistently early or late, adjust the offset. If timing varies
-throughout the song, the source may be for a different recording or may only have
-line-level timing. Highlighting cannot create accurate word timestamps that the
-source does not contain.
+## Search and Download Music
 
-## Mini Player and Audio
+Online search is optional (Settings → Search & Downloads). Online results show
+a **Download** button; downloads go to `Music\QuietPlay Downloads` and are added
+to your library and, if you choose, a playlist. The download panel (cloud icon
+at the top) shows progress and lets you cancel.
 
-Use Mini player at the top to open the compact always-on-top player. It has song
-information, transport controls, volume, and opacity preferences. Close it to
-return to the main window; it does not create a separate playback session.
+### Download a Complete Playlist or Album
 
-Bass, Mid, and Treble in the bottom bar update live. Very large boosts need
-headroom to avoid clipping, and can sound worse than moderate EQ. Flat EQ is a
-useful baseline when comparing recordings. EQ or transcoding cannot repair a
-poor original recording.
+Paste a public Spotify playlist or album link in the search bar, then choose
+**Download full playlist/album** and the destination playlist. Individual
+tracks can fail; finished ones are kept.
 
-The visualizer reacts to PCM audio from the playback engine. Appearance/audio
-settings control its layout, colors, density, sensitivity, and response. Reduced
-motion lowers decorative animation without replacing the real audio analysis.
+Downloads use the bundled spotDL companion: Spotify provides the song details
+and the audio is matched from other providers. It does not download protected
+Spotify audio. Only save music you have permission to download. File format,
+quality, provider, lyrics and artwork options are in Settings → Search &
+Downloads, with more under **Show advanced**.
+
+## Audio and Mini Player
+
+- Bass, Mid and Treble sliders change sound live. Normalization and
+  ReplayGain even out loudness. Speed changes keep pitch.
+- **Settings → Audio** picks the output device and visualizer style.
+- The **mini player** (button at the bottom right) is a small always-on-top
+  window with adjustable opacity.
+- **Sleep timer** pauses after 15–90 minutes or at the end of the song.
+- Media keys, headset buttons and the taskbar thumbnail buttons control
+  playback. Repair them in Settings → Integrations if they stop responding.
 
 ## OBS
 
-The Streaming settings setup flow connects to OBS on this PC. OBS WebSocket must
-be enabled in OBS; enter the matching local connection details when requested.
-The setup flow changes the current OBS scene only after its final Add action.
+Settings → Streaming → **Set up OBS** connects to OBS on this PC (enable OBS
+WebSocket in OBS first). It adds a **Browser Source** for the now-playing
+overlay and an audio source for the music.
 
-For a song-information overlay, add the localhost URL displayed by QuietPlay as
-an OBS Browser Source. It displays the current title/artist; it does not capture
-the sound by itself.
+For separate music audio, choose a **Stream output** such as CABLE Input
+(VB-CABLE) and capture CABLE Output in OBS. Turn on **Listen on this PC** to
+hear the music too. Use **Test tone** to check routing. Avoid also capturing
+the music through Desktop Audio, or it plays twice on stream.
+[Optional driver guide](OPTIONAL_DRIVERS.md).
 
-For separate music audio, choose a stream-output device and add its corresponding
-recording device to OBS. With VB-CABLE, QuietPlay sends to CABLE Input and OBS
-captures CABLE Output. These names describe opposite ends of the same cable.
-Enable Listen on this PC too if you want dual output to headphones and OBS.
+Showing a song title doesn't grant permission to broadcast the recording.
 
-The optional virtual driver is not needed for ordinary playback. Install it only
-when you need separate routing. Avoid also capturing the same audio through
-Desktop Audio, or the stream may hear music twice. Restart audio applications
-after driver installation if their device lists have not refreshed.
+## Settings
 
-Song credits and overlays do not grant broadcast rights. Ensure you have the
-permission required for the music and streaming platform.
+Settings has a search box. Categories: Playback, Audio, Library, Search &
+Downloads, Lyrics, Appearance (themes, custom colors, motion), Streaming,
+Integrations, Updates and Advanced (Gaming Mode, caches, diagnostics).
 
-## Updates, Problems, and Privacy
+## Keyboard Shortcuts
 
-Versioned packages and release notes live on this repository's Releases page.
-Unsigned testing builds are prereleases. Signed in-app updates require a trusted
-publisher certificate and signed update metadata; those checks are not bypassed
-for convenience.
+| Keys | Action |
+| --- | --- |
+| Space | Play or pause |
+| Ctrl+Left / Ctrl+Right | Previous / next song |
+| Left / Right | Back or ahead 5 seconds |
+| Ctrl+Up / Ctrl+Down | Volume |
+| L | Like the playing song |
+| Ctrl+K | Quick play |
+| Ctrl+F | Search |
+| Ctrl+J | Jump to the playing song |
+| Ctrl+M | Mini player |
+| Ctrl+O / Ctrl+Shift+O | Add files / add a folder |
+| Alt+Left / Alt+Right | Back / forward |
+| Ctrl+Shift+G | Gaming Mode |
 
-When reporting an issue, include the QuietPlay version/build, Windows version,
-what you clicked, and what happened. For search/download errors, include a public
-song link when appropriate. Do not post passwords, OBS credentials, private
-music, private playlist URLs, or unreviewed diagnostic logs in public issues.
+Press **F1** to see every shortcut.
 
-Your music is not automatically uploaded to a shared public server. Online
-services receive search terms or recording details when used. Third-party
-provider policies and availability still apply.
+## Updates and Help
+
+**Settings → Updates → Check for updates** tells you when a newer QuietPlay is
+on the Releases page and opens it. Installing a new version keeps your data.
+
+For problems, **Settings → Advanced → Diagnostics → Copy summary** copies a
+summary without personal file paths. Then
+[report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
+or [ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
