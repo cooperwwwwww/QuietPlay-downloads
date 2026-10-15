@@ -18,6 +18,9 @@ See the [changelog](CHANGELOG.md).
 
 - Finish packaged upgrade checks for the user-approved GitHub **Update now** flow.
   The implementation is in development, not in the current 2.2.0 download.
+- Package and verify the restored **Download playlist** / **Download album**
+  search actions and the new OBS overlay appearance editor. Focused backend and
+  headless interface checks pass; these changes are not in the current installer.
 - Gapless playback between songs.
 - Bringing the 2.0 interface to Mac and Linux.
 
