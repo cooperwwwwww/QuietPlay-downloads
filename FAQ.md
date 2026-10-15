@@ -127,10 +127,16 @@ you have permission to download.
 
 ## Can I Download a Whole Playlist?
 
-Paste a public Spotify playlist or album link into the main search bar,
-then choose **Download full playlist/album** and pick the destination playlist.
-Search preview limits do not limit full collection jobs. Unavailable tracks
-can fail individually; completed tracks remain available.
+In the current 2.2.0 download, open the download panel (cloud icon at the top),
+paste a public Spotify playlist or album link there, optionally choose a
+destination playlist, and start the download. This also works around the
+missing collection-download button in the main search bar.
+
+A dedicated **Download playlist** / **Download album** action in the main search
+bar, plus a prefilled **Choose playlist…** flow, is implemented in development
+but **not yet included in the public installer**. Search preview limits do not
+limit full collection jobs. Unavailable tracks can fail individually; completed
+tracks remain available. [Download guide](USER_GUIDE.md#download-a-complete-playlist-or-album).
 
 ## Why Is a Genre or Cover Still Missing or Incorrect?
 
@@ -157,6 +163,15 @@ stream. These are different sources. Optional dual output lets you hear the
 music on your PC too. See [OBS setup](USER_GUIDE.md#obs).
 
 Showing a song title does not grant permission to broadcast the recording.
+
+## Can I Customize the OBS Overlay?
+
+The current release has basic overlay options in Streaming settings. A larger
+appearance editor is implemented in development, **not in the 2.2.0 download**:
+six color pickers, transparency, fonts, artwork placement and sizes, borders,
+visible details, presets, reset and a live preview. It saves locally and does
+not change the audio route or your OBS scene.
+[Upcoming overlay controls](USER_GUIDE.md#overlay-customization-unreleased).
 
 ## How Are Mixes and Recommendations Made?
 
