@@ -1,5 +1,21 @@
 # QuietPlay Changes
 
+## 2.2.0 - Genres by Artist and Real Recommendations
+
+- One genre per artist from MusicBrainz listener tags, Deezer and Apple Music,
+  confirmed through your own songs so namesakes can't change it.
+- Genres are written into the song files' own tags (can be turned off).
+- The old per-song genre guessing is removed; every artist is checked again.
+- Artists only labeled Rock/Pop/Alternative by stores take the genre of their
+  similar artists in your library.
+- Review genres screen: every artist, how sure QuietPlay is, and a one-click
+  change for all of an artist's songs.
+- Artists you might like: suggestions from what listeners of your most-played
+  artists also play.
+- Lyrics preview always matches the playing song and line.
+- Ctrl+K quick play focus, focus return after dialogs, settings search
+  highlights, and a safe message when a screen fails to draw.
+
 ## 2.1.0 - Crossfade and Global Shortcuts
 
 - Crossfade between songs (3 to 12 seconds, off by default).
