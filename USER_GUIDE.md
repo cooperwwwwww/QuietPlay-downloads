@@ -150,9 +150,17 @@ at the top) shows progress and lets you cancel.
 
 ### Download a Complete Playlist or Album
 
-Paste a public Spotify playlist or album link in the search bar, then choose
-**Download full playlist/album** and the destination playlist. Individual
-tracks can fail; finished ones are kept.
+**Current 2.2.0 download:** open the download panel using the cloud icon at the
+top, paste a public Spotify playlist or album link into its input, choose a
+destination playlist if wanted, and start the download. If pasting into the
+main search bar does not show a collection-download button, use this panel.
+Individual tracks can fail; finished ones are kept.
+
+**In development, not in 2.2.0:** the main search bar recognizes a collection
+link and shows **Download playlist** or **Download album** directly. Choose
+**Choose playlist…** to open the panel with the link filled in and select an
+existing local playlist or create a new one. These full collection jobs are
+not limited by the number of results shown in an online search preview.
 
 Downloads use the bundled spotDL companion: Spotify provides the song details
 and the audio is matched from other providers. It does not download protected
@@ -184,6 +192,31 @@ the music through Desktop Audio, or it plays twice on stream.
 [Optional driver guide](OPTIONAL_DRIVERS.md).
 
 Showing a song title doesn't grant permission to broadcast the recording.
+
+### Overlay Customization (Unreleased)
+
+The following controls are implemented in the development build and are **not
+in the current 2.2.0 installer**. The existing download still has the basic
+overlay options in Streaming settings.
+
+Open **Settings → Streaming → Overlay appearance** in the upcoming build:
+
+- Choose background, accent, title, artist/album, progress and border colors
+  with visual pickers. Use **Background opacity** for transparency.
+- Let the progress bar and border follow the accent, or give each its own color.
+- Pick Compact, Text or Banner; change artwork position, font, sizes, card
+  width, canvas position and margin, corner rounding and border thickness.
+- Choose which song details appear, including separate artist and album text,
+  progress and elapsed/total time. Shadow, fades and hide-on-pause are optional.
+- Start from Cyan, Glass or Text only, or reset just the overlay appearance.
+
+Changes save automatically and appear in the live preview and the existing OBS
+source without restarting OBS. Preview works locally, even with the overlay
+server off, and shows a labeled sample if no song is selected. Small source
+heights scale the complete card rather than cut off its text. Source dimensions
+and local server repair controls remain under **Show advanced**.
+
+Customizing the visual overlay does not change your audio routing or OBS scene.
 
 ## Settings
 
