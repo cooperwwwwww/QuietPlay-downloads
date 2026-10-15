@@ -71,7 +71,17 @@ QuietPlay is not code-signed yet, so Microsoft Defender SmartScreen may show
 If **Smart App Control**, antivirus or an administrator policy blocks the file,
 stop. Do not turn those protections off. [Full guide](FAQ.md#windows-protected-your-pc).
 
-## What's in QuietPlay 2.2
+## Start Listening
+
+On the first launch, choose **Add music** for individual songs or **Add folder**
+for a whole collection. You can also drag audio files or folders onto QuietPlay.
+Your library starts empty until you add music; no account is needed.
+
+Select a song and press **Play**. To use the optional online search and downloader,
+see the [download guide](USER_GUIDE.md#search-and-download-music). Only download
+recordings you have permission to save.
+
+## What QuietPlay Can Do
 
 | | |
 | --- | --- |
@@ -114,9 +124,21 @@ only save music you have permission to download.
 
 ## Updates and Support
 
-Settings → Updates → **Check for updates** tells you when a newer QuietPlay is
-published here and opens the download page. Installing a new version keeps your
-data. Use GitHub's **Watch → Custom → Releases** for notifications.
+**Available now in 2.2.0:** open **Settings → Updates → Check for updates** to
+check the official GitHub releases. When a newer version is available, open
+**Official downloads** and run its Windows installer over the existing app.
+You do not need to uninstall QuietPlay first. Normal upgrades keep your music,
+playlists, likes, listening history and settings.
+
+**In development, not included in the current download:** an in-app update notice
+and **Update now** button. After you approve, QuietPlay will download the official
+installer, check its published SHA-256 and size, and start a quiet upgrade of the
+existing installation. Windows security prompts and blocks will still apply.
+The first version containing this updater will need a one-time manual install.
+
+This uses the full installer in the background. Smaller, changed-files-only
+(delta) downloads are not implemented. Follow the [changelog](CHANGELOG.md) for
+what has actually shipped, or use GitHub's **Watch → Custom → Releases** for news.
 
 | Need help with | Where to go |
 | --- | --- |
