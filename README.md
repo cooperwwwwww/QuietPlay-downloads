@@ -2,7 +2,7 @@
 
 **A music player for the songs on your PC, that learns what you like.**
 
-QuietPlay 2.0 is a redesigned Windows app: a clean black-and-grey interface,
+QuietPlay 2.2 is a redesigned Windows app: a clean black-and-grey interface,
 synced lyrics, smart mixes and radio built only from your own listening, your
 listening stats, playlists, a mini player, Windows media controls and OBS
 streaming tools. No account, no subscription and no upload of what you play.
@@ -30,7 +30,7 @@ streaming tools. No account, no subscription and no upload of what you play.
 [Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.0) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
-**Mac, Linux and Chromebook:** QuietPlay 2.0 is Windows-only. The older
+**Mac, Linux and Chromebook:** QuietPlay 2.2 is Windows-only. The older
 experimental **1.54.1 Beta** packages are still available on its
 [release page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.1-development).
 See the [platform guide](PLATFORMS.md).
@@ -71,7 +71,7 @@ QuietPlay is not code-signed yet, so Microsoft Defender SmartScreen may show
 If **Smart App Control**, antivirus or an administrator policy blocks the file,
 stop. Do not turn those protections off. [Full guide](FAQ.md#windows-protected-your-pc).
 
-## What's in QuietPlay 2.0
+## What's in QuietPlay 2.2
 
 | | |
 | --- | --- |
@@ -132,7 +132,7 @@ documentation and feedback; the app's source is private.
 ## Credits
 
 Created and product-directed by **Cooper W.** Engineering and product design
-developed in collaboration with **OpenAI Codex**; the 2.0 redesign was developed
+developed in collaboration with **OpenAI Codex**; the 2.2 redesign was developed
 in collaboration with **Claude** by Anthropic.
 
 QuietPlay is independent, is not affiliated with Spotify or Apple, and is not
