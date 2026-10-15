@@ -72,6 +72,9 @@ Everything here is calculated on your PC from what you play, finish and skip.
   played…, Forgotten favorites, Deep cuts, New to you, Never skipped, Recently
   added, genre mixes and your top artist's essentials. Mixes refresh daily.
   Save any mix as a playlist.
+- **Artists you might like** suggests songs by artists you don't have yet,
+  picked from what listeners of your most-played artists also play (Deezer).
+  Each card says which of your artists led to it.
 - **New from your artists** shows songs by the artists you play most that
   aren't in your library. Point at a card to preview 30 seconds, download it,
   or dismiss it. Artist pages show popular songs you're missing too.
@@ -118,6 +121,13 @@ Settings → Library:
 - **Removed songs**: restore songs you removed.
 - **Cover artwork** and **genre checks** fill in missing covers and genres
   online. Edit a song's details with **Edit song info**.
+- **Genres by artist**: each artist gets one genre for all their songs, from
+  MusicBrainz listener tags, Deezer and Apple Music. QuietPlay only trusts a
+  catalog when it finds one of your songs there, so an artist with the same
+  name can't change your genres. Settings → Library → **Review genres** shows
+  every artist and how sure QuietPlay is; **Check these** lists the ones worth
+  a look. Choose a genre to change all of an artist's songs; your choice is kept
+  for songs you add later. A genre you set on a single song always wins.
 - **Edit several songs at once**: select songs (Ctrl or Shift click), right-click
   and choose **Edit info for N songs**, or select **Edit genre…** on an artist
   page. Fill in only what should change; blank fields keep each song as it is.
