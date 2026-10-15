@@ -1,9 +1,35 @@
 # QuietPlay Changes
 
-## Unreleased - User-Approved In-App Updates
+## Unreleased - Updates, Playlist Downloads and OBS Customization
 
 These changes are in development and are **not part of the downloadable 2.2.0
 release**. A new installer will be published only after packaged upgrade checks.
+
+### Playlist Downloads
+
+- A dedicated **Download playlist** or **Download album** button when a Spotify
+  collection link is pasted into search, including supported Spotify URIs.
+- **Choose playlist…** opens the download panel with the link already filled in;
+  choose an existing destination playlist or create one.
+- Full collection jobs do not use the online search preview limit. Duplicate
+  clicks are guarded while a request is being submitted; failed requests can
+  be retried without losing the link.
+
+### OBS Overlay Appearance
+
+- Six visual pickers for background, accent, title, artist/album, progress and
+  border colors, plus background opacity and independent border opacity.
+- Font styles, title and artwork sizes, left/right artwork, canvas position,
+  card width, margin, corner rounding and progress thickness.
+- Separate visibility for artwork, label, title, artist, album, progress and
+  elapsed/total time; optional shadow, fades and hide-on-pause.
+- Cyan, glass and text-only presets, an appearance-only reset, and automatic
+  saving that does not restart OBS or change audio routing.
+- A sandboxed preview using the actual OBS renderer, even when the overlay
+  server is off. Small browser sources scale the complete card instead of
+  clipping its text. Existing saved colors and visibility choices are preserved.
+
+### User-Approved In-App Updates
 
 - Background checks of the official GitHub release, with an in-app notice and
   a persistent update indicator.
