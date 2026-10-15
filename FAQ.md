@@ -179,10 +179,22 @@ audio file are different actions. Read confirmation dialogs carefully.
 
 ## How Do I Get Update News?
 
-In QuietPlay, open **Settings > Updates > Check for updates**. It tells you
-when a newer version is published here and opens the download page. Installing
-is manual until QuietPlay is code-signed; a new release is never installed
-without you. You can also check the
+In the current **2.2.0** download, open **Settings > Updates > Check for updates**.
+It checks the official GitHub releases; **Official downloads** opens the release
+page so you can get the Windows installer. Run it over the existing installation;
+you do not need to uninstall the app first.
+
+A user-approved **Update now** button and in-app notification are in development,
+but are **not included in the current download**. That flow will download and
+check the official installer, then run a quiet upgrade after you approve it.
+Windows security warnings and blocks will still apply. Signing remains a separate
+distribution improvement, not a reason to turn off those protections.
+
+The first release with that updater will need a one-time manual install. It will
+still download the full installer; smaller delta updates are not implemented.
+No update starts installing just because you checked for one.
+
+You can also check the
 [Releases page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 and [changelog](CHANGELOG.md), or use GitHub's Watch menu for release notifications.
 
