@@ -2,7 +2,8 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.0** on Windows.
+This guide is for **QuietPlay 2.2** on Windows. Sections marked in development
+describe upcoming features, not the current download.
 
 ## Jump to a Topic
 
@@ -217,8 +218,27 @@ them off there too. Press **F1** to see every shortcut.
 
 ## Updates and Help
 
-**Settings → Updates → Check for updates** tells you when a newer QuietPlay is
-on the Releases page and opens it. Installing a new version keeps your data.
+### Update the Current 2.2.0 App
+
+1. Open **Settings → Updates → Check for updates**.
+2. If a newer version is available, choose **Official downloads**.
+3. Download its Windows installer and run it over the existing installation.
+   Do not uninstall QuietPlay first. Normal upgrades keep your music, playlists,
+   likes, listening history and preferences.
+
+### In Development: Update From Inside QuietPlay
+
+This is **not included in the current 2.2.0 download**. The planned flow is an
+in-app notification and an **Update now** button, followed by your approval.
+QuietPlay will check the downloaded installer's published SHA-256 and size, then
+start a quiet upgrade. Windows security prompts and blocks remain in effect.
+Checking for updates alone will never start installation.
+
+The first release with this updater requires a one-time manual install. The
+updater will initially download the full installer, not a changed-files-only
+patch. See the [changelog](CHANGELOG.md) to check whether a feature has shipped.
+
+### Get Help
 
 For problems, **Settings → Advanced → Diagnostics → Copy summary** copies a
 summary without personal file paths. Then
