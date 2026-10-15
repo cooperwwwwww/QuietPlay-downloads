@@ -1,5 +1,22 @@
 # QuietPlay Changes
 
+## Unreleased - User-Approved In-App Updates
+
+These changes are in development and are **not part of the downloadable 2.2.0
+release**. A new installer will be published only after packaged upgrade checks.
+
+- Background checks of the official GitHub release, with an in-app notice and
+  a persistent update indicator.
+- An **Update now** action that asks for approval, downloads the matching Windows
+  installer, checks its published SHA-256 and size, and starts a quiet upgrade.
+- Cancellation and rejection of incomplete, changed or mismatched downloads.
+- Windows download-security checks stay enabled. The existing signed updater's
+  verification requirements are unchanged.
+- Clearer release notes and update status inside Settings.
+
+The first release with the updater needs one manual install. Subsequent upgrades
+will use the full installer in the background; delta downloads are not implemented.
+
 ## 2.2.0 - Genres by Artist and Real Recommendations
 
 - One genre per artist from MusicBrainz listener tags, Deezer and Apple Music,
