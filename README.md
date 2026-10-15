@@ -7,7 +7,7 @@ synced lyrics, smart mixes and radio built only from your own listening, your
 listening stats, playlists, a mini player, Windows media controls and OBS
 streaming tools. No account, no subscription and no upload of what you play.
 
-**[Download QuietPlay 2.0 for Windows](#get-quietplay)** &nbsp; / &nbsp;
+**[Download QuietPlay 2.2 for Windows](#get-quietplay)** &nbsp; / &nbsp;
 **[Install guide](#install-quietplay)** &nbsp; / &nbsp;
 **[What's new](CHANGELOG.md)** &nbsp; / &nbsp;
 **[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
