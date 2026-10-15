@@ -6,16 +6,19 @@ This is a direction for future work, not a schedule or a claim that unfinished
 features already exist. Scope is decided after feedback and testing. New ideas
 start with `needs triage`; only accepted work is marked `planned`.
 
-## Shipped in 2.0
+## Shipped in 2.0-2.2
 
 The redesigned app, Discover mixes, radio and autoplay from your own listening,
 listening stats, suggestions from your artists, duplicate and missing-song
-tools, playlist tidy-up and a faster, typo-tolerant search.
+tools, playlist tidy-up, faster typo-tolerant search, crossfade, global shortcuts,
+and artist-based genre review and recommendations.
 See the [changelog](CHANGELOG.md).
 
 ## Next
 
-- Crossfade and gapless playback between songs.
+- Finish packaged upgrade checks for the user-approved GitHub **Update now** flow.
+  The implementation is in development, not in the current 2.2.0 download.
+- Gapless playback between songs.
 - Bringing the 2.0 interface to Mac and Linux.
 
 ## Reliability Before More Controls
@@ -48,6 +51,8 @@ See the [changelog](CHANGELOG.md).
   including Chromebook Linux, headsets, audio routing and provider downloads.
 - Obtain Mac Developer ID signing and notarization before a production Mac release.
 - Complete the signed update path without weakening Windows security.
+- Investigate smaller delta downloads after the full-installer upgrade flow is
+  verified. Delta updates are not implemented or promised for the next release.
 - Keep installers, optional prerequisites, setup instructions, and release
   verification easy to find and understand.
 
