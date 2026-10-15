@@ -21,13 +21,13 @@ streaming tools. No account, no subscription and no upload of what you play.
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Latest release: QuietPlay 2.1.0** (October 2026)
+**Latest release: QuietPlay 2.2.0** (October 2026)
 
 | Download | For | File |
 | --- | --- | --- |
-| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.1.0/QuietPlay-2.1.0-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.1.0-Windows-Setup.exe` |
+| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.0/QuietPlay-2.2.0-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.0-Windows-Setup.exe` |
 
-[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.1.0) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.0) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
 **Mac, Linux and Chromebook:** QuietPlay 2.0 is Windows-only. The older
@@ -43,7 +43,7 @@ online search and downloads, not for playing your songs.
 ## Install QuietPlay
 
 1. Select **Download for Windows** above. The file is
-   `QuietPlay-2.1.0-Windows-Setup.exe`.
+   `QuietPlay-2.2.0-Windows-Setup.exe`.
 2. Open it. Windows may show a SmartScreen warning because QuietPlay is not
    code-signed yet; read the [security notice](#windows-security-notice).
 3. Follow setup. The optional VB-CABLE driver is only for separate OBS audio;
@@ -76,13 +76,13 @@ stop. Do not turn those protections off. [Full guide](FAQ.md#windows-protected-y
 | | |
 | --- | --- |
 | **Home** | Your recent rotation, mixes made for you, and your whole library with genre filter and sorting. |
-| **Discover** | Made for you, time-of-day mix, On repeat, Because you played…, Forgotten favorites, Deep cuts, genre mixes, plus **New from your artists**: songs by the artists you play most that you don't have yet, with 30-second previews. |
+| **Discover** | Made for you, time-of-day mix, On repeat, Because you played…, Forgotten favorites, Deep cuts, genre mixes, plus **Artists you might like** (picked from what listeners of your favorite artists also play) and **New from your artists**, with 30-second previews. |
 | **Radio and autoplay** | Song radio and artist mixes use the songs you actually play after each other. When a list ends, autoplay keeps going with similar songs. Smart shuffle never repeats an artist back to back. |
 | **Your listening** | Listening time, top songs, artists and genres, minutes per day, favorite hour and streak, for 7 days, 30 days, a year or all time. Every song has its own listening stats. |
 | **Recently played** | Every play, grouped by day, with what you finished and what you skipped. |
 | **Search** | Finds songs, artists, albums and playlists as you type, ignores accents and punctuation, and still finds "jak jonson" when you misspell it. Ctrl+K plays anything instantly. |
 | **Lyrics** | Synced lyrics that follow the song, saved with your files when possible, with a per-song timing adjustment. |
-| **Library care** | Finds duplicate copies of songs and keeps the best one, reconnects songs you moved, tidies up empty and copied playlists, finds missing covers and genres, and lets you set the genre or album for many songs at once. |
+| **Library care** | Finds duplicate copies of songs and keeps the best one, reconnects songs you moved, tidies up empty and copied playlists, finds missing covers, gives each artist one genre checked against MusicBrainz, Deezer and Apple (with a review screen to change any of them), and lets you set the genre or album for many songs at once. |
 | **Playlists** | Create, reorder, pin, import and export (M3U8 or JSON), and undo deletes. |
 | **Playback** | Crossfade, queue, speed control, live EQ, normalization, sleep timer, output device choice, mini player, media keys, taskbar buttons and Ctrl+Alt shortcuts that work from any app, even in games. |
 | **Look and feel** | Black, grey, light, midnight, colorful, high-contrast and custom themes, a real-audio visualizer and reduced motion. |
@@ -106,10 +106,11 @@ only save music you have permission to download.
 - Your library, playlists, history and settings stay on your PC
   (`%APPDATA%\QuietPlay`). Nothing you play is uploaded.
 - Mixes, radio, autoplay and stats are calculated on your PC.
-- When turned on, lyrics (LRCLIB), cover art and genres (MusicBrainz, Apple)
-  receive the song details they need. **New from your artists** sends only the
-  names of your most-played artists to Apple's public music catalog. Each can be
-  turned off in Settings.
+- When turned on, lyrics (LRCLIB), cover art and genres (MusicBrainz, Deezer,
+  Apple) receive the song details they need. Suggestions (**Artists you might
+  like**, **New from your artists**) send only the names of your most-played
+  artists to Deezer's and Apple's public music catalogs. Each can be turned off
+  in Settings.
 
 ## Updates and Support
 
