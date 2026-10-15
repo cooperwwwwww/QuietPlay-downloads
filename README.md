@@ -111,6 +111,25 @@ It does not download protected Spotify audio or give you rights to a recording;
 only save music you have permission to download.
 [Download guide](USER_GUIDE.md#search-and-download-music).
 
+## In Development
+
+These improvements are implemented in the development build, **not included in
+the current 2.2.0 installer**. They will need a new, verified installer release.
+
+- **Clearer playlist downloads:** paste a Spotify playlist or album link into
+  search to get a dedicated **Download playlist** or **Download album** action.
+  Use **Choose playlist…** to select where the songs are added. Full collection
+  downloads are separate from the limited online search preview.
+- **Custom OBS overlays:** six visual color pickers, background transparency,
+  fonts, artwork placement, borders, sizing, visible details and presets. A live
+  preview uses the same renderer as OBS, and small sources scale to fit.
+  [Overlay customization guide](USER_GUIDE.md#overlay-customization-unreleased).
+- **User-approved updates:** an in-app notice and **Update now** action for
+  upgrading the existing installation. [How updates will work](#updates-and-support).
+
+Nothing here requires an account or uploads your music. Follow the
+[unreleased changelog](CHANGELOG.md) for development progress.
+
 ## Data and Privacy
 
 - Your library, playlists, history and settings stay on your PC
