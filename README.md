@@ -116,10 +116,16 @@ only save music you have permission to download.
 These improvements are implemented in the development build, **not included in
 the current 2.2.0 installer**. They will need a new, verified installer release.
 
-- **Clearer playlist downloads:** paste a Spotify playlist or album link into
-  search to get a dedicated **Download playlist** or **Download album** action.
-  Use **Choose playlist…** to select where the songs are added. Full collection
-  downloads are separate from the limited online search preview.
+- **Full personalized playlists:** Discover builds playlists of **50–60
+  different songs** from your plays, completed listens, likes, skips and recent
+  listening. A larger pool of related artists brings in new music alongside
+  songs from your favorites. Open a playlist to see every song, preview tracks,
+  or **Download & save** the whole playlist as one cancellable download job.
+  [Personalized playlist guide](USER_GUIDE.md#personalized-playlists-unreleased).
+- **Complete playlist search:** paste a Spotify playlist or album link into
+  search to see all returned songs, with **Download all** for the collection.
+  Playlist links no longer use the short song-search or metadata preview limits;
+  ordinary text searches keep their configured result limit.
 - **Custom OBS overlays:** six visual color pickers, background transparency,
   fonts, artwork placement, borders, sizing, visible details and presets. A live
   preview uses the same renderer as OBS, and small sources scale to fit.
@@ -179,3 +185,4 @@ in collaboration with **Claude** by Anthropic.
 QuietPlay is independent, is not affiliated with Spotify or Apple, and is not
 endorsed by OpenAI or Anthropic. Third-party notices and licenses are included
 in the installed app under *Release Evidence*.
+

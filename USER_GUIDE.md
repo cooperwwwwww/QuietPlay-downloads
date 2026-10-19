@@ -67,7 +67,8 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
 ## Discover, Radio and Autoplay
 
-Everything here is calculated on your PC from what you play, finish and skip.
+Your listening signals and rankings are calculated on your PC. Optional catalog
+lookups supply songs and related artists for online recommendations.
 
 - **Discover** has Made for you, a time-of-day mix, On repeat, Because you
   played…, Forgotten favorites, Deep cuts, New to you, Never skipped, Recently
@@ -87,6 +88,34 @@ Everything here is calculated on your PC from what you play, finish and skip.
 - **Shuffle** plays recently heard songs last and avoids the same artist twice in a row.
 - **Dislike** keeps a song out of shuffle, autoplay and mixes. **Often skipped**
   in Discover lists songs you keep skipping.
+
+### Personalized Playlists (Unreleased)
+
+These improvements are in the development build and **not included in the
+current 2.2.0 installer**.
+
+1. Open **Discover → Playlists picked for you**. QuietPlay ranks recommendations
+   from your plays, completed listens, likes, recent listening, skips and
+   dislikes, then combines them with related-artist catalog results.
+2. Choose a playlist to see its complete list of **50–60 different songs**.
+   Your discovery mix blends familiar and new artists; New horizons emphasizes
+   new artists; More from your favorites finds songs you do not own yet.
+   Because you play… mixes focus on an artist from your listening history.
+3. Use **Preview** for a catalog sample, or **Download** for an individual song.
+   Previews are samples, not full-length streaming.
+4. Choose **Download & save N songs** to queue the whole playlist as one job.
+   Completed downloads appear together in a new local playlist. Use the
+   Downloads panel for progress or cancellation; downloaded songs play in full.
+5. Choose **Show more** under the song shelves to reveal more recommendations,
+   or **Refresh recommendations** to update the catalog pool.
+
+Picks use artist variety, daily ordering and overlap checks. The app does not
+repeat songs to reach the playlist length: a full playlist appears only when
+at least 50 eligible recommendations are available. Results depend on your
+listening history and catalog availability; counts can vary. Catalog results
+normally refresh after six hours. Existing owned-song, dislike and dismissed
+recommendation filters still apply. Turn off **Suggest new songs** in
+Settings → Search & Downloads to disable online recommendations.
 
 ## Your Listening
 
@@ -156,11 +185,12 @@ destination playlist if wanted, and start the download. If pasting into the
 main search bar does not show a collection-download button, use this panel.
 Individual tracks can fail; finished ones are kept.
 
-**In development, not in 2.2.0:** the main search bar recognizes a collection
-link and shows **Download playlist** or **Download album** directly. Choose
-**Choose playlist…** to open the panel with the link filled in and select an
-existing local playlist or create a new one. These full collection jobs are
-not limited by the number of results shown in an online search preview.
+**In development, not in 2.2.0:** paste a public Spotify playlist or album
+link into the main search bar to see the complete returned song list. Choose
+**Download all** to queue the full collection, or **Download** beside one song.
+Collection links are not truncated by the short text-search or metadata preview
+limits. Supported Spotify URIs and short links work too. For a specific local
+playlist destination, use the existing download panel.
 
 Downloads use the bundled spotDL companion: Spotify provides the song details
 and the audio is matched from other providers. It does not download protected
@@ -277,3 +307,4 @@ For problems, **Settings → Advanced → Diagnostics → Copy summary** copies 
 summary without personal file paths. Then
 [report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
 or [ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
+

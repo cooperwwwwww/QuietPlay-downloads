@@ -1,19 +1,39 @@
 # QuietPlay Changes
 
-## Unreleased - Updates, Playlist Downloads and OBS Customization
+## Unreleased - Personalized Playlists, Downloads and OBS Customization
 
 These changes are in development and are **not part of the downloadable 2.2.0
 release**. A new installer will be published only after packaged upgrade checks.
 
+### Personalized Discovery
+
+- A larger recommendation pool combines songs by related artists with music
+  from the artists you already play most. Ranking uses the local taste model:
+  completed plays, likes and recent listening help; skips and dislikes reduce
+  affinity. Existing owned-song and dismissed-suggestion filters remain.
+- Full playlists contain **50–60 different songs** when enough matches are
+  available: Your discovery mix, New horizons, More from your favorites,
+  Because you play… and The next chapter.
+- Daily variation, artist-diversity penalties and an overlap check keep the
+  playlists varied. Sparse results are not padded with repeated songs.
+- Every playlist opens its complete song list, with catalog previews and
+  **Download & save**. A whole playlist uses one cancellable download job and
+  completed songs are added to a new local playlist.
+- **Show more** reveals further song recommendations. **Refresh recommendations**
+  updates the candidate pool; normal catalog results are cached for six hours.
+- Focused checks cover ranking changes, unique songs, artist variety, complete
+  playlist views, batch submission, retry and packaged-app startup. Public
+  installer and upgrade verification are still required before release.
+
 ### Playlist Downloads
 
-- A dedicated **Download playlist** or **Download album** button when a Spotify
-  collection link is pasted into search, including supported Spotify URIs.
-- **Choose playlist…** opens the download panel with the link already filled in;
-  choose an existing destination playlist or create one.
-- Full collection jobs do not use the online search preview limit. Duplicate
-  clicks are guarded while a request is being submitted; failed requests can
-  be retried without losing the link.
+- Spotify playlist and album links show their complete returned song list
+  in search, including supported Spotify URIs and short links.
+- **Download all** queues the full collection. Collection results are no longer
+  truncated by the song-search or metadata preview limits.
+- Individual downloads share their queued state with the collection action.
+  Duplicate submissions are guarded, and failed requests can be retried.
+- The existing download panel still supports choosing a destination playlist.
 
 ### OBS Overlay Appearance
 
@@ -197,3 +217,4 @@ playlists and generated mixes, lyrics, real PCM visualization, live EQ, taskbar
 and headset media controls, OBS tools, themes, a compact mini player, and session
 restoration. This page does not imply that older versions were signed public
 releases.
+

@@ -18,9 +18,12 @@ See the [changelog](CHANGELOG.md).
 
 - Finish packaged upgrade checks for the user-approved GitHub **Update now** flow.
   The implementation is in development, not in the current 2.2.0 download.
-- Package and verify the restored **Download playlist** / **Download album**
-  search actions and the new OBS overlay appearance editor. Focused backend and
-  headless interface checks pass; these changes are not in the current installer.
+- Package and verify expanded Discover recommendations and full **50–60-song
+  personalized playlists**, including the single-job **Download & save** flow.
+  The development build has focused recommendation, batch-download and
+  interface checks; these features are not in the current 2.2.0 installer.
+- Package complete playlist search, **Download all**, and the new OBS overlay
+  appearance editor, with installer and upgrade checks before publication.
 - Gapless playback between songs.
 - Bringing the 2.0 interface to Mac and Linux.
 
@@ -68,3 +71,4 @@ QuietPlay's private source workspace is not published in this repository.
 See [open feature requests](https://github.com/cooperwwwwww/QuietPlay-downloads/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22feature%20request%22)
 for listener ideas. Versioned release notes are the source of truth for what
 has actually shipped.
+
