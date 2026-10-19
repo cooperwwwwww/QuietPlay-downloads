@@ -14,12 +14,12 @@ tools, playlist tidy-up, faster typo-tolerant search, crossfade, global shortcut
 and artist-based genre review and recommendations.
 Version **2.2.1** adds expanded Discover recommendations, full 50–60-song
 personalized playlists, complete playlist search and Download all.
+Version **2.2.2** adds official signed manifests and changed-file updates,
+with startup verification and recovery.
 See the [changelog](CHANGELOG.md).
 
 ## Next
 
-- Finish packaged upgrade checks for the user-approved GitHub **Update now** flow.
-  The implementation is in development, not in the current 2.2.1 download.
 - Package the new OBS overlay appearance editor and complete its installer checks.
 - Gapless playback between songs.
 - Bringing the 2.0 interface to Mac and Linux.
@@ -53,9 +53,10 @@ See the [changelog](CHANGELOG.md).
 - Validate the experimental native Mac and Linux packages on physical devices,
   including Chromebook Linux, headsets, audio routing and provider downloads.
 - Obtain Mac Developer ID signing and notarization before a production Mac release.
-- Complete the signed update path without weakening Windows security.
-- Investigate smaller delta downloads after the full-installer upgrade flow is
-  verified. Delta updates are not implemented or promised for the next release.
+- Continue validating file updates across future app and runtime releases.
+- Obtain Windows Authenticode signing separately from release-key signatures.
+- Consider binary patching within large changed files; current file updates
+  replace each changed file and reuse unchanged files.
 - Keep installers, optional prerequisites, setup instructions, and release
   verification easy to find and understand.
 

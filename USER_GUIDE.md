@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.1** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.2** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -222,7 +222,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.1 installer**. The existing download still has the basic
+in the current 2.2.2 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -277,25 +277,40 @@ them off there too. Press **F1** to see every shortcut.
 
 ## Updates and Help
 
-### Update the Current 2.2.1 App
+### Official File Updates (2.2.2 and Later)
 
-1. Open **Settings → Updates → Check for updates**.
-2. If a newer version is available, choose **Official downloads**.
-3. Download its Windows installer and run it over the existing installation.
-   Do not uninstall QuietPlay first. Normal upgrades keep your music, playlists,
-   likes, listening history and preferences.
+1. Open **Settings → Updates → Check for updates**. QuietPlay also checks in
+   the background and shows a notice when an official stable update is available.
+2. Review the available version and changed-file download size.
+3. Choose **Download changed files**. You can cancel while downloading.
+4. When verification finishes, choose **Update and restart** and approve.
+   QuietPlay closes, updates its changed app files, checks startup and reopens.
 
-### In Development: Update From Inside QuietPlay
+The update replaces changed files, not the whole app installation. It may remove
+obsolete files that belonged to the previous release. Unchanged runtime files
+and your music, library, playlists, history and preferences stay in place.
 
-This is **not included in the current 2.2.1 download**. The planned flow is an
-in-app notification and an **Update now** button, followed by your approval.
-QuietPlay will check the downloaded installer's published SHA-256 and size, then
-start a quiet upgrade. Windows security prompts and blocks remain in effect.
-Checking for updates alone will never start installation.
+The official release manifest is signed with QuietPlay's pinned release key.
+The updater checks signatures, sizes and SHA-256 hashes, backs up changed files,
+and restores the previous version if applying the update or startup verification
+fails. It also recovers an interrupted update before normal startup continues.
+Backups are retained for the two most recent update transactions.
 
-The first release with this updater requires a one-time manual install. The
-updater will initially download the full installer, not a changed-files-only
-patch. See the [changelog](CHANGELOG.md) to check whether a feature has shipped.
+The release signature is separate from Windows Authenticode; QuietPlay is still
+not Windows code-signed, and Windows security warnings and blocks still apply.
+
+### First Upgrade From an Older Version
+
+- **2.2.0:** download the official **2.2.2 Windows Setup** and run it over the
+  existing installation once. Do not uninstall first. This enables file updates.
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.2 release**,
+  run it, choose **Download changed files**, then **Update and restart**. This
+  transfers about 23 MB instead of the full setup. Full setup is also available.
+
+Future releases must publish a signed package matching your installed version.
+If no matching package exists, or an app file is damaged or modified, the updater
+stops and directs you to **Official downloads** for repair or a manual upgrade.
+An offline PC can keep using the installed app and check again when connected.
 
 ### Get Help
 

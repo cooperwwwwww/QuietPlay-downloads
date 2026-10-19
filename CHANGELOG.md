@@ -1,8 +1,8 @@
 # QuietPlay Changes
 
-## Unreleased - OBS Customization and In-App Updates
+## Unreleased - OBS Customization
 
-These features are not included in 2.2.1.
+These features are not included in 2.2.2.
 
 ### OBS Overlay Appearance
 
@@ -18,19 +18,25 @@ These features are not included in 2.2.1.
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
 
-### User-Approved In-App Updates
+## 2.2.2 - Official Changed-File Updater
 
-- Background checks of the official GitHub release, with an in-app notice and
-  a persistent update indicator.
-- An **Update now** action that asks for approval, downloads the matching Windows
-  installer, checks its published SHA-256 and size, and starts a quiet upgrade.
-- Cancellation and rejection of incomplete, changed or mismatched downloads.
-- Windows download-security checks stay enabled. The existing signed updater's
-  verification requirements are unchanged.
-- Clearer release notes and update status inside Settings.
+Released October 19, 2026 for Windows 10/11 (64-bit).
 
-The first release with the updater needs one manual install. Subsequent upgrades
-will use the full installer in the background; delta downloads are not implemented.
+- Official stable-release checks in the background; downloads and installation
+  require user action in the existing update screen.
+- Differential ZIP packages contain changed app files for each supported source
+  version. The 2.2.1 → 2.2.2 package is about 23 MB; unchanged runtime files are reused.
+- A pinned Ed25519 release key verifies the manifest. Package size, SHA-256 and
+  individual file hashes are checked before installation and checked again at apply.
+- Safe paths, expected-file lists, original file checks, duplicate-job guards,
+  cancellable downloads and a separate updater process protect the update flow.
+- Changed files are backed up. Startup verification runs before committing;
+  failures and interrupted transactions restore the previous app files.
+- The standalone official updater can move 2.2.1 to 2.2.2. Version 2.2.0 needs
+  one manual 2.2.2 setup to gain the new updater.
+- User music, library, playlists, history and settings are not update targets.
+- Release signatures are separate from Windows Authenticode. Windows security
+  checks remain enabled; Windows publisher signing is still pending.
 
 ## 2.2.1 - Full Playlists and More Discovery
 

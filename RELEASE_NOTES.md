@@ -1,3 +1,25 @@
+# QuietPlay 2.2.2
+
+QuietPlay 2.2.2 adds the **official changed-file updater**.
+
+- Open **Settings → Updates → Check for updates → Download changed files → Update and restart**.
+- Updates download the files changed for your installed version, instead of the whole Windows installer.
+- The updater verifies an Ed25519-signed official release manifest, package size and SHA-256 hashes, then checks the installed app before reopening it.
+- Downloads show progress and can be cancelled. Duplicate update jobs are blocked. Failed or interrupted updates restore the previous files.
+- Your music, library, playlists, likes, history and settings stay in place.
+
+**Upgrade from 2.2.1:** download `QuietPlayUpdater.exe` below and run it. It finds your installation and downloads about **23 MB** of changed files. Choose **Update and restart** when verification finishes. You can also use the full setup.
+
+**Upgrade from 2.2.0:** install `QuietPlay-2.2.2-Windows-Setup.exe` once over the existing app. After that, future published file updates use the new update screen. The old 2.2.0 update checker cannot install this new updater itself.
+
+The full installer is also available for new PCs and repairs. Windows 10/11, 64-bit. QuietPlay is still not Windows Authenticode-signed; its release-key signatures do not replace Windows publisher signing or bypass Windows security.
+
+Only updates published with matching packages and the trusted QuietPlay release signature can be applied. The updater does not create future releases by itself. The OBS appearance editor remains unreleased.
+
+[User guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/USER_GUIDE.md#updates-and-help) · [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues)
+
+---
+
 # QuietPlay 2.2.1
 
 QuietPlay 2.2.1 adds complete playlists and more music discovery.

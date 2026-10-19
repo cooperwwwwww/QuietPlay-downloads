@@ -166,7 +166,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.1 download**:
+appearance editor is implemented in development, **not in the 2.2.2 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -194,24 +194,18 @@ audio file are different actions. Read confirmation dialogs carefully.
 
 ## How Do I Get Update News?
 
-In the current **2.2.1** download, open **Settings > Updates > Check for updates**.
-It checks the official GitHub releases; **Official downloads** opens the release
-page so you can get the Windows installer. Run it over the existing installation;
-you do not need to uninstall the app first.
+**2.2.2 and later:** open **Settings > Updates > Check for updates**. Background
+checks also show a notice. Choose **Download changed files**, then **Update and
+restart** and approve. The official updater downloads a matching changed-file
+package, verifies its signed manifest and hashes, backs up the old files and
+checks startup. Failed or interrupted updates restore the previous app.
 
-A user-approved **Update now** button and in-app notification are in development,
-but are **not included in the current download**. That flow will download and
-check the official installer, then run a quiet upgrade after you approve it.
-Windows security warnings and blocks will still apply. Signing remains a separate
-distribution improvement, not a reason to turn off those protections.
+**2.2.0** needs one manual 2.2.2 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.2 release to download about
+23 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
+installations can use the full setup. Windows security checks remain enabled.
 
-The first release with that updater will need a one-time manual install. It will
-still download the full installer; smaller delta updates are not implemented.
-No update starts installing just because you checked for one.
-
-You can also check the
-[Releases page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
-and [changelog](CHANGELOG.md), or use GitHub's Watch menu for release notifications.
+[Full update guide](USER_GUIDE.md#updates-and-help).
 
 ## Can Other People Change the App or See My Music Here?
 
