@@ -127,16 +127,15 @@ you have permission to download.
 
 ## Can I Download a Whole Playlist?
 
-In the current 2.2.0 download, open the download panel (cloud icon at the top),
-paste a public Spotify playlist or album link there, optionally choose a
-destination playlist, and start the download. This also works around the
-missing collection-download button in the main search bar.
+Yes. In **2.2.1**, paste a public Spotify playlist or album link into the
+main search bar to see every returned song, then choose **Download all**.
+For a specific destination playlist, use the download panel (cloud icon at the
+top). Individual tracks can fail; completed downloads are kept.
+[Download guide](USER_GUIDE.md#download-a-complete-playlist-or-album).
 
-A dedicated **Download playlist** / **Download album** action in the main search
-bar, plus a prefilled **Choose playlist…** flow, is implemented in development
-but **not yet included in the public installer**. Search preview limits do not
-limit full collection jobs. Unavailable tracks can fail individually; completed
-tracks remain available. [Download guide](USER_GUIDE.md#download-a-complete-playlist-or-album).
+Discover also offers full **50–60-song personalized playlists** when enough
+matches are available, with **Download & save** for the whole playlist.
+[Personalized playlist guide](USER_GUIDE.md#personalized-playlists).
 
 ## Why Is a Genre or Cover Still Missing or Incorrect?
 
@@ -167,7 +166,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.0 download**:
+appearance editor is implemented in development, **not in the 2.2.1 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -180,10 +179,11 @@ dislike, which songs you play one after another, and the time of day you
 listen. Nothing about your listening is uploaded. Dislike a song, or review
 **Often skipped** in Discover, to steer them.
 
-**New from your artists** is the only part that looks online: it sends the names
-of your most-played artists (not your songs or history) to Apple's public music
-catalog to find songs you don't have. Turn it off in Settings > Search &
-Downloads > **Suggest new songs**.
+Online recommendations send the names of your most-played artists to Deezer's
+and Apple's public catalogs to find new songs and related artists. Ranking and
+playlist building happen on your PC. Plays, completions, likes, recent listening,
+skips and dislikes influence picks, with artist variety and daily ordering.
+Turn online suggestions off in Settings > Search & Downloads > **Suggest new songs**.
 
 ## Will Updating Delete My Library?
 
@@ -194,7 +194,7 @@ audio file are different actions. Read confirmation dialogs carefully.
 
 ## How Do I Get Update News?
 
-In the current **2.2.0** download, open **Settings > Updates > Check for updates**.
+In the current **2.2.1** download, open **Settings > Updates > Check for updates**.
 It checks the official GitHub releases; **Official downloads** opens the release
 page so you can get the Windows installer. Run it over the existing installation;
 you do not need to uninstall the app first.

@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.1** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -89,10 +89,9 @@ lookups supply songs and related artists for online recommendations.
 - **Dislike** keeps a song out of shuffle, autoplay and mixes. **Often skipped**
   in Discover lists songs you keep skipping.
 
-### Personalized Playlists (Unreleased)
+### Personalized Playlists
 
-These improvements are in the development build and **not included in the
-current 2.2.0 installer**.
+Available in QuietPlay **2.2.1**.
 
 1. Open **Discover → Playlists picked for you**. QuietPlay ranks recommendations
    from your plays, completed listens, likes, recent listening, skips and
@@ -179,18 +178,15 @@ at the top) shows progress and lets you cancel.
 
 ### Download a Complete Playlist or Album
 
-**Current 2.2.0 download:** open the download panel using the cloud icon at the
-top, paste a public Spotify playlist or album link into its input, choose a
-destination playlist if wanted, and start the download. If pasting into the
-main search bar does not show a collection-download button, use this panel.
-Individual tracks can fail; finished ones are kept.
+Paste a public Spotify playlist or album link into the main search bar to
+see the complete returned song list. Choose **Download all** to queue the full
+collection, or **Download** beside one song. Collection links are not truncated
+by the short text-search or metadata preview limits. Supported Spotify URIs
+and short links work too.
 
-**In development, not in 2.2.0:** paste a public Spotify playlist or album
-link into the main search bar to see the complete returned song list. Choose
-**Download all** to queue the full collection, or **Download** beside one song.
-Collection links are not truncated by the short text-search or metadata preview
-limits. Supported Spotify URIs and short links work too. For a specific local
-playlist destination, use the existing download panel.
+For a specific local playlist destination, open the download panel using the
+cloud icon at the top, paste the link and choose the destination playlist.
+Individual tracks can fail; finished downloads are kept.
 
 Downloads use the bundled spotDL companion: Spotify provides the song details
 and the audio is matched from other providers. It does not download protected
@@ -226,7 +222,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.0 installer**. The existing download still has the basic
+in the current 2.2.1 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -281,7 +277,7 @@ them off there too. Press **F1** to see every shortcut.
 
 ## Updates and Help
 
-### Update the Current 2.2.0 App
+### Update the Current 2.2.1 App
 
 1. Open **Settings → Updates → Check for updates**.
 2. If a newer version is available, choose **Official downloads**.
@@ -291,7 +287,7 @@ them off there too. Press **F1** to see every shortcut.
 
 ### In Development: Update From Inside QuietPlay
 
-This is **not included in the current 2.2.0 download**. The planned flow is an
+This is **not included in the current 2.2.1 download**. The planned flow is an
 in-app notification and an **Update now** button, followed by your approval.
 QuietPlay will check the downloaded installer's published SHA-256 and size, then
 start a quiet upgrade. Windows security prompts and blocks remain in effect.
@@ -307,4 +303,5 @@ For problems, **Settings → Advanced → Diagnostics → Copy summary** copies 
 summary without personal file paths. Then
 [report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
 or [ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml).
+
 

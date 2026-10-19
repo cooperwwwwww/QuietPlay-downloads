@@ -12,18 +12,15 @@ The redesigned app, Discover mixes, radio and autoplay from your own listening,
 listening stats, suggestions from your artists, duplicate and missing-song
 tools, playlist tidy-up, faster typo-tolerant search, crossfade, global shortcuts,
 and artist-based genre review and recommendations.
+Version **2.2.1** adds expanded Discover recommendations, full 50–60-song
+personalized playlists, complete playlist search and Download all.
 See the [changelog](CHANGELOG.md).
 
 ## Next
 
 - Finish packaged upgrade checks for the user-approved GitHub **Update now** flow.
-  The implementation is in development, not in the current 2.2.0 download.
-- Package and verify expanded Discover recommendations and full **50–60-song
-  personalized playlists**, including the single-job **Download & save** flow.
-  The development build has focused recommendation, batch-download and
-  interface checks; these features are not in the current 2.2.0 installer.
-- Package complete playlist search, **Download all**, and the new OBS overlay
-  appearance editor, with installer and upgrade checks before publication.
+  The implementation is in development, not in the current 2.2.1 download.
+- Package the new OBS overlay appearance editor and complete its installer checks.
 - Gapless playback between songs.
 - Bringing the 2.0 interface to Mac and Linux.
 

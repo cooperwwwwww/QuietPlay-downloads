@@ -1,3 +1,22 @@
+# QuietPlay 2.2.1
+
+QuietPlay 2.2.1 adds complete playlists and more music discovery.
+
+- Search a Spotify playlist or album link to see every returned song, with **Download all**.
+- Discover builds personalized playlists of **50–60 unique songs** from your listening habits when enough matches are available.
+- Browse more recommended songs, explore related artists, preview tracks, and **Download & save** an entire recommended playlist as one job.
+- App and installer labels now show **2.2.1**.
+
+**Windows 10/11, 64-bit.** Download `QuietPlay-2.2.1-Windows-Setup.exe` below and run it over the existing installation. Normal upgrades keep your music, playlists, likes, history and settings. WebView2 installation needs internet only if the runtime is missing. The optional VB-CABLE driver archive is included for OBS audio routing.
+
+Recommendations depend on listening history and catalog availability. Downloads use catalog metadata and matching audio providers; only save recordings you have permission to download. This release does not include the unreleased OBS appearance editor or in-app Update now flow.
+
+The installer is unsigned. Compare its SHA-256 against `SHA256SUMS.txt`. Follow the repository's Windows security notice if Windows displays a warning.
+
+[User guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/USER_GUIDE.md) · [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues)
+
+---
+
 # QuietPlay 2.2.0
 
 Genres you can trust, recommendations from the real world, and a steadier

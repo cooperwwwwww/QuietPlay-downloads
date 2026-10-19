@@ -2,12 +2,12 @@
 
 **A music player for the songs on your PC, that learns what you like.**
 
-QuietPlay 2.2 is a redesigned Windows app: a clean black-and-grey interface,
+QuietPlay 2.2.1 is a redesigned Windows app: a clean black-and-grey interface,
 synced lyrics, smart mixes and radio built only from your own listening, your
 listening stats, playlists, a mini player, Windows media controls and OBS
 streaming tools. No account, no subscription and no upload of what you play.
 
-**[Download QuietPlay 2.2 for Windows](#get-quietplay)** &nbsp; / &nbsp;
+**[Download QuietPlay 2.2.1 for Windows](#get-quietplay)** &nbsp; / &nbsp;
 **[Install guide](#install-quietplay)** &nbsp; / &nbsp;
 **[What's new](CHANGELOG.md)** &nbsp; / &nbsp;
 **[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
@@ -21,16 +21,16 @@ streaming tools. No account, no subscription and no upload of what you play.
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Latest release: QuietPlay 2.2.0** (October 2026)
+**Latest release: QuietPlay 2.2.1** (October 2026)
 
 | Download | For | File |
 | --- | --- | --- |
-| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.0/QuietPlay-2.2.0-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.0-Windows-Setup.exe` |
+| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.1/QuietPlay-2.2.1-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.1-Windows-Setup.exe` |
 
-[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.0) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.1) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
-**Mac, Linux and Chromebook:** QuietPlay 2.2 is Windows-only. The older
+**Mac, Linux and Chromebook:** QuietPlay 2.2.1 is Windows-only. The older
 experimental **1.54.1 Beta** packages are still available on its
 [release page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.1-development).
 See the [platform guide](PLATFORMS.md).
@@ -43,11 +43,11 @@ online search and downloads, not for playing your songs.
 ## Install QuietPlay
 
 1. Select **Download for Windows** above. The file is
-   `QuietPlay-2.2.0-Windows-Setup.exe`.
+   `QuietPlay-2.2.1-Windows-Setup.exe`.
 2. Open it. Windows may show a SmartScreen warning because QuietPlay is not
    code-signed yet; read the [security notice](#windows-security-notice).
-3. Follow setup. The optional VB-CABLE driver is only for separate OBS audio;
-   leave it unchecked for normal listening.
+3. Follow setup. The optional VB-CABLE driver archive is included for separate
+   OBS audio. Normal listening does not need the driver.
 4. Open **QuietPlay** from the desktop or Start menu.
 
 Upgrading from 1.x keeps your library, playlists, likes, listening history and
@@ -86,7 +86,7 @@ recordings you have permission to save.
 | | |
 | --- | --- |
 | **Home** | Your recent rotation, mixes made for you, and your whole library with genre filter and sorting. |
-| **Discover** | Made for you, time-of-day mix, On repeat, Because you played…, Forgotten favorites, Deep cuts, genre mixes, plus **Artists you might like** (picked from what listeners of your favorite artists also play) and **New from your artists**, with 30-second previews. |
+| **Discover** | Personalized 50–60-song playlists with previews and Download & save, expanded online recommendations with Show more, Made for you, time-of-day mix, On repeat, Because you played…, Forgotten favorites, Deep cuts, genre mixes, plus **Artists you might like** (picked from what listeners of your favorite artists also play) and **New from your artists**, with 30-second previews. |
 | **Radio and autoplay** | Song radio and artist mixes use the songs you actually play after each other. When a list ends, autoplay keeps going with similar songs. Smart shuffle never repeats an artist back to back. |
 | **Your listening** | Listening time, top songs, artists and genres, minutes per day, favorite hour and streak, for 7 days, 30 days, a year or all time. Every song has its own listening stats. |
 | **Recently played** | Every play, grouped by day, with what you finished and what you skipped. |
@@ -111,21 +111,23 @@ It does not download protected Spotify audio or give you rights to a recording;
 only save music you have permission to download.
 [Download guide](USER_GUIDE.md#search-and-download-music).
 
+## New in 2.2.1
+
+- **Full personalized playlists:** Discover builds playlists of **50–60 different
+  songs** from your listening habits when enough recommendations are available.
+  Open every song, preview tracks, or **Download & save** the whole playlist.
+- **More recommendations:** a larger pool of related artists, picks from your
+  favorite artists, and **Show more** for additional song suggestions.
+- **Complete playlist search:** paste a Spotify playlist or album link to see
+  all returned songs. **Download all** queues the complete collection.
+
+[Personalized playlist guide](USER_GUIDE.md#personalized-playlists) |
+[Release notes](CHANGELOG.md#221---full-playlists-and-more-discovery)
+
 ## In Development
 
-These improvements are implemented in the development build, **not included in
-the current 2.2.0 installer**. They will need a new, verified installer release.
+The following features are **not included in the 2.2.1 installer**:
 
-- **Full personalized playlists:** Discover builds playlists of **50–60
-  different songs** from your plays, completed listens, likes, skips and recent
-  listening. A larger pool of related artists brings in new music alongside
-  songs from your favorites. Open a playlist to see every song, preview tracks,
-  or **Download & save** the whole playlist as one cancellable download job.
-  [Personalized playlist guide](USER_GUIDE.md#personalized-playlists-unreleased).
-- **Complete playlist search:** paste a Spotify playlist or album link into
-  search to see all returned songs, with **Download all** for the collection.
-  Playlist links no longer use the short song-search or metadata preview limits;
-  ordinary text searches keep their configured result limit.
 - **Custom OBS overlays:** six visual color pickers, background transparency,
   fonts, artwork placement, borders, sizing, visible details and presets. A live
   preview uses the same renderer as OBS, and small sources scale to fit.
@@ -149,7 +151,7 @@ Nothing here requires an account or uploads your music. Follow the
 
 ## Updates and Support
 
-**Available now in 2.2.0:** open **Settings → Updates → Check for updates** to
+**Available now in 2.2.1:** open **Settings → Updates → Check for updates** to
 check the official GitHub releases. When a newer version is available, open
 **Official downloads** and run its Windows installer over the existing app.
 You do not need to uninstall QuietPlay first. Normal upgrades keep your music,

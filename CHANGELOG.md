@@ -1,39 +1,8 @@
 # QuietPlay Changes
 
-## Unreleased - Personalized Playlists, Downloads and OBS Customization
+## Unreleased - OBS Customization and In-App Updates
 
-These changes are in development and are **not part of the downloadable 2.2.0
-release**. A new installer will be published only after packaged upgrade checks.
-
-### Personalized Discovery
-
-- A larger recommendation pool combines songs by related artists with music
-  from the artists you already play most. Ranking uses the local taste model:
-  completed plays, likes and recent listening help; skips and dislikes reduce
-  affinity. Existing owned-song and dismissed-suggestion filters remain.
-- Full playlists contain **50–60 different songs** when enough matches are
-  available: Your discovery mix, New horizons, More from your favorites,
-  Because you play… and The next chapter.
-- Daily variation, artist-diversity penalties and an overlap check keep the
-  playlists varied. Sparse results are not padded with repeated songs.
-- Every playlist opens its complete song list, with catalog previews and
-  **Download & save**. A whole playlist uses one cancellable download job and
-  completed songs are added to a new local playlist.
-- **Show more** reveals further song recommendations. **Refresh recommendations**
-  updates the candidate pool; normal catalog results are cached for six hours.
-- Focused checks cover ranking changes, unique songs, artist variety, complete
-  playlist views, batch submission, retry and packaged-app startup. Public
-  installer and upgrade verification are still required before release.
-
-### Playlist Downloads
-
-- Spotify playlist and album links show their complete returned song list
-  in search, including supported Spotify URIs and short links.
-- **Download all** queues the full collection. Collection results are no longer
-  truncated by the song-search or metadata preview limits.
-- Individual downloads share their queued state with the collection action.
-  Duplicate submissions are guarded, and failed requests can be retried.
-- The existing download panel still supports choosing a destination playlist.
+These features are not included in 2.2.1.
 
 ### OBS Overlay Appearance
 
@@ -62,6 +31,43 @@ release**. A new installer will be published only after packaged upgrade checks.
 
 The first release with the updater needs one manual install. Subsequent upgrades
 will use the full installer in the background; delta downloads are not implemented.
+
+## 2.2.1 - Full Playlists and More Discovery
+
+Released October 19, 2026 for Windows 10/11 (64-bit).
+
+### Personalized Discovery
+
+- A larger recommendation pool combines songs by related artists with music
+  from the artists you already play most. Ranking uses the local taste model:
+  completed plays, likes and recent listening help; skips and dislikes reduce
+  affinity. Existing owned-song and dismissed-suggestion filters remain.
+- Full playlists contain **50–60 different songs** when enough matches are
+  available: Your discovery mix, New horizons, More from your favorites,
+  Because you play… and The next chapter.
+- Daily variation, artist-diversity penalties and an overlap check keep the
+  playlists varied. Sparse results are not padded with repeated songs.
+- Every playlist opens its complete song list, with catalog previews and
+  **Download & save**. A whole playlist uses one cancellable download job and
+  completed songs are added to a new local playlist.
+- **Show more** reveals further song recommendations. **Refresh recommendations**
+  updates the candidate pool; normal catalog results are cached for six hours.
+
+### Playlist Downloads
+
+- Spotify playlist and album links show their complete returned song list
+  in search, including supported Spotify URIs and short links.
+- **Download all** queues the full collection. Collection results are no longer
+  truncated by the song-search or metadata preview limits.
+- Individual downloads share their queued state with the collection action.
+  Duplicate submissions are guarded, and failed requests can be retried.
+- The existing download panel still supports choosing a destination playlist.
+
+### Packaging and Version Labels
+
+- App, setup and download links consistently identify version 2.2.1.
+- Installer upgrades the existing app and keeps user data outside the app folder.
+- Optional VB-CABLE driver is supplied as an archive; normal playback needs no driver.
 
 ## 2.2.0 - Genres by Artist and Real Recommendations
 
