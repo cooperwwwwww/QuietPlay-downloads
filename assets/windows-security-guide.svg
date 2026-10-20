@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+ <title id="title">QuietPlay: the Windows protected your PC warning</title>
+ <desc id="desc">Illustrated guide. Verify the official installer, choose More info to inspect it, and choose Run anyway only if you trust the file and Windows offers it. Stop for Smart App Control, malware or administrator blocks.</desc>
+ <rect width="1200" height="650" rx="20" fill="#101216"/>
+ <g font-family="Segoe UI,Arial,sans-serif" fill="#f5f5f7">
+  <text x="38" y="45" font-size="14" fill="#aab0bc" letter-spacing="2">QUIETPLAY · WINDOWS INSTALL HELP</text>
+  <text x="38" y="88" font-size="32" font-weight="650">Seeing “Windows protected your PC”?</text>
+  <text x="38" y="119" font-size="18" fill="#b9bfca">An unrecognized-app warning is a prompt to check the download, not proof that it is safe.</text>
+  <rect x="38" y="151" width="545" height="325" rx="12" fill="#075aaa"/>
+  <rect x="605" y="151" width="557" height="325" rx="12" fill="#075aaa"/>
+  <circle cx="69" cy="180" r="17" fill="#fff"/><text x="64" y="187" font-size="20" fill="#075aaa" font-weight="700">1</text>
+  <text x="98" y="187" font-size="19" font-weight="600">Inspect the warning</text>
+  <text x="62" y="234" font-size="28" font-weight="600">Windows protected your PC</text>
+  <text x="62" y="273" font-size="17">First, verify the download came from</text>
+  <text x="62" y="298" font-size="17">QuietPlay’s official GitHub release.</text>
+  <rect x="53" y="324" width="120" height="42" rx="5" fill="none" stroke="#f1d286" stroke-width="3"/>
+  <text x="70" y="351" font-size="18" text-decoration="underline">More info</text>
+  <text x="62" y="400" font-size="16" fill="#d2e6fa">Choose More info to see the file details.</text>
+  <rect x="416" y="420" width="138" height="36" fill="#e8e8ea"/><text x="444" y="444" fill="#222" font-size="17">Don’t run</text>
+  <circle cx="637" cy="180" r="17" fill="#fff"/><text x="631" y="187" font-size="20" fill="#075aaa" font-weight="700">2</text>
+  <text x="666" y="187" font-size="19" font-weight="600">Check the file before deciding</text>
+  <text x="630" y="234" font-size="28" font-weight="600">Windows protected your PC</text>
+  <text x="630" y="277" font-size="15">App: QuietPlay-2.2.3-Windows-Setup.exe</text>
+  <text x="630" y="306" font-size="16">Publisher: Unknown publisher</text>
+  <text x="630" y="346" font-size="17">QuietPlay is not Windows code-signed yet.</text>
+  <text x="630" y="375" font-size="17">Only continue if you trust this specific file.</text>
+  <rect x="832" y="418" width="145" height="40" fill="#e8e8ea" stroke="#f1d286" stroke-width="3"/><text x="855" y="444" fill="#222" font-size="17">Run anyway</text>
+  <rect x="993" y="420" width="140" height="36" fill="#e8e8ea"/><text x="1020" y="444" fill="#222" font-size="17">Don’t run</text>
+  <rect x="38" y="499" width="1124" height="91" rx="10" fill="#25252a"/>
+  <text x="60" y="531" font-size="19" font-weight="650" fill="#f1d286">No “Run anyway”, or a different security block?</text>
+  <text x="60" y="560" font-size="17">Stop for Smart App Control, malware detections or administrator restrictions. Keep protections on.</text>
+  <text x="38" y="624" font-size="13" fill="#aab0bc">ILLUSTRATION, NOT A WINDOWS SCREENSHOT · Wording and available buttons vary by Windows version and policy.</text>
+ </g>
+</svg>
