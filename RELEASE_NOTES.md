@@ -1,3 +1,20 @@
+# QuietPlay 2.2.4
+
+QuietPlay 2.2.4 gives **Home** one clear **Made for you** box and makes recommended playlist downloads reliable.
+
+- **Made for you** brings together your local mixes, new songs and full 50–60-song recommended playlists. Your songs sit right below, with **Play** and **Shuffle** where they were. In your rotation is removed.
+- Recommendations stay loaded when you switch tabs instead of reloading each time, and rows remember where you scrolled. Click a recommended song to preview it.
+- **Fixed:** recommended playlist downloads failing with "Could not get client token". Playlists use the song details QuietPlay already has, keep their order, and continue if one song cannot be found.
+- Redesigned **Downloads** panel, **Update center** and official updater window.
+
+**Already on 2.2.2 or 2.2.3:** open **Settings → Updates → Check for updates → Download changed files → Update and restart**. This release downloads about **40.1 MB** of changed files. Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.2 MB**. **On 2.2.0:** install `QuietPlay-2.2.4-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.3
 
 QuietPlay 2.2.3 adds compact, always-visible recommendations to **Home**, between **Made for you** and your library.

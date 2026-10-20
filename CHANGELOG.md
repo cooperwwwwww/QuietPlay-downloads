@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.3.
+These features are not included in 2.2.4.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,26 @@ These features are not included in 2.2.3.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.4 - Made for You
+
+Released October 20, 2026 for Windows 10/11 (64-bit).
+
+- Home has one **Made for you** box with your local mixes, new songs and full
+  50–60-song recommended playlists. In your rotation is removed so your songs
+  sit right below, with Play and Shuffle in their usual place.
+- Recommendations stay loaded when you switch tabs and refresh on their own only
+  after 30 minutes or when you press refresh. Rows remember their scroll
+  position; queued and dismissed songs keep their state.
+- Click a recommended song to preview it. Discover playlist cards are tidier.
+- Fixed recommended playlist downloads failing with "Could not get client token".
+  Playlists use the song details QuietPlay already has instead of looking each
+  song up again, keep their order, and continue past a song that cannot be found.
+  Missing song codes no longer leave downloaded files without tags.
+- Redesigned Downloads panel (active and finished downloads, counts, progress),
+  Update center (one status and one main action) and official updater window.
+- Signed changed-file packages support direct upgrades from 2.2.1, 2.2.2 and
+  2.2.3 (about 40 MB).
 
 ## 2.2.3 - Home Recommendations
 

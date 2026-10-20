@@ -71,6 +71,6 @@ for listener ideas. Versioned release notes are the source of truth for what
 has actually shipped.
 
 
-Version **2.2.3** adds compact, always-visible Home recommendations with smooth
-scroll arrows, song downloads and full 50–60-song playlists, while keeping local
-mixes and library access.
+Version **2.2.4** brings your mixes, new songs and full 50–60-song playlists
+together in one Made for you box on Home, keeps recommendations loaded between
+tabs, fixes recommended playlist downloads and redesigns Downloads and updates.
