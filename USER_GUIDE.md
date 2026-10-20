@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.2** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.3** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -54,6 +54,12 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
 - **Home** shows your rotation, mixes made for you and your whole library.
   Filter by genre and sort by recently added, title, artist and more.
+  Below your local mixes, **Songs recommended for you** and **Playlists picked
+  for you** stay visible with no dropdown. Use left/right arrows to scroll
+  each shelf; your rotation and local mixes also have scroll arrows.
+  **See all recommendations** opens Discover. Open a recommended playlist to
+  see every song, preview, download a song, or **Download & save** the full mix.
+  Local rotation and mixes remain playable without another download.
 - **Search** (Ctrl+F or the search bar) finds songs, artists, albums and
   playlists, ranks the best matches first, ignores accents and punctuation,
   and shows similar spellings when nothing matches exactly.
@@ -91,9 +97,9 @@ lookups supply songs and related artists for online recommendations.
 
 ### Personalized Playlists
 
-Available in QuietPlay **2.2.1**.
+Available in QuietPlay **2.2.1 and later**; also on Home in **2.2.3**.
 
-1. Open **Discover → Playlists picked for you**. QuietPlay ranks recommendations
+1. Open **Home → Playlists picked for you**, or **Discover → Playlists picked for you**. QuietPlay ranks recommendations
    from your plays, completed listens, likes, recent listening, skips and
    dislikes, then combines them with related-artist catalog results.
 2. Choose a playlist to see its complete list of **50–60 different songs**.
@@ -222,7 +228,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.2 installer**. The existing download still has the basic
+in the current 2.2.3 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -299,11 +305,16 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
+### Updating From 2.2.2 to 2.2.3
+
+Use the update screen above. The download is about **7.9 MB** and reuses the
+unchanged runtime files. No full installer is needed for a healthy 2.2.2 installation.
+
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.2 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.3 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.2 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.3 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 23 MB instead of the full setup. Full setup is also available.
 

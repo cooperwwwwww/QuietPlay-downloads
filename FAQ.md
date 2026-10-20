@@ -166,7 +166,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.2 download**:
+appearance editor is implemented in development, **not in the 2.2.3 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -200,8 +200,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.2 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.2 release to download about
+**2.2.0** needs one manual 2.2.3 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.3 release to download about
 23 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -222,3 +222,11 @@ remove sensitive information before posting.
 
 GitHub requires an account to submit an issue. QuietPlay itself does not require
 an account. Response times and implementation dates are not guaranteed.
+
+## Can Home Recommend Downloads Too?
+
+Yes, in 2.2.3. Compact recommended songs and full playlists stay visible between
+Made for you and your library, with no dropdown. Scroll using the left/right
+arrows. Open a playlist to see all songs and download one song or download and
+save the full mix. **See all recommendations** opens Discover. Your local
+rotation, mixes and library remain playable without another download.

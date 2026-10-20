@@ -70,3 +70,7 @@ See [open feature requests](https://github.com/cooperwwwwww/QuietPlay-downloads/
 for listener ideas. Versioned release notes are the source of truth for what
 has actually shipped.
 
+
+Version **2.2.3** adds compact, always-visible Home recommendations with smooth
+scroll arrows, song downloads and full 50–60-song playlists, while keeping local
+mixes and library access.

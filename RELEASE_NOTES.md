@@ -1,3 +1,21 @@
+# QuietPlay 2.2.3
+
+QuietPlay 2.2.3 adds compact, always-visible recommendations to **Home**, between **Made for you** and your library.
+
+- Your local rotation, Made for you mixes and library remain available to play without another download.
+- **Songs recommended for you** combines new discoveries and more from your favorite artists, using the same listening-based recommendations as Discover.
+- **Playlists picked for you** has complete 50–60-song mixes. Open one to see every song, preview, download a song, or **Download & save** the full playlist.
+- Left/right arrows scroll your rotation, local mixes, recommended songs and recommended playlists, with smooth movement, hover animations, keyboard controls and reduced-motion support.
+- Recommendations stay open with no dropdown. Small cards keep your library within reach. **See all recommendations** opens Discover; **Refresh recommendations** updates the shared selection.
+
+**Already on 2.2.2:** open **Settings → Updates → Check for updates → Download changed files → Update and restart**. This release downloads about **7.9 MB**, replacing five changed files and removing one obsolete app asset. Your music and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **23.1 MB**. **On 2.2.0:** install `QuietPlay-2.2.3-Windows-Setup.exe` once over the existing app to enable future file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and hashes are checked. Windows Authenticode signing is still pending. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.2
 
 QuietPlay 2.2.2 adds the **official changed-file updater**.

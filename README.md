@@ -2,12 +2,12 @@
 
 **A music player for the songs on your PC, that learns what you like.**
 
-QuietPlay 2.2.2 is a redesigned Windows app: a clean black-and-grey interface,
+QuietPlay 2.2.3 is a redesigned Windows app: a clean black-and-grey interface,
 synced lyrics, smart mixes and radio built only from your own listening, your
 listening stats, playlists, a mini player, Windows media controls and OBS
 streaming tools. No account, no subscription and no upload of what you play.
 
-**[Download QuietPlay 2.2.2 for Windows](#get-quietplay)** &nbsp; / &nbsp;
+**[Download QuietPlay 2.2.3 for Windows](#get-quietplay)** &nbsp; / &nbsp;
 **[Install guide](#install-quietplay)** &nbsp; / &nbsp;
 **[What's new](CHANGELOG.md)** &nbsp; / &nbsp;
 **[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
@@ -21,16 +21,16 @@ streaming tools. No account, no subscription and no upload of what you play.
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Latest release: QuietPlay 2.2.2** (October 2026)
+**Latest release: QuietPlay 2.2.3** (October 2026)
 
 | Download | For | File |
 | --- | --- | --- |
-| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.2/QuietPlay-2.2.2-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.2-Windows-Setup.exe` |
+| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.3/QuietPlay-2.2.3-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.3-Windows-Setup.exe` |
 
-[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.2) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.3) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
-**Mac, Linux and Chromebook:** QuietPlay 2.2.2 is Windows-only. The older
+**Mac, Linux and Chromebook:** QuietPlay 2.2.3 is Windows-only. The older
 experimental **1.54.1 Beta** packages are still available on its
 [release page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.1-development).
 See the [platform guide](PLATFORMS.md).
@@ -43,7 +43,7 @@ online search and downloads, not for playing your songs.
 ## Install QuietPlay
 
 1. Select **Download for Windows** above. The file is
-   `QuietPlay-2.2.2-Windows-Setup.exe`.
+   `QuietPlay-2.2.3-Windows-Setup.exe`.
 2. Open it. Windows may show a SmartScreen warning because QuietPlay is not
    code-signed yet; read the [security notice](#windows-security-notice).
 3. Follow setup. The optional VB-CABLE driver archive is included for separate
@@ -85,7 +85,7 @@ recordings you have permission to save.
 
 | | |
 | --- | --- |
-| **Home** | Your recent rotation, mixes made for you, and your whole library with genre filter and sorting. |
+| **Home** | Your recent rotation, local mixes made for you, compact, always-visible recommended songs and full 50–60-song playlists, and your whole library with genre filter and sorting. |
 | **Discover** | Personalized 50–60-song playlists with previews and Download & save, expanded online recommendations with Show more, Made for you, time-of-day mix, On repeat, Because you played…, Forgotten favorites, Deep cuts, genre mixes, plus **Artists you might like** (picked from what listeners of your favorite artists also play) and **New from your artists**, with 30-second previews. |
 | **Radio and autoplay** | Song radio and artist mixes use the songs you actually play after each other. When a list ends, autoplay keeps going with similar songs. Smart shuffle never repeats an artist back to back. |
 | **Your listening** | Listening time, top songs, artists and genres, minutes per day, favorite hour and streak, for 7 days, 30 days, a year or all time. Every song has its own listening stats. |
@@ -111,7 +111,16 @@ It does not download protected Spotify audio or give you rights to a recording;
 only save music you have permission to download.
 [Download guide](USER_GUIDE.md#search-and-download-music).
 
-## New in 2.2.2
+## New in 2.2.3
+
+- **Compact Home recommendations:** songs and full 50–60-song playlists appear
+  between Made for you and your library, always visible with no dropdown.
+  Preview or download a song, or download and save a whole playlist.
+- Left/right arrows scroll your rotation, local mixes, recommended songs and
+  playlists with smooth movement and hover animations. Reduced motion is supported.
+  **See all recommendations** opens Discover's larger selection.
+
+### Official Updater (2.2.2 and Later)
 
 - **Official updater:** signed release manifests, changed-file downloads,
   progress and cancellation, **Update and restart**, startup checks and recovery.
@@ -129,11 +138,11 @@ only save music you have permission to download.
   all returned songs. **Download all** queues the complete collection.
 
 [Personalized playlist guide](USER_GUIDE.md#personalized-playlists) |
-[Release notes](CHANGELOG.md#222---official-changed-file-updater)
+[Release notes](CHANGELOG.md#223---home-recommendations)
 
 ## In Development
 
-The following features are **not included in the 2.2.2 installer**:
+The following features are **not included in the 2.2.3 installer**:
 
 - **Custom OBS overlays:** six visual color pickers, background transparency,
   fonts, artwork placement, borders, sizing, visible details and presets. A live
@@ -155,7 +164,7 @@ Nothing here requires an account or uploads your music. Follow the
 
 ## Updates and Support
 
-**QuietPlay 2.2.2 includes the official file updater.** It checks official stable
+**QuietPlay 2.2.3 includes the official file updater.** It checks official stable
 releases in the background, but downloads and installs only when you ask.
 
 1. Open **Settings → Updates → Check for updates**.
@@ -170,13 +179,13 @@ playlists, history and settings stay in place. This release-key signature is
 separate from Windows Authenticode; the app is still not Windows code-signed,
 and Windows security checks remain enabled.
 
-**Moving from an older build:** version **2.2.0** needs one manual install of
-2.2.2 to enable this updater. Version **2.2.1** can instead download and run
-**[QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.2/QuietPlayUpdater.exe)**
-from the official 2.2.2 release: it downloads about **23 MB** of changed files,
-then offers **Update and restart**. After reaching 2.2.2, use the app's update
-screen for future published file updates. A full setup remains available for
-new PCs, repairs or versions without a matching update package.
+**Already on 2.2.2:** use the app's update screen to reach 2.2.3 with about
+**7.9 MB** of changed files. Version **2.2.1** can run
+**[QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.3/QuietPlayUpdater.exe)**
+from the official 2.2.3 release for a direct update of about **23.1 MB**.
+Version **2.2.0** needs one manual 2.2.3 setup to enable future file updates.
+A full setup remains available for new PCs, repairs or versions without a
+matching update package.
 
 | Need help with | Where to go |
 | --- | --- |

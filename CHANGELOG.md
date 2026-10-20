@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.2.
+These features are not included in 2.2.3.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,22 @@ These features are not included in 2.2.2.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.3 - Home Recommendations
+
+Released October 20, 2026 for Windows 10/11 (64-bit).
+
+- Home keeps local rotation, Made for you mixes and library, and adds compact,
+  always-visible song and playlist recommendations between the mixes and library.
+- Songs combine fresh discoveries and familiar artists using Discover's ranking.
+  Playlist details retain every one of their 50–60 songs and full-list download
+  and save. See all recommendations opens Discover; Home also has Refresh.
+- Left/right arrows, smooth scrolling and hover animations on local and online
+  shelves. Keyboard scrolling and reduced-motion support are included.
+- Loading, disabled recommendations, refresh errors and sparse history are handled
+  without repeating songs to pad playlists.
+- Signed changed-file packages support direct upgrades from 2.2.1 and 2.2.2.
+  The 2.2.2 package is about 7.9 MB; the official updater is reused unchanged.
 
 ## 2.2.2 - Official Changed-File Updater
 
