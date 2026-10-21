@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.4.
+These features are not included in 2.2.7.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,23 @@ These features are not included in 2.2.4.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.7 - Downloads That Keep Trying
+
+Released October 21, 2026 for Windows 10/11 (64-bit).
+
+- If a song cannot be downloaded from your chosen source, QuietPlay tries
+  YouTube Music, YouTube, SoundCloud and Bandcamp, then a broader YouTube
+  search, before reporting it. Songs already saved are not fetched again, and the
+  Downloads panel shows which source is being tried.
+- Fixed the YouTube Music source, which could not start in the packaged app.
+- When Spotify cannot provide song details, searches and Spotify song links use
+  Apple's public music catalogue. "Artist - Title" searches only use an exact
+  match and otherwise keep your words; free-text searches prefer the original
+  recording by the artist you named over covers and remixes. Album and playlist
+  links still need Spotify and now say so clearly.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4
+  (about 24.8 MB from 2.2.4).
 
 ## 2.2.4 - Made for You
 

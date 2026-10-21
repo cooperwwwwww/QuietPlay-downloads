@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.4 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.7 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.4 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.7 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.4-Windows-Setup.exe**
-   from [the official 2.2.4 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.4).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.7-Windows-Setup.exe**
+   from [the official 2.2.7 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.7).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -174,7 +174,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.4 download**:
+appearance editor is implemented in development, **not in the 2.2.7 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -209,8 +209,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.4 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.4 release to download about
+**2.2.0** needs one manual 2.2.7 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.7 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -232,9 +232,22 @@ remove sensitive information before posting.
 GitHub requires an account to submit an issue. QuietPlay itself does not require
 an account. Response times and implementation dates are not guaranteed.
 
+## What Happens If a Download Fails?
+
+QuietPlay 2.2.7 tries again elsewhere. If a song cannot be downloaded from your
+chosen source, it tries YouTube Music, YouTube, SoundCloud and Bandcamp, then a
+broader search. Songs that already downloaded are not fetched again, and the
+Downloads panel shows which source is being tried. A song is only reported as
+failed when no source has it.
+
+If Spotify cannot provide song details (for example "Could not get client
+token"), searches and Spotify song links use Apple's public music catalogue
+instead. Album and playlist links still need Spotify; try again later or search
+for the songs by name.
+
 ## Can Home Recommend Downloads Too?
 
-Yes. In 2.2.4, Home has one **Made for you** box with your local mixes, new
+Yes. Since 2.2.4, Home has one **Made for you** box with your local mixes, new
 songs and full 50–60-song recommended playlists, with your songs right below.
 Click a recommended song to preview it, or use its download button. Open a
 playlist to see all songs and download one song or download and save the full

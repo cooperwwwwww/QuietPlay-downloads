@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.4** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.7** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -108,7 +108,7 @@ lookups supply songs and related artists for online recommendations.
 
 ### Personalized Playlists
 
-Available in QuietPlay **2.2.1 and later**; also on Home since **2.2.4**.
+Available in QuietPlay **2.2.1 and later**; also on Home since **2.2.3**.
 
 1. Open **Home → Made for you → Playlists for you**, or **Discover → Playlists picked for you**. QuietPlay ranks recommendations
    from your plays, completed listens, likes, recent listening, skips and
@@ -211,6 +211,15 @@ Spotify audio. Only save music you have permission to download. File format,
 quality, provider, lyrics and artwork options are in Settings → Search &
 Downloads, with more under **Show advanced**.
 
+### If a Download Fails
+
+If a song cannot be downloaded from your chosen source, QuietPlay tries
+YouTube Music, YouTube, SoundCloud and Bandcamp, then a broader search, before
+reporting it as failed. When Spotify cannot provide song details, searches and
+Spotify song links use Apple's public music catalogue instead.
+Songs that already downloaded are not fetched again. Album and playlist links
+still need Spotify; if it is unavailable, try again later or search by name.
+
 ## Audio and Mini Player
 
 - Bass, Mid and Treble sliders change sound live. Normalization and
@@ -239,7 +248,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.4 installer**. The existing download still has the basic
+in the current 2.2.7 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -317,17 +326,17 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating From 2.2.2 or 2.2.3 to 2.2.4
+### Updating to 2.2.7
 
-Use the update screen above. The download is about **40.1 MB** and reuses the
-unchanged runtime files. No full installer is needed for a healthy 2.2.2 or
-2.2.3 installation.
+Use the update screen above. From **2.2.4** the download is about **24.8 MB**;
+from **2.2.2 or 2.2.3** it is about **40.1 MB**. It reuses the unchanged runtime
+files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.4 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.7 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.4 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.7 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

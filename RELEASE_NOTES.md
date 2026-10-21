@@ -1,3 +1,20 @@
+# QuietPlay 2.2.7
+
+QuietPlay 2.2.7 makes downloads keep trying when a source fails.
+
+- If a song cannot be downloaded from your chosen source, QuietPlay now tries **YouTube Music**, **YouTube**, **SoundCloud** and **Bandcamp**, then a broader search, before reporting it as failed. Songs that already downloaded are not fetched again, and the Downloads panel shows which source is being tried.
+- **Fixed:** the YouTube Music source could not start in earlier versions.
+- **Works when Spotify is down:** if Spotify cannot provide song details (for example "Could not get client token"), searches and Spotify song links use Apple's public music catalogue instead, preferring the original recording over covers and remixes. Album and playlist links still need Spotify.
+- Includes everything from 2.2.4: the **Made for you** Home, reliable recommended playlist downloads and the redesigned Downloads, Update center and updater.
+
+**Already on 2.2.4:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **24.8 MB**). **On 2.2.2 or 2.2.3:** the same steps, with **Download changed files** (about **40.1 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.2 MB**. **On 2.2.0:** install `QuietPlay-2.2.7-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.4
 
 QuietPlay 2.2.4 gives **Home** one clear **Made for you** box and makes recommended playlist downloads reliable.

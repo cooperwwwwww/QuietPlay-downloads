@@ -2,12 +2,12 @@
 
 **A music player for the songs on your PC, that learns what you like.**
 
-QuietPlay 2.2.4 is a redesigned Windows app: a clean black-and-grey interface,
+QuietPlay 2.2.7 is a redesigned Windows app: a clean black-and-grey interface,
 synced lyrics, smart mixes and radio built only from your own listening, your
 listening stats, playlists, a mini player, Windows media controls and OBS
 streaming tools. No account, no subscription and no upload of what you play.
 
-**[Download QuietPlay 2.2.4 for Windows](#get-quietplay)** &nbsp; / &nbsp;
+**[Download QuietPlay 2.2.7 for Windows](#get-quietplay)** &nbsp; / &nbsp;
 **[Install guide](#install-quietplay)** &nbsp; / &nbsp;
 **[What's new](CHANGELOG.md)** &nbsp; / &nbsp;
 **[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
@@ -18,21 +18,21 @@ streaming tools. No account, no subscription and no upload of what you play.
 
 ![QuietPlay 2.2.4 Home: one Made for you box with your mixes, new songs and full recommended playlists, with your songs right below](assets/quietplay-2.2.4-home.jpg)
 
-*QuietPlay 2.2.4, shown with fictional demonstration songs and artwork. Your library starts with your own music.*
+*QuietPlay, shown with fictional demonstration songs and artwork. Your library starts with your own music.*
 
 ## Get QuietPlay
 
 <!-- release-summary:start -->
-**Latest release: QuietPlay 2.2.4** (October 2026)
+**Latest release: QuietPlay 2.2.7** (October 2026)
 
 | Download | For | File |
 | --- | --- | --- |
-| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.4/QuietPlay-2.2.4-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.4-Windows-Setup.exe` |
+| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.7/QuietPlay-2.2.7-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.7-Windows-Setup.exe` |
 
-[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.4) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.7) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 <!-- release-summary:end -->
 
-**Mac, Linux and Chromebook:** QuietPlay 2.2.4 is Windows-only. The older
+**Mac, Linux and Chromebook:** QuietPlay 2.2.7 is Windows-only. The older
 experimental **1.54.1 Beta** packages are still available on its
 [release page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.1-development).
 See the [platform guide](PLATFORMS.md).
@@ -45,7 +45,7 @@ online search and downloads, not for playing your songs.
 ## Install QuietPlay
 
 1. Select **Download for Windows** above. The file is
-   `QuietPlay-2.2.4-Windows-Setup.exe`.
+   `QuietPlay-2.2.7-Windows-Setup.exe`.
 2. Open it. Windows may show a SmartScreen warning because QuietPlay is not
    code-signed yet; read the [security notice](#windows-security-notice).
 3. Follow setup. The optional VB-CABLE driver archive is included for separate
@@ -58,14 +58,14 @@ nothing else to install.
 
 ### Windows Security Notice
 
-QuietPlay **2.2.4 is not Windows code-signed yet**. Microsoft Defender
+QuietPlay **2.2.7 is not Windows code-signed yet**. Microsoft Defender
 SmartScreen may show **Windows protected your PC** when you open the installer.
 An unrecognized-app warning does not prove a download is safe or malicious.
 
 ![Illustrated Windows warning guide: inspect More info, check the file details, and continue only if you trust that file](assets/windows-security-guide.svg)
 
-1. Check that you downloaded **QuietPlay-2.2.4-Windows-Setup.exe** from
-   [this official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.4).
+1. Check that you downloaded **QuietPlay-2.2.7-Windows-Setup.exe** from
+   [this official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.7).
    You can [compare its SHA-256 checksum](FAQ.md#check-the-downloaded-file).
    A matching checksum confirms file identity; it does not prove safety.
 2. On **Windows protected your PC**, select **More info**. Check the filename
@@ -122,6 +122,10 @@ The search bar can also show online results. Downloads use the bundled spotDL
 companion, which reads Spotify metadata and matches audio from other providers.
 It does not download protected Spotify audio or give you rights to a recording;
 only save music you have permission to download.
+If a song cannot be downloaded from your chosen source, QuietPlay tries
+YouTube Music, YouTube, SoundCloud and Bandcamp, then a broader search, before
+reporting it as failed. When Spotify cannot provide song details, searches and
+Spotify song links use Apple's public music catalogue instead.
 [Download guide](USER_GUIDE.md#search-and-download-music).
 
 ## Discover and Full Playlists
@@ -140,7 +144,17 @@ the whole mix. Catalog previews appear when a preview is available.
 
 *All pictures use fictional demonstration data. Click a picture to view it larger.*
 
-## New in 2.2.4
+## New in 2.2.7
+
+- **Downloads that keep trying:** if a song fails on your chosen source,
+  QuietPlay tries YouTube Music, YouTube, SoundCloud and Bandcamp, then a
+  broader search. Only songs that fail everywhere are reported.
+- **Fixed YouTube Music downloads**, which could not start in earlier versions.
+- **Works when Spotify is down:** searches and Spotify song links fall back to
+  Apple's public music catalogue, preferring the original recording over covers
+  and remixes. Album and playlist links still need Spotify.
+
+### New in 2.2.4
 
 - **Made for you on Home:** one box brings together your local mixes, new songs
   and full 50–60-song recommended playlists, with your songs right below.
@@ -171,11 +185,11 @@ the whole mix. Catalog previews appear when a preview is available.
   all returned songs. **Download all** queues the complete collection.
 
 [Personalized playlist guide](USER_GUIDE.md#personalized-playlists) |
-[Release notes](CHANGELOG.md#224---made-for-you)
+[Release notes](CHANGELOG.md#227---downloads-that-keep-trying)
 
 ## In Development
 
-The following features are **not included in the 2.2.4 installer**:
+The following features are **not included in the 2.2.7 installer**:
 
 - **Custom OBS overlays:** six visual color pickers, background transparency,
   fonts, artwork placement, borders, sizing, visible details and presets. A live
@@ -197,7 +211,7 @@ Nothing here requires an account or uploads your music. Follow the
 
 ## Updates and Support
 
-**QuietPlay 2.2.4 includes the official file updater.** It checks official stable
+**QuietPlay 2.2.7 includes the official file updater.** It checks official stable
 releases in the background, but downloads and installs only when you ask.
 
 1. Open **Settings → Updates → Check for updates**.
@@ -213,11 +227,11 @@ playlists, history and settings stay in place. This release-key signature is
 separate from Windows Authenticode; the app is still not Windows code-signed,
 and Windows security checks remain enabled.
 
-**Already on 2.2.2 or 2.2.4:** use the app's update screen to reach 2.2.4 with
-about **40.1 MB** of changed files. Version **2.2.1** can run
-**[QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.4/QuietPlayUpdater.exe)**
-from the official 2.2.4 release for a direct update of about **40.2 MB**.
-Version **2.2.0** needs one manual 2.2.4 setup to enable future file updates.
+**Already on 2.2.4:** use the app's update screen to reach 2.2.7 with about
+**24.8 MB** of changed files. From **2.2.2 or 2.2.3** it is about **40.1 MB**. Version **2.2.1** can run
+**[QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.7/QuietPlayUpdater.exe)**
+from the official 2.2.7 release for a direct update of about **40.2 MB**.
+Version **2.2.0** needs one manual 2.2.7 setup to enable future file updates.
 A full setup remains available for new PCs, repairs or versions without a
 matching update package.
 
