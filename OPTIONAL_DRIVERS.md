@@ -2,10 +2,12 @@
 
 [QuietPlay downloads](README.md#get-quietplay) | [User guide](USER_GUIDE.md) | [FAQ](FAQ.md)
 
-## Install QuietPlay 2.2.3
+## Install QuietPlay 2.2.7
 
-Download **QuietPlay-2.2.3-Windows-Setup.exe** from the official release and run
-it over the existing app. Setup includes QuietPlay, its Python runtime, playback
+Download **QuietPlay-2.2.7-Windows-Setup.exe** from the
+[official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/latest)
+and run it, over the existing app if you already have one. Version 2.2.1 and
+later can also update from **Settings → Updates** without the full installer. Setup includes QuietPlay, its Python runtime, playback
 libraries, FFmpeg and the spotDL companion. No developer tools are needed.
 Your library, playlists, history and settings stay in `%APPDATA%\QuietPlay`.
 
