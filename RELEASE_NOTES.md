@@ -1,3 +1,20 @@
+# QuietPlay 2.2.8
+
+QuietPlay 2.2.8 plays where your PC plays.
+
+- **Follows your sound device:** with **Output** set to **System default** (Settings → Audio), playback follows the device Windows is using. Connect headphones, a speaker or Bluetooth device and the music moves there automatically, keeping your song and position; disconnect it and it moves back.
+- **No manual refresh:** the output device list in Settings updates by itself when devices are connected or removed.
+- **Missing device, no silence:** if the device you chose is not connected, QuietPlay plays through your PC's current device and switches back when yours returns.
+- Includes everything from 2.2.7 and 2.2.4: downloads that try other sources when one fails, the **Made for you** Home and the redesigned Downloads, Update center and updater.
+
+**Already on 2.2.7:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **7.8 MB**). **On 2.2.4:** the same steps (about **24.8 MB**). **On 2.2.2 or 2.2.3:** the same steps, with **Download changed files** (about **40.1 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.2 MB**. **On 2.2.0:** install `QuietPlay-2.2.8-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.7
 
 QuietPlay 2.2.7 makes downloads keep trying when a source fails.

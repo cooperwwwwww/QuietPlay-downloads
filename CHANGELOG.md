@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.7.
+These features are not included in 2.2.8.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,21 @@ These features are not included in 2.2.7.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.8 - Plays Where Your PC Plays
+
+Released October 21, 2026 for Windows 10/11 (64-bit).
+
+- With Output set to System default, playback follows the device Windows is
+  using. Connecting or disconnecting headphones, speakers or Bluetooth devices
+  moves playback within about two seconds, keeping the song, position and
+  play/pause state, with a short "Now playing on" notice.
+- If a chosen output device is not connected, QuietPlay plays through the PC's
+  current device instead of failing, and returns to the chosen device when it
+  reconnects. Separate stream outputs are not redirected.
+- The output device list in Settings updates automatically when devices change.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4 and
+  from 2.2.7 (about 7.8 MB).
 
 ## 2.2.7 - Downloads That Keep Trying
 
