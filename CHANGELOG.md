@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.9.
+These features are not included in 2.2.11.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,22 @@ These features are not included in 2.2.9.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.11 - More Cover Art
+
+Released October 23, 2026 for Windows 10/11 (64-bit).
+
+- When MusicBrainz is unavailable or finds nothing, cover art lookup falls back
+  to Apple Music, then Deezer. It accepts only the same lead artist and song
+  (ignoring featured artists and bracketed notes), skips live and remix
+  versions unless requested, requires the same album when one is known, and
+  downloads images only from Apple's and Deezer's image servers.
+- Downloads saved without album details (named after the song) are matched by
+  artist and song alone.
+- Song titles no longer show the downloader's "[qp-…]" file tag when a song was
+  added to the library while it was still downloading. Files are not changed.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4 and
+  2.2.7 to 2.2.9. Version 2.2.10 was not published; 2.2.11 includes its changes.
 
 ## 2.2.9 - Small Things Made Easier
 

@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.9 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.11 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.9 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.11 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.9-Windows-Setup.exe**
-   from [the official 2.2.9 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.9).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.11-Windows-Setup.exe**
+   from [the official 2.2.11 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.11).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -174,7 +174,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.9 download**:
+appearance editor is implemented in development, **not in the 2.2.11 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -209,8 +209,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.9 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.9 release to download about
+**2.2.0** needs one manual 2.2.11 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.11 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -253,6 +253,14 @@ If Spotify cannot provide song details (for example "Could not get client
 token"), searches and Spotify song links use Apple's public music catalogue
 instead. Album and playlist links still need Spotify; try again later or search
 for the songs by name.
+
+## Why Does a Song Have No Cover Art?
+
+QuietPlay first uses artwork inside the file. When there is none, it looks the
+song up on MusicBrainz, then Apple Music and Deezer (from 2.2.11), and only
+accepts the same artist, song and, when known, album. Songs that are not in
+those catalogues keep a placeholder. To check your whole library again, open
+**Settings → Library → Missing artwork** and choose **Find covers**.
 
 ## Can Home Recommend Downloads Too?
 

@@ -1,3 +1,19 @@
+# QuietPlay 2.2.11
+
+QuietPlay 2.2.11 finds more cover art and tidies up song titles.
+
+- **More cover art:** when MusicBrainz is unavailable or finds nothing, QuietPlay looks for the same song and album on **Apple Music**, then **Deezer**. Songs whose catalogue title lists featured artists, and downloads saved without album details, are matched too.
+- **Cleaner titles:** fixed songs showing a download tag such as "[qp-1a2b…]" in their title when they were added while still downloading. Your music files are not changed.
+- Includes everything from 2.2.9 and earlier: Retry for failed downloads, a collapsible **Made for you**, playback that follows your sound device, and downloads that try other sources.
+
+**Already on 2.2.7, 2.2.8 or 2.2.9:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **7.9 MB**). **On 2.2.4:** the same steps (about **24.9 MB**). **On 2.2.2 or 2.2.3:** the same steps, with **Download changed files** (about **40.1 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.2 MB**. **On 2.2.0:** install `QuietPlay-2.2.11-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.9
 
 QuietPlay 2.2.9 makes a few everyday things easier.

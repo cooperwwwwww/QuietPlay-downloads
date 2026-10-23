@@ -71,7 +71,7 @@ for listener ideas. Versioned release notes are the source of truth for what
 has actually shipped.
 
 
-Version **2.2.9** adds Retry for failed downloads and a collapsible Made for you. Version **2.2.8** follows the sound device your PC is using. Version **2.2.7** retried failed downloads on other sources and keeps working
+Version **2.2.11** finds more cover art. Version **2.2.9** added Retry for failed downloads and a collapsible Made for you. Version **2.2.8** follows the sound device your PC is using. Version **2.2.7** retried failed downloads on other sources and keeps working
 when Spotify is unavailable. Version **2.2.4** brought your mixes, new songs and full 50–60-song playlists
 together in one Made for you box on Home, keeps recommendations loaded between
 tabs, fixes recommended playlist downloads and redesigns Downloads and updates.
