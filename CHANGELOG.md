@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.8.
+These features are not included in 2.2.9.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,20 @@ These features are not included in 2.2.8.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.9 - Small Things Made Easier
+
+Released October 23, 2026 for Windows 10/11 (64-bit).
+
+- Failed song downloads have a **Retry** button in the Downloads panel; it reuses
+  the same playlist and skips songs already saved. Recommended playlists reopen
+  from Discover instead.
+- The Made for you box on Home can be collapsed to one line; the choice is
+  remembered.
+- Settings → Audio shows "Follow Windows (System default)" and explains what the
+  selected output does, instead of naming the audio engine.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4, 2.2.7
+  and 2.2.8 (about 7.9 MB from 2.2.7 or 2.2.8).
 
 ## 2.2.8 - Plays Where Your PC Plays
 
