@@ -1,3 +1,20 @@
+# QuietPlay 2.2.14
+
+QuietPlay 2.2.14 works properly offline and plays without crackling.
+
+- **Works offline:** online recommendations used to retry every few seconds while your PC was offline, keeping QuietPlay busy and filling its logs. They now wait before trying again (2 minutes, growing to 30), show that you are offline, keep what you already had, and come back as soon as you reconnect.
+- **No more crackling:** QuietPlay now gives your speakers or headphones a larger audio buffer, so a busy moment in the app no longer interrupts the sound. Measured on a real PC under load: 51 audio dropouts in 10 seconds before, none after.
+- **Bluetooth:** Bluetooth headphones and speakers get an extra-safe buffer. If Windows plays through a headset's hands-free (phone call) connection, which always sounds muffled and crackly, QuietPlay tells you which output to choose instead.
+- Includes everything from 2.2.13 and earlier, including the optional Navidrome add-on.
+
+**Already on 2.2.7, 2.2.8, 2.2.9, 2.2.11, 2.2.12 or 2.2.13:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **8.0 MB**). **On 2.2.4:** the same steps (about **25.0 MB**). **On 2.2.2 or 2.2.3:** the same steps, with **Download changed files** (about **40.2 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.2 MB**. **On 2.2.0:** install `QuietPlay-2.2.14-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.13
 
 QuietPlay 2.2.13 gives the Navidrome add-on its own Settings tab and makes it reconnect on its own.

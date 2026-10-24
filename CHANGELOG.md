@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.13.
+These features are not included in 2.2.14.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,23 @@ These features are not included in 2.2.13.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.14 - Offline and Smooth Audio
+
+Released October 24, 2026 for Windows 10/11 (64-bit).
+
+- Online recommendations no longer rebuild every few seconds while offline. A
+  failed build waits 2, 5, 15 and then 30 minutes before trying again (Refresh
+  and reconnecting retry at once), reports "You're offline", and keeps the
+  previous results.
+- The output device buffer grows from 20 ms to 60 ms x 3 periods, and 100 ms x 4
+  on Bluetooth outputs (detected from Windows' audio endpoints, including the
+  system default device). This removes dropouts when the app is busy: measured
+  51 dropouts in 10 seconds before and none after, under load.
+- Hands-free (HFP) Bluetooth outputs are detected and explained, with the
+  headset's stereo output suggested instead.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.13.
 
 ## 2.2.13 - Navidrome Settings
 

@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.13** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.14** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -285,7 +285,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.13 installer**. The existing download still has the basic
+in the current 2.2.14 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -363,17 +363,17 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.13
+### Updating to 2.2.14
 
-Use the update screen above. From **2.2.7, 2.2.8, 2.2.9, 2.2.11 or 2.2.12** the download is about
-**7.9 MB**, from **2.2.4** about **25.0 MB**, and from **2.2.2 or 2.2.3** about **40.2 MB**. It reuses the unchanged runtime
+Use the update screen above. From **2.2.7, 2.2.8, 2.2.9, 2.2.11, 2.2.12 or 2.2.13** the download is about
+**8.0 MB**, from **2.2.4** about **25.0 MB**, and from **2.2.2 or 2.2.3** about **40.2 MB**. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.13 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.14 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.13 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.14 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

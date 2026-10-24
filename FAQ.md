@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.13 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.14 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.13 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.14 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.13-Windows-Setup.exe**
-   from [the official 2.2.13 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.13).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.14-Windows-Setup.exe**
+   from [the official 2.2.14 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.14).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -174,7 +174,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.13 download**:
+appearance editor is implemented in development, **not in the 2.2.14 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -209,8 +209,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.13 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.13 release to download about
+**2.2.0** needs one manual 2.2.14 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.14 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -240,6 +240,26 @@ when you connect or disconnect headphones, speakers or Bluetooth devices,
 keeping your song and position. If you pick a specific device instead,
 QuietPlay stays on it while it is connected and uses your PC's current device
 while it is not. The device list updates on its own.
+
+## Why Does the Sound Crackle?
+
+From 2.2.14, QuietPlay gives your output a larger audio buffer, so a busy
+moment in the app no longer interrupts the sound, and Bluetooth headphones and
+speakers get an extra-safe buffer. Update first if you are on an older version.
+
+If a Bluetooth headset still sounds muffled or crackly, Windows may be using its
+**hands-free** (phone call) connection, for example "Headset (AirPods
+Hands-Free)". That connection is low quality by design, and QuietPlay shows a
+message when it happens. In **Settings → Audio**, choose the headset's
+**Headphones** output instead, and close apps that are using its microphone.
+
+## Does QuietPlay Work Offline?
+
+Yes. Your library, playlists, mixes, lyrics already saved and playback all work
+without internet. Online extras (new song and playlist recommendations, cover
+and genre lookups, downloads and update checks) wait until you are connected.
+From 2.2.14, Home shows that you are offline instead of retrying in the
+background, and new recommendations return on their own when you reconnect.
 
 ## What Happens If a Download Fails?
 
