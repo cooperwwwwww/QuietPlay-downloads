@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.14.
+These features are not included in 2.2.15.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,19 @@ These features are not included in 2.2.14.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.15 - Next Works Offline
+
+Released October 24, 2026 for Windows 10/11 (64-bit).
+
+- Fixed **Next**, shuffle, Add to queue and mixes stopping with "End of the
+  list" after startup. Since 2.2.12 the Navidrome add-on's playable-song index
+  replaced the one QuietPlay builds at startup without copying it, so no song
+  counted as playable until the library was next saved. Online, background
+  tagging saved it within moments; offline it stayed empty. The startup index
+  is now kept.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.14.
 
 ## 2.2.14 - Offline and Smooth Audio
 

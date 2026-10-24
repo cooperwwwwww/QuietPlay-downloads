@@ -1,3 +1,18 @@
+# QuietPlay 2.2.15
+
+QuietPlay 2.2.15 fixes Next saying "End of the list", most often while offline.
+
+- **Fixed:** since 2.2.12, songs were not counted as playable right after QuietPlay started, until the library was next saved. Online that happens on its own within moments, but offline it does not, so **Next**, **shuffle**, **Add to queue** and mixes could stop with "End of the list." They now work straight away, online or offline.
+- Includes everything from 2.2.14: no background retry loop while offline, and a larger audio buffer so playback no longer crackles (with an extra-safe buffer for Bluetooth).
+
+**Already on 2.2.14:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **7.8 MB**). **On 2.2.7 to 2.2.13:** the same steps (about **8.0 MB**). **On 2.2.4:** the same steps (about **25.0 MB**). **On 2.2.2 or 2.2.3:** the same steps, with **Download changed files** (about **40.2 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.2 MB**. **On 2.2.0:** install `QuietPlay-2.2.15-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.14
 
 QuietPlay 2.2.14 works properly offline and plays without crackling.
