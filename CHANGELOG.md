@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.11.
+These features are not included in 2.2.12.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,25 @@ These features are not included in 2.2.11.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.12 - Navidrome Add-on
+
+Released October 23, 2026 for Windows 10/11 (64-bit).
+
+- New optional Navidrome add-on for Navidrome and other Subsonic-compatible
+  servers: an unchecked setup option, and **Settings → Advanced → Add-ons** to
+  install, turn on or off, connect, sign out or remove it later.
+- Server songs can be mixed into the library or kept on a separate Navidrome
+  page with albums, artists, playlists and search. They stream through the
+  normal player, with cover art, likes (starred on the server) and play
+  reporting (scrobbles).
+- Disconnecting or a server going offline removes server songs from the
+  library without errors; listening history is kept locally so recommendations
+  keep learning from it, and unreachable songs are not suggested.
+- Uses Subsonic token sign-in; the password is not stored and the token is
+  protected with Windows data protection.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11.
 
 ## 2.2.11 - More Cover Art
 
