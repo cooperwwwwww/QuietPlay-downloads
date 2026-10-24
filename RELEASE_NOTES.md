@@ -1,3 +1,22 @@
+# QuietPlay 2.2.13
+
+QuietPlay 2.2.13 gives the Navidrome add-on its own Settings tab and makes it reconnect on its own.
+
+- **Settings → Navidrome:** once the add-on is installed it gets a tab of its own with everything in one place: connection, library, streaming quality, what is shared with your server, and storage.
+- **Automatic reconnect:** if your server goes offline, its songs leave your library and QuietPlay checks every minute, bringing them back automatically when the server returns.
+- **New settings:** streaming quality (original down to 96 kbps), check for new songs automatically, connect when QuietPlay starts, use server songs in mixes and radio, and separate switches for sending plays, now playing and likes to your server.
+- **Tools:** test the connection, clear the listening history kept on this PC, and clear the cover art cache.
+- **Fixed:** with a lower streaming quality, songs now fall back to original quality on servers that cannot convert them (servers without FFmpeg), instead of not playing.
+- Tested against a real Navidrome 0.64.2 server: sign-in, browsing, MP3 and FLAC playback, cover art, likes, play counts, and the server going offline and coming back.
+
+**Already on 2.2.7, 2.2.8, 2.2.9, 2.2.11 or 2.2.12:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **7.9 MB**). **On 2.2.4:** the same steps (about **25.0 MB**). **On 2.2.2 or 2.2.3:** the same steps, with **Download changed files** (about **40.2 MB**). Your music, library, playlists and settings stay in place, including your Navidrome sign-in.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.2 MB**. **On 2.2.0:** install `QuietPlay-2.2.13-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.12
 
 QuietPlay 2.2.12 adds an optional **Navidrome add-on**, so you can play music from your own music server alongside the songs on your PC.

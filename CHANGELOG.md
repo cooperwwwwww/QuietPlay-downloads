@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.12.
+These features are not included in 2.2.13.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,28 @@ These features are not included in 2.2.12.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.13 - Navidrome Settings
+
+Released October 23, 2026 for Windows 10/11 (64-bit).
+
+- New **Settings → Navidrome** tab, shown once the add-on is installed, with
+  Connection, Library, Playback, Listening, Storage and Add-on groups. Advanced →
+  Add-ons and the Navidrome page link to it.
+- A connection monitor checks the server every minute: songs leave the library
+  when it goes offline and return automatically when it is back. A song that
+  fails to stream triggers an immediate check.
+- New settings: streaming quality (original, 320, 256, 192, 128 or 96 kbps),
+  automatic new-song checks, connect at startup, automatic reconnect, server
+  songs in mixes and radio, and separate switches for scrobbling, now playing
+  and like sync.
+- Test connection (shows server version and response time), clear the local
+  Navidrome listening history, and clear the cover art cache.
+- Lower streaming quality falls back to original quality, with one notice, on
+  servers that cannot transcode (no FFmpeg) instead of failing to play.
+- Verified against a real Navidrome 0.64.2 server.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, 2.2.11 and 2.2.12.
 
 ## 2.2.12 - Navidrome Add-on
 

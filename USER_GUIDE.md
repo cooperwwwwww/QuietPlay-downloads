@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.12** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.13** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -229,15 +229,29 @@ add-on is optional and off by default.
 
 1. Tick **Navidrome music server support** during setup, or open
    **Settings → Advanced → Add-ons** and choose **Install**.
-2. Enter your server address, username and password, then choose **Connect**.
+2. Open **Settings → Navidrome** (it appears once the add-on is installed), enter
+   your server address, username and password, then choose **Connect**.
 3. Open **Navidrome** in the sidebar to browse **Albums**, **Artists**,
    **Playlists** and **Search**. Right-click a song to queue, like or dislike it.
 
-**Mix into my library** (on by default) shows server songs together with your
-own. When the server is unreachable or you choose **Sign out of server**, those
-songs leave your library without errors and come back when you reconnect. Your
-listening history is kept for recommendations. Turn the add-on off with its
-switch, or choose **Remove add-on** to forget the server.
+**Settings → Navidrome** has every add-on option:
+
+- **Connection:** status and server version, **Test connection**, **Reconnect**,
+  **Connect when QuietPlay starts**, **Reconnect automatically** and **Sign out**.
+- **Library:** **Mix into my library** (on by default) shows server songs
+  together with your own; **Check for new songs** (from never to once a day)
+  and **Refresh songs now**.
+- **Playback:** **Streaming quality** (original down to 96 kbps; your server
+  needs FFmpeg to convert) and whether server songs can appear in mixes, radio
+  and autoplay.
+- **Listening:** switches for sending plays, what you are playing and likes to
+  your server, and **Clear** for the listening history kept on this PC.
+- **Storage:** clear the cover art cache. **Add-on:** turn it off without
+  forgetting anything, or **Remove add-on** to forget the server.
+
+When the server is unreachable or you sign out, its songs leave your library
+without errors; with **Reconnect automatically** on they come back when the
+server returns. Your listening history is kept for recommendations.
 
 ## Audio and Mini Player
 
@@ -271,7 +285,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.12 installer**. The existing download still has the basic
+in the current 2.2.13 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -349,17 +363,17 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.12
+### Updating to 2.2.13
 
-Use the update screen above. From **2.2.7, 2.2.8, 2.2.9 or 2.2.11** the download is about
+Use the update screen above. From **2.2.7, 2.2.8, 2.2.9, 2.2.11 or 2.2.12** the download is about
 **7.9 MB**, from **2.2.4** about **25.0 MB**, and from **2.2.2 or 2.2.3** about **40.2 MB**. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.12 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.13 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.12 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.13 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

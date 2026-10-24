@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.12 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.13 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.12 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.13 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.12-Windows-Setup.exe**
-   from [the official 2.2.12 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.12).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.13-Windows-Setup.exe**
+   from [the official 2.2.13 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.13).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -174,7 +174,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.12 download**:
+appearance editor is implemented in development, **not in the 2.2.13 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -209,8 +209,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.12 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.12 release to download about
+**2.2.0** needs one manual 2.2.13 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.13 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -267,18 +267,22 @@ those catalogues keep a placeholder. To check your whole library again, open
 Yes, from 2.2.12, with the optional Navidrome add-on. It works with Navidrome
 and other Subsonic-compatible servers. Tick **Navidrome music server support**
 during setup, or open **Settings → Advanced → Add-ons** and choose **Install**.
-Then enter your server address (for example `http://192.168.1.20:4533`),
-username and password.
+Then open **Settings → Navidrome** and enter your server address (for example
+`http://192.168.1.20:4533`), username and password.
 
 - **Mix into my library** puts server songs alongside your own in Home,
   artists, albums, liked songs and search. Turn it off to keep them on the
   **Navidrome** page only.
-- If the server goes offline or you sign out, its songs leave your library and
-  return when it is back. Songs you listened to stay in your history, so
+- If the server goes offline or you sign out, its songs leave your library.
+  QuietPlay checks every minute and brings them back when the server returns. Songs you listened to stay in your history, so
   recommendations keep what they learned.
-- Plays and likes are sent to your server. QuietPlay never saves your password;
-  it keeps a sign-in token protected by Windows. **Remove add-on** forgets the
-  server.
+- Plays, what you are playing and likes are sent to your server; each can be
+  turned off in **Settings → Navidrome → Listening**. QuietPlay never saves your
+  password; it keeps a sign-in token protected by Windows. **Remove add-on**
+  forgets the server.
+- **Streaming quality** (Settings → Navidrome → Playback) can lower the bitrate
+  to save data. Your server needs FFmpeg to convert songs; without it, songs
+  play at original quality.
 
 ## Can Home Recommend Downloads Too?
 
