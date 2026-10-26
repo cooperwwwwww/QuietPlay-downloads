@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.15.
+These features are not included in 2.2.16.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,24 @@ These features are not included in 2.2.15.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.16 - Bug Fixes
+
+Released October 26, 2026 for Windows 10/11 (64-bit).
+
+- Update progress: the changed-file updater reported progress as 0-100 while
+  the bar expects 0-1, so it was full from the first update. Progress is now a
+  fraction, checking shows a moving bar, and the end of the download shows a
+  verifying step. The updater window's bar, which never moved while installing
+  or checking, now sweeps while waiting and checking and advances per file.
+- Artist credits: " & " before "the" is treated as part of a band name ("The
+  Mamas & the Papas", "Echo & the Bunnymen"), except for "& The Weeknd". The
+  same applies to genre and cover lookups.
+- File names: a zero-padded track number followed by a space ("01 Artist -
+  Title") is removed when reading untagged files.
+- Damaged or non-audio files show a plain message instead of FFmpeg's output.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.15.
 
 ## 2.2.15 - Next Works Offline
 
