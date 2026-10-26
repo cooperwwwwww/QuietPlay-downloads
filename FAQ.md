@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.16 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.17 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.16 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.17 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.16-Windows-Setup.exe**
-   from [the official 2.2.16 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.16).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.17-Windows-Setup.exe**
+   from [the official 2.2.17 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.17).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -135,8 +135,9 @@ you have permission to download.
 
 ## Can I Download a Whole Playlist?
 
-Yes. In **2.2.1**, paste a public Spotify playlist or album link into the
-main search bar to see every returned song, then choose **Download all**.
+Yes. Paste a public Spotify playlist, album or song link into the main search
+bar to see every returned song, then choose **Download all**. From 2.2.17 the
+search box shows this tip when you click it, with a **Paste link** button.
 For a specific destination playlist, use the download panel (cloud icon at the
 top). Individual tracks can fail; completed downloads are kept.
 [Download guide](USER_GUIDE.md#download-a-complete-playlist-or-album).
@@ -174,7 +175,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.16 download**:
+appearance editor is implemented in development, **not in the 2.2.17 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -209,8 +210,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.16 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.16 release to download about
+**2.2.0** needs one manual 2.2.17 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.17 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -307,6 +308,22 @@ Then open **Settings → Navidrome** and enter your server address (for example
 - **Streaming quality** (Settings → Navidrome → Playback) can lower the bitrate
   to save data. Your server needs FFmpeg to convert songs; without it, songs
   play at original quality.
+
+## Can QuietPlay Pick Music for My Mood?
+
+Yes, from 2.2.17. Click the search box or open **Search** in the sidebar, then
+pick a mood (Chill, Happy, Sad, Energetic, Focus, Party, Workout, Romantic,
+Sleep, Throwback or Road trip) or type how you feel, such as "kinda down" or
+"need energy for the gym".
+
+QuietPlay builds the mix from **your own library**. It reads the mood playlists
+that Deezer's editors publish, then ranks your songs: songs on those playlists
+first, then songs by artists the editors chose for that mood, then songs whose
+genre fits, adjusted by what you like, play, finish and skip. Sad songs are kept
+out of upbeat moods. Each mix also suggests **new songs** for that mood from the
+same playlists, favouring artists you already listen to, to preview or download.
+Only the mood is sent to Deezer, never your library. Mood data is saved for
+three days, so mixes keep working offline; with no data yet, genres are used.
 
 ## Can Home Recommend Downloads Too?
 

@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.16.
+These features are not included in 2.2.17.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,31 @@ These features are not included in 2.2.16.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.17 - Search and Mood Mixes
+
+Released October 26, 2026 for Windows 10/11 (64-bit).
+
+- Search box panel: mood chips, recent searches, quick picks and a Spotify-link
+  tip with Paste link; while typing, shortcuts for a detected mood, Spotify link,
+  artist, playlist or genre. New **Search** page in the sidebar with a free-text
+  "How are you feeling?" box, mood cards, genres and quick picks.
+- Mood mixes for 11 moods. Evidence comes from Deezer's editorial mood playlists
+  (public API, cached for three days): exact song matches, artists weighted by
+  how specific they are to the mood, related moods (exact songs only) and
+  opposite moods (counted against). Genres refine the picks; broad genres count
+  only for songs the listener played or liked. Likes, plays, completions and
+  skips adjust the order. New songs for the mood come from the same playlists.
+- Online search allows up to 100 results (setting range was 5-15, and the search
+  itself capped at 15).
+- Save & download on recommended playlist cards (Home and Discover).
+- Audio buffer 20 ms x 3 (Bluetooth 40 ms x 3) for faster volume and EQ, with an
+  automatic step up to a larger buffer if a PC falls behind.
+- Fades on pause, resume, stop and stream start remove clicks.
+- Settings > Library > Check for damaged songs (FFmpeg decodes the start and end
+  of each file).
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.16.
 
 ## 2.2.16 - Bug Fixes
 

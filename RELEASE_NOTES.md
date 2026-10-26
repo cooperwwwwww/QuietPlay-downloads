@@ -1,3 +1,24 @@
+# QuietPlay 2.2.17
+
+QuietPlay 2.2.17 makes it much easier to find music, adds mood mixes, and makes playback feel quicker and smoother.
+
+- **New search:** click the search box for moods, recent searches and quick picks, plus a tip for pasting **Spotify playlist, album or song links** to see and download every song. While you type, QuietPlay offers shortcuts to a mood, artist, playlist or genre.
+- **Search page:** a new **Search** item in the sidebar. Tell QuietPlay how you feel ("kinda down", "need energy for the gym"), pick one of 11 moods, browse by genre, or try **Surprise me**, **Never played**, **Forgotten favorites**, **Most played** and **Recently added**.
+- **Mood mixes:** your songs for each mood (Chill, Happy, Sad, Energetic, Focus, Party, Workout, Romantic, Sleep, Throwback, Road trip), picked with the mood playlists Deezer's editors publish plus your own genres, likes and listening, with new songs for that mood to preview or download. Mood data is saved, so mixes keep working offline.
+- **More online results:** online search can show up to **100** songs (was 15).
+- **Save & download recommended playlists:** every recommended playlist has a button that adds it to your playlists and downloads all its songs into it.
+- **Faster volume:** volume and EQ changes are heard within about 60 ms (120 ms on Bluetooth), down from 180 ms (400 ms), without bringing back crackling.
+- **Smooth pause and play:** a short fade instead of a hard cut, so speakers and headphones don't pop; skipping and seeking are click-free too.
+- **Damaged songs:** Settings → Library → Check for damaged songs finds files that won't play and lets you show or remove them.
+
+**Already on 2.2.16:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **8.0 MB**). **On 2.2.7 to 2.2.15:** the same steps (about **23.2 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.2 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.3 MB**. **On 2.2.0:** install `QuietPlay-2.2.17-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.16
 
 QuietPlay 2.2.16 is a bug-fix update.
