@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.17.
+These features are not included in 2.2.18.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,23 @@ These features are not included in 2.2.17.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.18 - Search Polish and Mood Playlists
+
+Released October 26, 2026 for Windows 10/11 (64-bit).
+
+- Search panel, Search page and mood views restyled with the app's own tokens,
+  mix cards, chips and rows; mood cards show artwork mosaics of the listener's
+  matching songs (computed from saved mood data, no network). Works in all themes.
+- Mood pages show the listener's songs (first 8, Show all), then the editors'
+  playlists for the mood (owned songs excluded from downloads, ranked by taste
+  overlap, lists with no overlap hidden when at least four overlap), then new
+  songs. Playlists use the existing recommended-playlist window and Save &
+  download.
+- Fixed the Downloads panel overflowing with long "Save to" playlist names.
+- Fixed the search panel reopening after navigating to a mood or artist.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.17.
 
 ## 2.2.17 - Search and Mood Mixes
 

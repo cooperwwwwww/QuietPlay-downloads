@@ -1,3 +1,21 @@
+# QuietPlay 2.2.18
+
+QuietPlay 2.2.18 makes the new search look and feel like the rest of the app, and gives every mood more to explore.
+
+- **Search that fits QuietPlay:** mood cards now look like your mixes on Home, with artwork from your own songs, and the search panel uses the app's colours, chips and rows. It follows every theme, including Light.
+- **More on each mood page:** your songs first (with Show all), then **5 to 10 playlists from Deezer's editors** that fit your taste, each with **Save & download** and a preview window, then **new songs** for the mood. Playlists that share nothing with your library are left out.
+- **Fixed:** the Downloads panel ran off the edge when a playlist had a long name.
+- **Fixed:** the search panel could reopen over a page after opening a mood or artist.
+- Includes everything from 2.2.17: mood mixes, the Search page, up to 100 online results, Save & download for recommended playlists, faster volume, smooth pause and the damaged songs check.
+
+**Already on 2.2.16 or 2.2.17:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **8.0 MB**). **On 2.2.7 to 2.2.15:** the same steps (about **23.2 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.2 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.3 MB**. **On 2.2.0:** install `QuietPlay-2.2.18-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.17
 
 QuietPlay 2.2.17 makes it much easier to find music, adds mood mixes, and makes playback feel quicker and smoother.
