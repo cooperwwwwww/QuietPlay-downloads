@@ -1,3 +1,20 @@
+# QuietPlay 2.2.19
+
+QuietPlay 2.2.19 gives new listeners music to start with, and tidies up Settings.
+
+- **Taste quiz for new listeners:** three quick, skippable questions (the genres you like, a few artists, and the moods you listen in). It opens once for libraries with fewer than 25 songs, and anyone can take or retake it from the **Search** page. Your answers stay on your PC.
+- **Starter picks on Home:** songs and playlists to start with, built from the playlists Deezer's genre editors publish and the most popular songs of the artists you picked and artists like them. There's a starter mix, one playlist per genre and one per mood, and each has **Save & download**. Songs you already have are left out, and the artists you pick also shape the mood pages.
+- **Settings fits narrow windows:** buttons like Crossfade's "3 s" no longer split over two lines when the window or the Now playing panel makes Settings narrow. A wide control moves under its description instead.
+- **Decades spelled out:** playlists say **2000s**, **2010s** and **2020s** instead of 00s, 10s and 20s, and the Throwback mood now mixes the 80s, 90s and 2000s.
+
+**Already on 2.2.16, 2.2.17 or 2.2.18:** open **Settings → Updates → Check for updates → Download update → Update and restart** (about **8.0 MB**). **On 2.2.7 to 2.2.15:** the same steps (about **23.2 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.2 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.3 MB**. **On 2.2.0:** install `QuietPlay-2.2.19-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.18
 
 QuietPlay 2.2.18 makes the new search look and feel like the rest of the app, and gives every mood more to explore.

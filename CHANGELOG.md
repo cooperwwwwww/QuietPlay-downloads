@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.18.
+These features are not included in 2.2.19.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,28 @@ These features are not included in 2.2.18.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.19 - Taste Quiz and Starter Picks
+
+Released October 26, 2026 for Windows 10/11 (64-bit).
+
+- Skippable taste quiz (genres, artists, moods). It opens once for libraries
+  with fewer than 25 songs and can be retaken from the Search page; answers are
+  stored only on the PC.
+- Quiz artists come from the artists on each genre's Deezer editorial playlists
+  (Deezer's own genre charts return the same global list for every genre).
+  Artist search sorts by fans.
+- Starter picks on Home: songs (each picked artist's top songs, related artists,
+  genre editors' songs) and playlists (a starter mix, one per genre, the best
+  editors' list per mood picked) with Save & download. Owned songs are left
+  out, data is cached for a week, and picks refresh daily. Picked artists also
+  weight new songs and playlists on the mood pages.
+- Settings rows wrap the control under the description instead of breaking
+  button labels; the Settings sidebar keeps labels on one line.
+- Playlist names spell out this century's decades (00s to 2000s, '10s to
+  2010s). Each mood search adds at most three lists, so Throwback mixes decades.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.18.
 
 ## 2.2.18 - Search Polish and Mood Playlists
 

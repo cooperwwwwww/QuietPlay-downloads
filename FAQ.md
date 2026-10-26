@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.18 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.19 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.18 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.19 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.18-Windows-Setup.exe**
-   from [the official 2.2.18 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.18).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.19-Windows-Setup.exe**
+   from [the official 2.2.19 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.19).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -175,7 +175,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.18 download**:
+appearance editor is implemented in development, **not in the 2.2.19 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -210,8 +210,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.18 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.18 release to download about
+**2.2.0** needs one manual 2.2.19 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.19 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -323,6 +323,19 @@ genre fits, adjusted by what you like, play, finish and skip. Sad songs are kept
 out of upbeat moods. Each mood page also lists **5 to 10 of the editors' playlists** that fit your
 taste (from 2.2.18), each with **Save & download**, and suggests **new songs**
 for that mood, favouring artists you already listen to, to preview or download.
+
+## I'm New. How Does QuietPlay Know What I Like?
+
+From 2.2.19, a short **taste quiz** opens the first time QuietPlay starts with
+fewer than 25 songs: pick the genres you like, a few artists (or search for any
+artist), and the moods you listen in. Every step can be skipped, and you can
+take or retake the quiz any time from the **Search** page.
+
+Your answers give you **Starter picks** on Home: songs and playlists to start
+with, built from the playlists Deezer's genre editors publish and the most
+popular songs of the artists you picked and artists like them. Each playlist can
+be previewed or saved and downloaded. Songs you already have are left out. Your
+answers stay on your PC; no other listener's data is used.
 Only the mood is sent to Deezer, never your library. Mood data is saved for
 three days, so mixes keep working offline; with no data yet, genres are used.
 
