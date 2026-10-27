@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.22** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.23** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -155,12 +155,25 @@ Settings → Search & Downloads to disable online recommendations.
 
 ### Bring Your Taste From Other Apps
 
-From **2.2.22**, QuietPlay can learn what you like in another music app, the way Spotify's
-"Import your music" does. It only shapes recommendations: **nothing is downloaded, no playlists are
-created, and QuietPlay never asks for your passwords.**
+QuietPlay can learn what you like in another music app, the way Spotify's "Import your music"
+does: with [TuneMyMusic](https://www.tunemymusic.com). It only shapes recommendations: **nothing is
+downloaded, no playlists are created, and QuietPlay never asks for your passwords.**
 
-1. Open **Settings → Playback → Listening and recommendations** and choose **Choose an app**.
-2. Pick the app you listen with, then follow the steps QuietPlay shows for it:
+1. Open **Settings → Playback → Import your music** and press **Get started**. TuneMyMusic opens
+   in your browser.
+2. In TuneMyMusic, choose the app your music is in now (Spotify, Apple Music, YouTube Music, Amazon
+   Music, Tidal, Deezer, SoundCloud and more) and sign in there.
+3. Pick your liked songs and the playlists that sound most like you.
+4. For the destination, choose **Export to file**, then CSV. Your browser saves the file.
+5. Drop the file into the QuietPlay window (or click to choose it). QuietPlay shows how many artists
+   and songs it found and your top artists. Choose **Add to my taste**.
+
+TuneMyMusic is a separate service, not affiliated with QuietPlay, with its own terms and privacy
+policy; its free plan may limit how many songs one transfer includes.
+
+#### Other ways
+
+Prefer not to use TuneMyMusic? Choose **Other ways** on the Import screen, then your app:
 
 | App | Quickest | Everything |
 | --- | --- | --- |
@@ -172,8 +185,7 @@ created, and QuietPlay never asks for your passwords.**
 | Last.fm (and apps that scrobble to it) | | Your scrobbles as CSV from [lastfm.ghan.nl/export](https://lastfm.ghan.nl/export/) |
 | Something else | Type artists, or songs as `Artist - Title` | Any .csv, .txt, .m3u or .xspf playlist |
 
-3. QuietPlay shows how many artists, songs and plays it found and your top artists. Choose
-   **Add to my taste**.
+Then choose **Add to my taste**.
 
 Liked songs and songs you played often count more. Your imported artists join the artists you play
 in QuietPlay, so you'll see them in **Because you play…** playlists and in new songs from related
@@ -338,7 +350,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.22 installer**. The existing download still has the basic
+in the current 2.2.23 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -419,18 +431,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.22
+### Updating to 2.2.23
 
-Use the update screen above. From **2.2.16 to 2.2.21** the download is about **8.1 MB**,
+Use the update screen above. From **2.2.16 to 2.2.22** the download is about **8.1 MB**,
 from **2.2.7 to 2.2.15** about **23.3 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.22 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.23 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.22 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.23 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

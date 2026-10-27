@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.22.
+These features are not included in 2.2.23.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,18 @@ These features are not included in 2.2.22.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.23 - Import Your Music
+
+Released October 27, 2026 for Windows 10/11 (64-bit).
+
+- Settings → Playback → Import your music works like Spotify's import page: **Get started** opens
+  TuneMyMusic in the browser, where you choose your app, sign in and export to a file; drop the
+  file into QuietPlay and recommendations learn your taste. Playlist links, data exports and typed
+  artists remain under **Other ways**. Nothing is downloaded.
+- Home's New songs shows up to 90 songs (was 36).
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.22.
 
 ## 2.2.22 - Your Taste From Other Apps
 

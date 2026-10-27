@@ -8,9 +8,9 @@
 
 No account. No subscription. Nothing you play leaves your computer.
 
-<a id="get-quietplay"></a><a href="https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.22/QuietPlay-2.2.22-Windows-Setup.exe"><img src="assets/download-windows.svg" alt="Download QuietPlay 2.2.22 for Windows" width="340"></a>
+<a id="get-quietplay"></a><a href="https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.23/QuietPlay-2.2.23-Windows-Setup.exe"><img src="assets/download-windows.svg" alt="Download QuietPlay 2.2.23 for Windows" width="340"></a>
 
-Version 2.2.22 · [What's new](#new-in-2222) · [Help](FAQ.md) · [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
+Version 2.2.23 · [What's new](#new-in-2223) · [Help](FAQ.md) · [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
 
 </div>
 
@@ -18,7 +18,7 @@ Version 2.2.22 · [What's new](#new-in-2222) · [Help](FAQ.md) · [Report a prob
 
 <a id="install-quietplay"></a>
 
-1. **Click the button above.** Your browser downloads `QuietPlay-2.2.22-Windows-Setup.exe`.
+1. **Click the button above.** Your browser downloads `QuietPlay-2.2.23-Windows-Setup.exe`.
 2. **Open the file.** If Windows says *"Windows protected your PC"*, choose **More info**, check the
    file name, then **Run anyway**. This shows up because QuietPlay is new and not code-signed yet;
    [why this happens](#windows-security-notice).
@@ -38,7 +38,7 @@ the app. One click, and your music, playlists and settings stay in place.
 | **Your listening** | **Search, moods and quick picks** |
 | ![Your listening: time, top songs and top artists](assets/quietplay-stats.jpg) | ![Search page with moods and quick picks](assets/quietplay-search.jpg) |
 
-*Screenshots of QuietPlay 2.2.22 with a demo library of well-known songs.*
+*Screenshots of QuietPlay 2.2.23 with a demo library of well-known songs.*
 
 ## What it does
 
@@ -50,7 +50,7 @@ the app. One click, and your music, playlists and settings stay in place.
 - **Find new music:** recommended songs and playlists you can preview, then save and download
   in one click.
 - **New here?** A short, skippable quiz gives you songs and playlists to start with, and you can
-  bring your taste over from Spotify, Apple Music, YouTube Music and other apps.
+  import your taste from Spotify, Apple Music, YouTube Music and other apps with TuneMyMusic.
 - **Your listening:** time listened, top songs, artists and genres, streaks and favorite hours.
 - **Looks the way you like:** dark, light and colorful themes, plus a live visualizer.
 - **Plays where Windows plays:** follows your headphones and speakers, and asks before switching
@@ -59,22 +59,24 @@ the app. One click, and your music, playlists and settings stay in place.
 
 Only download music you have permission to save.
 
-## New in 2.2.22
+## New in 2.2.23
 
-- **Bring your taste from other apps:** in **Settings → Playback**, choose Spotify, Apple Music,
-  YouTube Music, Deezer, Tidal, Amazon Music, SoundCloud or Last.fm, then paste a public playlist link
-  or choose the app's data export. QuietPlay learns which artists and songs you like there;
-  nothing is downloaded. [How to](USER_GUIDE.md#bring-your-taste-from-other-apps)
-- **About twice as many recommendations,** and up to eight "Because you play" playlists plus a new
-  "Fresh faces" playlist of artists you've never played.
+- **Import your music, the way Spotify does it:** in **Settings → Playback → Import your music**,
+  press **Get started**. TuneMyMusic opens in your browser: choose the app your music is in now
+  (Spotify, Apple Music, YouTube Music, Amazon Music, Tidal, Deezer, SoundCloud and more), sign in
+  there, pick your songs and choose **Export to file**. Drop the file into QuietPlay and its
+  recommendations learn your taste. Nothing is downloaded.
+  [How to](USER_GUIDE.md#bring-your-taste-from-other-apps)
+- **More new songs on Home:** up to 90 (was 36).
+
+### New in 2.2.22
+
+- **About twice as many recommendations,** up to eight "Because you play" playlists and a new
+  "Fresh faces" playlist.
 - **Made for you fills the whole row** in three rows at every window size.
-- **No duplicate downloads:** songs already in your library say **In your library** in online
-  search and are never downloaded again.
+- **No duplicate downloads:** songs already in your library say **In your library** and are never
+  downloaded again.
 - **Small windows:** the queue opens over the page instead of squeezing it.
-
-### New in 2.2.21
-
-- **Made for you shows more at a glance:** mixes in rows instead of one long row.
 
 ### New in 2.2.20
 
@@ -94,14 +96,14 @@ Only download music you have permission to save.
 
 ## Windows security notice
 
-QuietPlay 2.2.22 is not Windows code-signed yet, so Microsoft Defender SmartScreen may show
+QuietPlay 2.2.23 is not Windows code-signed yet, so Microsoft Defender SmartScreen may show
 **Windows protected your PC**. That warning means Windows doesn't recognize the app yet; it doesn't
 say the file is harmful.
 
 ![How to check the Windows warning: More info, check the file name, then Run anyway](assets/windows-security-guide.svg)
 
-1. Make sure you downloaded `QuietPlay-2.2.22-Windows-Setup.exe` from
-   [the official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.22). You can
+1. Make sure you downloaded `QuietPlay-2.2.23-Windows-Setup.exe` from
+   [the official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.23). You can
    [compare its checksum](FAQ.md#check-the-downloaded-file).
 2. Choose **More info**, check the file name, then **Run anyway** only if Windows offers it.
 3. If there is no **Run anyway**, or you see Smart App Control or a malware warning, stop and
@@ -116,7 +118,7 @@ replace the app files that changed (usually a few megabytes), are signed and che
 are applied, and restore the previous version if anything goes wrong.
 
 On a version older than 2.2.16? Open **Settings → Updates → Check for updates**. Version 2.2.1 can
-run [QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.22/QuietPlayUpdater.exe); version
+run [QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.23/QuietPlayUpdater.exe); version
 2.2.0 needs the installer once. [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
 ## Requirements
@@ -129,8 +131,9 @@ Mac and Linux: see the [platform guide](PLATFORMS.md).
 
 Your library, playlists, history and settings stay on your PC (`%APPDATA%\QuietPlay`). Mixes,
 radio and stats are worked out on your PC. Online features send only what they need (for example
-a song name to find its lyrics) and each can be turned off in Settings. Export files you use to
-bring your taste from other apps are read on your PC; QuietPlay never asks for your passwords.
+a song name to find its lyrics) and each can be turned off in Settings. Files you import from
+other apps are read on your PC; QuietPlay never asks for your passwords. TuneMyMusic is a separate
+service with its own terms and privacy policy.
 
 ## Help
 

@@ -1,3 +1,21 @@
+# QuietPlay 2.2.23
+
+QuietPlay 2.2.23 imports your music the way Spotify does.
+
+- **Import your music:** in **Settings → Playback → Import your music**, press **Get started**. TuneMyMusic opens in your browser: choose the app your music is in now (Spotify, Apple Music, YouTube Music, Amazon Music, Tidal, Deezer, SoundCloud and more), sign in there, pick your liked songs and playlists, and choose **Export to file**. Drop the file into QuietPlay and its recommendations learn your taste. Nothing is downloaded, no playlists are created, and QuietPlay never asks for your passwords. Playlist links, data exports and typed artists are still under **Other ways**. [Step-by-step guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/USER_GUIDE.md#bring-your-taste-from-other-apps)
+- **More new songs on Home:** Made for you → New songs now shows up to 90 songs (was 36).
+- Includes everything from 2.2.22: about twice as many recommendations, Made for you filling the row in three rows at every window size, no duplicate downloads, and the queue opening over the page in small windows.
+
+TuneMyMusic is a separate service, not affiliated with QuietPlay, with its own terms and privacy policy.
+
+**Already on 2.2.16 to 2.2.22:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **8.1 MB**). **On 2.2.7 to 2.2.15:** the same steps (about **23.3 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.3 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.3 MB**. **On 2.2.0:** install `QuietPlay-2.2.23-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.22
 
 QuietPlay 2.2.22 recommends a lot more, and can learn your taste from the apps you already use.
