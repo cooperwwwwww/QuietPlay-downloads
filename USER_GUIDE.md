@@ -2,14 +2,14 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.21** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.22** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
 
 [Install and open](#install-and-open) · [Your data](#your-data-on-this-pc) ·
 [Add music](#add-existing-music) · [Find and play](#find-and-play) ·
-[Discover and radio](#discover-radio-and-autoplay) · [Your listening](#your-listening) ·
+[Discover and radio](#discover-radio-and-autoplay) · [Taste from other apps](#bring-your-taste-from-other-apps) · [Your listening](#your-listening) ·
 [Playlists](#playlists) · [Library care](#library-care) · [Lyrics](#lyrics) ·
 [Search and download](#search-and-download-music) · [Navidrome](#navidrome-add-on) · [Audio and mini player](#audio-and-mini-player) ·
 [OBS](#obs) · [Settings](#settings) · [Shortcuts](#keyboard-shortcuts) · [Updates and help](#updates-and-help)
@@ -64,7 +64,7 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
 - **Home** starts with **Made for you**: pick **Mixes** (local mixes you can
   play straight away), **New songs** or **Playlists** with the tabs next to the
-  title. Mixes show in two or three rows; use the left/right arrows to see more.
+  title. Each tab shows three rows that fill the window; use the left/right arrows to see more.
   QuietPlay remembers the tab.
   Click a recommended song to preview it, or use its download button. Open a
   recommended playlist to see every song, preview, download a song, or
@@ -153,6 +153,33 @@ normally refresh after six hours. Existing owned-song, dislike and dismissed
 recommendation filters still apply. Turn off **Suggest new songs** in
 Settings → Search & Downloads to disable online recommendations.
 
+### Bring Your Taste From Other Apps
+
+From **2.2.22**, QuietPlay can learn what you like in another music app, the way Spotify's
+"Import your music" does. It only shapes recommendations: **nothing is downloaded, no playlists are
+created, and QuietPlay never asks for your passwords.**
+
+1. Open **Settings → Playback → Listening and recommendations** and choose **Choose an app**.
+2. Pick the app you listen with, then follow the steps QuietPlay shows for it:
+
+| App | Quickest | Everything |
+| --- | --- | --- |
+| Spotify | Paste a public playlist link (**Share → Copy link to playlist**) | Export with [exportify.net](https://exportify.net) (**Export All**), or **Account → Privacy settings → Download your data** with **Extended streaming history** |
+| Apple Music | Paste a playlist link (**Share → Copy Link**) | **File → Library → Export Library…** (Mac Music app or iTunes on Windows), or your data from [privacy.apple.com](https://privacy.apple.com) |
+| YouTube Music | | [Google Takeout](https://takeout.google.com): YouTube and YouTube Music, history as JSON |
+| Deezer | Paste a public playlist link | A TuneMyMusic export file |
+| Tidal, Amazon Music, SoundCloud | | [TuneMyMusic](https://www.tunemymusic.com): your app as the source, **Export to file** |
+| Last.fm (and apps that scrobble to it) | | Your scrobbles as CSV from [lastfm.ghan.nl/export](https://lastfm.ghan.nl/export/) |
+| Something else | Type artists, or songs as `Artist - Title` | Any .csv, .txt, .m3u or .xspf playlist |
+
+3. QuietPlay shows how many artists, songs and plays it found and your top artists. Choose
+   **Add to my taste**.
+
+Liked songs and songs you played often count more. Your imported artists join the artists you play
+in QuietPlay, so you'll see them in **Because you play…** playlists and in new songs from related
+artists. Each source is listed in Settings with **Remove**. Export files are read on your PC; only
+the names of the songs and artists are kept.
+
 ## Your Listening
 
 **Your listening** in the sidebar shows listening time, plays, how many songs
@@ -210,7 +237,9 @@ online. The next song's lyrics are fetched ahead of time.
 
 Online search is optional (Settings → Search & Downloads). Online results show
 a **Download** button; downloads go to `Music\QuietPlay Downloads` and are added
-to your library and, if you choose, a playlist. The download panel (cloud icon
+to your library and, if you choose, a playlist. From 2.2.22, songs you already have show
+**In your library** instead (click to play) and are never downloaded again, also not as part of
+**Download all** or a recommended playlist. The download panel (cloud icon
 at the top) shows progress and lets you cancel.
 
 ### Download a Complete Playlist or Album
@@ -309,7 +338,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.21 installer**. The existing download still has the basic
+in the current 2.2.22 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -390,18 +419,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.21
+### Updating to 2.2.22
 
-Use the update screen above. From **2.2.16 to 2.2.20** the download is about **8.0 MB**,
-from **2.2.7 to 2.2.15** about **23.2 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
+Use the update screen above. From **2.2.16 to 2.2.21** the download is about **8.1 MB**,
+from **2.2.7 to 2.2.15** about **23.3 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.21 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.22 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.21 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.22 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

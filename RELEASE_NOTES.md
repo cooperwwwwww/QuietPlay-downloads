@@ -1,3 +1,21 @@
+# QuietPlay 2.2.22
+
+QuietPlay 2.2.22 recommends a lot more, and can learn your taste from the apps you already use.
+
+- **Bring your taste from other apps:** in **Settings → Playback → Listening and recommendations**, choose Spotify, Apple Music, YouTube Music, Deezer, Tidal, Amazon Music, SoundCloud or Last.fm. Then paste a public playlist link (Spotify, Apple Music, Deezer) or choose the app's data export. QuietPlay learns which artists and songs you like there and recommends more like them. Nothing is downloaded and no playlists are created, and you can remove a source at any time. QuietPlay never asks for your passwords. [Step-by-step guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/USER_GUIDE.md#bring-your-taste-from-other-apps)
+- **About twice as many recommendations:** recommendations start from up to 24 of your artists (was 12) and explore up to 56 related artists (was 28). Made for you can have up to eight "Because you play" playlists, plus a new **Fresh faces** playlist of artists you've never played.
+- **Made for you fills the whole row** in three rows at every window size, from small windows to full screen on large monitors.
+- **No duplicate downloads:** songs already in your library say **In your library** in online search (click to play), **Download all** skips them, and a song you already have is never downloaded again.
+- **Small windows:** the Now playing / Queue panel opens over the page instead of squeezing it.
+
+**Already on 2.2.16 to 2.2.21:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **8.1 MB**). **On 2.2.7 to 2.2.15:** the same steps (about **23.3 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.3 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.3 MB**. **On 2.2.0:** install `QuietPlay-2.2.22-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.21
 
 QuietPlay 2.2.21 shows more of Made for you at a glance.

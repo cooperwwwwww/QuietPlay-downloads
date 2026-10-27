@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.21.
+These features are not included in 2.2.22.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,22 @@ These features are not included in 2.2.21.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.22 - Your Taste From Other Apps
+
+Released October 27, 2026 for Windows 10/11 (64-bit).
+
+- Settings → Playback → Listening and recommendations can learn your taste from Spotify, Apple
+  Music, YouTube Music, Deezer, Tidal, Amazon Music, SoundCloud and Last.fm (public playlist links
+  or data exports). It only shapes recommendations; nothing is downloaded. Sources can be removed.
+- About twice as many recommendations: up to 24 seed artists (was 12) and 56 related artists
+  (was 28), up to eight "Because you play" playlists and a new Fresh faces playlist.
+- Made for you fills the whole row in three rows at every window size.
+- Songs already in the library show "In your library" in online search and are never downloaded
+  again; owned songs are left out of playlist downloads and added to the playlist instead.
+- In windows narrower than 1100 px the Now playing / Queue panel opens over the page.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.21.
 
 ## 2.2.21 - Mixes in a Grid
 

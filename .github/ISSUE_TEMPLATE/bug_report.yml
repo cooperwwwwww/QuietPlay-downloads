@@ -11,7 +11,7 @@
     {
       "type": "input",
       "id": "version",
-      "attributes": {"label": "QuietPlay version", "description": "Find it in Settings > Updates. Enter 'Not sure' if the app will not open.", "placeholder": "Example: 2.2.21"},
+      "attributes": {"label": "QuietPlay version", "description": "Find it in Settings > Updates. Enter 'Not sure' if the app will not open.", "placeholder": "Example: 2.2.22"},
       "validations": {"required": true}
     },
     {
