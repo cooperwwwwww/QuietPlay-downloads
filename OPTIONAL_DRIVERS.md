@@ -2,9 +2,9 @@
 
 [QuietPlay downloads](README.md#get-quietplay) | [User guide](USER_GUIDE.md) | [FAQ](FAQ.md)
 
-## Install QuietPlay 2.2.19
+## Install QuietPlay 2.2.20
 
-Download **QuietPlay-2.2.19-Windows-Setup.exe** from the
+Download **QuietPlay-2.2.20-Windows-Setup.exe** from the
 [official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/latest)
 and run it, over the existing app if you already have one. Version 2.2.1 and
 later can also update from **Settings → Updates** without the full installer. Setup includes QuietPlay, its Python runtime, playback
@@ -21,17 +21,16 @@ displays a warning. Do not disable Windows security protections.
 
 ## Optional: Separate Music Audio for OBS
 
-Normal playback needs no extra audio driver. For separate OBS audio, the
-original **VBCABLE_Driver_Pack45.zip** is included in the installed app's
-**Optional Streamer Audio Driver** folder. QuietPlay setup does not install it.
+Normal playback needs no extra audio driver. For separate OBS audio, QuietPlay
+includes VB-Audio's original **VBCABLE_Driver_Pack45.zip**; setup does not install it.
 
-1. Extract that archive if you need VB-CABLE and do not already have it.
-2. Open VB-Audio's original signed installer for your system. Driver installation
-   requires administrator approval and may need a Windows restart.
-3. Follow VB-Audio's instructions. Its own terms apply; review them before installing.
-4. In QuietPlay's Streaming settings, choose **CABLE Input** as the stream output.
+1. Open **Settings → Streaming** and choose **Install VB-CABLE** (from 2.2.20).
+   QuietPlay unpacks VB-Audio's own signed installer and runs it.
+2. Approve the Windows prompt. Driver installation needs administrator approval
+   and may need a Windows restart. VB-Audio's terms apply; review them first.
+3. In QuietPlay's Streaming settings, choose **CABLE Input** as the stream output.
    Enable routing, and optionally listen on this PC too.
-5. In OBS, add **Audio Input Capture** for **CABLE Output**. The now-playing
+4. In OBS, add **Audio Input Capture** for **CABLE Output**. The now-playing
    Browser Source is a separate visual overlay.
 
 VB-CABLE is third-party VB-Audio donationware.

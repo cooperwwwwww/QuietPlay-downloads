@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.19 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.20 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.19 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.20 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.19-Windows-Setup.exe**
-   from [the official 2.2.19 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.19).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.20-Windows-Setup.exe**
+   from [the official 2.2.20 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.20).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -175,7 +175,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.19 download**:
+appearance editor is implemented in development, **not in the 2.2.20 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -203,15 +203,19 @@ audio file are different actions. Read confirmation dialogs carefully.
 
 ## How Do I Get Update News?
 
-**2.2.2 and later:** open **Settings > Updates > Check for updates**. Background
+**2.2.20 and later:** QuietPlay checks by itself and shows a notice above the
+player when an update is ready. Press **Update now** and it downloads, verifies,
+installs and restarts in one go.
+
+**2.2.2 to 2.2.19:** open **Settings > Updates > Check for updates**. Background
 checks also show a notice. Choose **Download changed files** (**Download update**
 from 2.2.4), then **Update and
 restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.19 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.19 release to download about
+**2.2.0** needs one manual 2.2.20 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.20 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -240,7 +244,9 @@ QuietPlay then plays through whatever device Windows is using and follows it
 when you connect or disconnect headphones, speakers or Bluetooth devices,
 keeping your song and position. If you pick a specific device instead,
 QuietPlay stays on it while it is connected and uses your PC's current device
-while it is not. The device list updates on its own.
+while it is not. The device list updates on its own. From 2.2.20, connecting
+headphones or speakers that Windows does not switch to shows **Play here?**, and
+the update moves anyone with a fixed device back to following Windows once.
 
 ## Why Does the Sound Crackle?
 
@@ -328,7 +334,7 @@ for that mood, favouring artists you already listen to, to preview or download.
 
 From 2.2.19, a short **taste quiz** opens the first time QuietPlay starts with
 fewer than 25 songs: pick the genres you like, a few artists (or search for any
-artist), and the moods you listen in. Every step can be skipped, and you can
+artist), how many new artists to mix in and whether to skip explicit songs. Every step can be skipped, and you can
 take or retake the quiz any time from the **Search** page.
 
 Your answers give you **Starter picks** on Home: songs and playlists to start
@@ -341,8 +347,8 @@ three days, so mixes keep working offline; with no data yet, genres are used.
 
 ## Can Home Recommend Downloads Too?
 
-Yes. Since 2.2.4, Home has one **Made for you** box with your local mixes, new
-songs and full 50–60-song recommended playlists, with your songs right below.
+Yes. Home starts with **Made for you**, with tabs for your local mixes, new
+songs and full 50–60-song recommended playlists, and your songs right below.
 Click a recommended song to preview it, or use its download button. Open a
 playlist to see all songs and download one song or download and save the full
 mix. **See all** opens Discover. Recommendations stay loaded when you switch tabs.

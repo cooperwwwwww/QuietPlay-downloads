@@ -1,3 +1,27 @@
+# QuietPlay 2.2.20
+
+QuietPlay 2.2.20 makes updating one click, makes the app noticeably faster, and makes Settings easier to find.
+
+- **One-click updates:** QuietPlay checks for updates by itself and shows a small notice when one is ready. Press **Update now** and it downloads, verifies, installs and restarts. **Later** hides the notice until the next version.
+- **Faster:** online search results arrive in about a third of a second (they used to take several seconds), search starts sooner after you stop typing, and Made for you, mood cards and mood pages open instantly.
+- **Remove songs from the queue:** songs coming up from what's playing have a remove button. It only takes them out of this play-through; nothing is deleted or disliked.
+- **Sleep timer button** in the player bar. It lights up while a timer is running.
+- **Settings is easier to find:** a **Settings** entry in the sidebar, a close (X) button, **Audio** first, and Navidrome as a Settings tab instead of a sidebar item.
+- **Visualizer:** moved to **Settings → Appearance**, the style preview fills its whole box, and **Spectrum** is the new default.
+- **Made for you** is a tidy row on Home with **Mixes**, **New songs** and **Playlists** tabs, with nothing to collapse.
+- **Audio follows Windows:** playback goes to the device Windows is using. When you connect headphones or speakers that Windows doesn't switch to, QuietPlay asks whether to play there. This update moves anyone with a fixed output device back to following Windows once; you can still pick a device in Settings → Audio.
+- **VB-CABLE for OBS installs from the app:** **Install VB-CABLE** in Settings → Streaming runs VB-Audio's own installer after one Windows approval.
+- **Quiz for new listeners** now uses the app's own chips and settings rows, and asks how many new artists to mix in and whether to skip explicit songs.
+- **Fixed:** saving a mood or starter playlist could fail with "This recommendation changed" after Home refreshed. Dropdown lists and scrollbars now follow dark themes.
+
+**Already on 2.2.16 to 2.2.19:** open **Settings → Updates → Check for updates**, then **Update now** (about **8.0 MB**). **On 2.2.7 to 2.2.15:** the same steps (about **23.2 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.3 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.3 MB**. **On 2.2.0:** install `QuietPlay-2.2.20-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.19
 
 QuietPlay 2.2.19 gives new listeners music to start with, and tidies up Settings.

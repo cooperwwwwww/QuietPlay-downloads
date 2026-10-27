@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="72" viewBox="0 0 340 72" role="img" aria-label="Download QuietPlay for Windows">
+  <rect x="0.5" y="0.5" width="339" height="71" rx="16" fill="#ffffff" stroke="#d4d4d8"/>
+  <g transform="translate(26 22)" fill="#0a0a0b">
+    <rect x="0" y="0" width="13" height="13" rx="1.5"/>
+    <rect x="15" y="0" width="13" height="13" rx="1.5"/>
+    <rect x="0" y="15" width="13" height="13" rx="1.5"/>
+    <rect x="15" y="15" width="13" height="13" rx="1.5"/>
+  </g>
+  <text x="72" y="34" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#0a0a0b">Download for Windows</text>
+  <text x="72" y="54" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#52525b">Free · Windows 10 and 11 · 64-bit</text>
+</svg>

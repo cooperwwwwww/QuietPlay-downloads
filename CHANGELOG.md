@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.19.
+These features are not included in 2.2.20.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,38 @@ These features are not included in 2.2.19.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.20 - One-Click Updates and a Faster App
+
+Released October 26, 2026 for Windows 10/11 (64-bit).
+
+- Automatic update check 25 seconds after start and every 12 hours; a notice above
+  the player offers **Update now** (download, verify, install and restart in one
+  click) or **Later** (until the next version). The update screen has one button.
+- Online song search answered from Deezer's search API (about 0.3 s instead of a
+  spotDL run per search); downloads still go through spotDL as "Artist - Title".
+  Links still use spotDL. Results are kept for 10 minutes. Search starts 0.35 s
+  after typing stops (was 0.9 s).
+- Made for you reuses its last answer until recommendations change (about 0.75 s
+  per request before) and is prepared at startup; mood cards are cached; mood
+  playlists download in parallel and older mood data opens at once while it
+  refreshes.
+- Fixed: Home refreshes dropped mood and starter playlists from Save & download
+  ("This recommendation changed").
+- Upcoming songs can be removed from the queue (this play-through only).
+- Sleep timer button in the player bar.
+- Settings: sidebar entry, close button, Audio first, Navidrome tab after
+  Streaming (no sidebar entry), visualizer under Appearance with a full-size
+  preview and Spectrum as the default (set once).
+- Made for you and Starter picks are Home rows with tabs instead of a box.
+- Output follows Windows (fixed devices reset once); new devices that Windows does
+  not switch to prompt **Play here?** (registry endpoints and Core Audio default).
+- **Install VB-CABLE** runs VB-Audio's silent installer after the approval prompt.
+- Quiz: genre chips and two questions (new artists, explicit songs) replace the
+  colored tiles and the mood step; starter picks follow the answers.
+- Native dropdowns and scrollbars follow the theme (color-scheme).
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.19.
 
 ## 2.2.19 - Taste Quiz and Starter Picks
 

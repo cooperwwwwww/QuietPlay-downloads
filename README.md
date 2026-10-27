@@ -1,359 +1,131 @@
+<div align="center">
+
+<img src="assets/quietplay-home.jpg" alt="QuietPlay: Home with Made for you, your songs and the song that's playing" width="100%">
+
 # QuietPlay
 
-**A music player for the songs on your PC, that learns what you like.**
+**A free music player for Windows that plays the songs on your PC and learns what you like.**
 
-QuietPlay 2.2.19 is a redesigned Windows app: a clean black-and-grey interface,
-synced lyrics, smart mixes and radio built only from your own listening, your
-listening stats, playlists, a mini player, Windows media controls and OBS
-streaming tools. No account, no subscription and no upload of what you play.
+No account. No subscription. Nothing you play leaves your computer.
 
-**[Download QuietPlay 2.2.19 for Windows](#get-quietplay)** &nbsp; / &nbsp;
-**[Install guide](#install-quietplay)** &nbsp; / &nbsp;
-**[What's new](CHANGELOG.md)** &nbsp; / &nbsp;
-**[Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml)** &nbsp; / &nbsp;
-**[Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)**
+<a id="get-quietplay"></a><a href="https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.20/QuietPlay-2.2.20-Windows-Setup.exe"><img src="assets/download-windows.svg" alt="Download QuietPlay 2.2.20 for Windows" width="340"></a>
 
-[User guide](USER_GUIDE.md) | [FAQ](FAQ.md) | [Changelog](CHANGELOG.md) |
-[Platforms](PLATFORMS.md) | [Roadmap](ROADMAP.md) | [Get help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml)
+Version 2.2.20 · [What's new](#new-in-2220) · [Help](FAQ.md) · [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
 
-![QuietPlay 2.2.4 Home: one Made for you box with your mixes, new songs and full recommended playlists, with your songs right below](assets/quietplay-2.2.4-home.jpg)
+</div>
 
-*QuietPlay, shown with fictional demonstration songs and artwork. Your library starts with your own music.*
+## Install in three steps
 
-## Get QuietPlay
+<a id="install-quietplay"></a>
 
-<!-- release-summary:start -->
-**Latest release: QuietPlay 2.2.19** (October 2026)
+1. **Click the button above.** Your browser downloads `QuietPlay-2.2.20-Windows-Setup.exe`.
+2. **Open the file.** If Windows says *"Windows protected your PC"*, choose **More info**, check the
+   file name, then **Run anyway**. This shows up because QuietPlay is new and not code-signed yet;
+   [why this happens](#windows-security-notice).
+3. **Follow setup**, then open **QuietPlay** from the Start menu and choose **Add music** to add a
+   folder of songs.
 
-| Download | For | File |
-| --- | --- | --- |
-| **[Download for Windows](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.19/QuietPlay-2.2.19-Windows-Setup.exe)** | Windows 10 or 11, 64-bit | `QuietPlay-2.2.19-Windows-Setup.exe` |
+Already have QuietPlay? It updates itself: when a new version is out you'll see **Update now** in
+the app. One click, and your music, playlists and settings stay in place.
 
-[Release notes and checksum](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.19) | [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
-<!-- release-summary:end -->
+## A look inside
 
-**Mac, Linux and Chromebook:** QuietPlay 2.2.19 is Windows-only. The older
-experimental **1.54.1 Beta** packages are still available on its
-[release page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.1-development).
-See the [platform guide](PLATFORMS.md).
+| Your music, mixes and recommendations | Moods made from your library |
+| --- | --- |
+| ![Home with Made for you tabs: mixes, new songs and playlists](assets/quietplay-home-playlists.jpg) | ![The Party mood: your songs that fit, with editors' playlists and new songs](assets/quietplay-mood.jpg) |
+| **Discover new music** | **Full playlists you can save and download** |
+| ![Discover: playlists picked from what you play](assets/quietplay-discover.jpg) | ![A 60-song recommended playlist with previews and Download and save](assets/quietplay-playlist.jpg) |
+| **Your listening** | **Search, moods and quick picks** |
+| ![Your listening: time, top songs and top artists](assets/quietplay-stats.jpg) | ![Search page with moods and quick picks](assets/quietplay-search.jpg) |
 
-**Requirements:** Windows 10 or 11 (64-bit), a working audio output and the
-Microsoft Edge WebView2 Runtime (built into Windows 11; setup installs it if it
-is missing). Internet is only needed for lyrics, cover art, suggestions,
-online search and downloads, not for playing your songs.
+*Screenshots of QuietPlay 2.2.20 with a demo library of well-known songs.*
 
-## Install QuietPlay
+## What it does
 
-1. Select **Download for Windows** above. The file is
-   `QuietPlay-2.2.19-Windows-Setup.exe`.
-2. Open it. Windows may show a SmartScreen warning because QuietPlay is not
-   code-signed yet; read the [security notice](#windows-security-notice).
-3. Follow setup. The optional VB-CABLE driver archive is included for separate
-   OBS audio. Normal listening does not need the driver.
-4. Open **QuietPlay** from the desktop or Start menu.
+- **Plays your music:** MP3, FLAC, M4A, OGG and WAV, with crossfade, an equalizer, a sleep timer,
+  synced lyrics and a mini player.
+- **Made for you:** daily mixes, radio and full 50–60-song playlists built from what you actually
+  play, finish, like and skip.
+- **Moods:** say how you feel ("need energy for the gym") and get a mix from your own songs.
+- **Find new music:** recommended songs and playlists you can preview, then save and download
+  in one click.
+- **New here?** A short, skippable quiz gives you songs and playlists to start with.
+- **Your listening:** time listened, top songs, artists and genres, streaks and favorite hours.
+- **Looks the way you like:** dark, light and colorful themes, plus a live visualizer.
+- **Plays where Windows plays:** follows your headphones and speakers, and asks before switching
+  to a device you just connected.
+- **For streamers:** a now-playing overlay for OBS and separate stream audio.
 
-Upgrading from 1.x keeps your library, playlists, likes, listening history and
-settings. The app, FFmpeg and the optional downloader are all included; there is
-nothing else to install.
+Only download music you have permission to save.
 
-### Windows Security Notice
+## New in 2.2.20
 
-QuietPlay **2.2.19 is not Windows code-signed yet**. Microsoft Defender
-SmartScreen may show **Windows protected your PC** when you open the installer.
-An unrecognized-app warning does not prove a download is safe or malicious.
+- **One-click updates:** QuietPlay tells you when an update is ready. Press **Update now** and
+  it downloads, installs and restarts on its own.
+- **Remove songs from the queue** without deleting or disliking them.
+- **Sleep timer** one click away in the player bar.
+- **Settings in the sidebar**, a close button, Audio first, and the visualizer under Appearance
+  (Spectrum is the new default).
+- **Made for you** is now a tidy row on Home with Mixes, New songs and Playlists tabs.
+- **Faster:** online search results in about a third of a second, and recommendations and mood
+  pages that open instantly.
+- **Audio follows Windows**, and asks when you connect new headphones or speakers.
+- **VB-CABLE for OBS** installs from inside the app with one approval.
 
-![Illustrated Windows warning guide: inspect More info, check the file details, and continue only if you trust that file](assets/windows-security-guide.svg)
+[Full changelog](CHANGELOG.md)
 
-1. Check that you downloaded **QuietPlay-2.2.19-Windows-Setup.exe** from
-   [this official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.19).
-   You can [compare its SHA-256 checksum](FAQ.md#check-the-downloaded-file).
-   A matching checksum confirms file identity; it does not prove safety.
-2. On **Windows protected your PC**, select **More info**. Check the filename
-   and publisher. This unsigned build may show **Unknown publisher**.
-3. If you trust that specific file and accept the risk, select **Run anyway**,
-   **only if Windows offers it**. If you are unsure, choose **Don't run**.
-4. If there is no **Run anyway**, or you see **Smart App Control**, a malware
-   detection or an administrator restriction, **stop**. Keep Windows security
-   protections on; ask your administrator or [report the exact warning](https://github.com/cooperwwwwww/QuietPlay-downloads/issues).
-   Do not post private details from your PC.
+## Windows security notice
 
-The image is an illustration; wording varies by Windows version and policy.
-See the [full warning guide](FAQ.md#windows-protected-your-pc),
-[Microsoft's SmartScreen explanation](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
-and [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions).
+QuietPlay 2.2.20 is not Windows code-signed yet, so Microsoft Defender SmartScreen may show
+**Windows protected your PC**. That warning means Windows doesn't recognize the app yet; it doesn't
+say the file is harmful.
 
-## Start Listening
+![How to check the Windows warning: More info, check the file name, then Run anyway](assets/windows-security-guide.svg)
 
-On the first launch, choose **Add music** for individual songs or **Add folder**
-for a whole collection. You can also drag audio files or folders onto QuietPlay.
-Your library starts empty until you add music; no account is needed.
+1. Make sure you downloaded `QuietPlay-2.2.20-Windows-Setup.exe` from
+   [the official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.20). You can
+   [compare its checksum](FAQ.md#check-the-downloaded-file).
+2. Choose **More info**, check the file name, then **Run anyway** only if Windows offers it.
+3. If there is no **Run anyway**, or you see Smart App Control or a malware warning, stop and
+   [ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml). Keep Windows security turned on.
 
-Select a song and press **Play**. To use the optional online search and downloader,
-see the [download guide](USER_GUIDE.md#search-and-download-music). Only download
-recordings you have permission to save.
+## Updates
 
-## What QuietPlay Can Do
+<a id="updates-and-support"></a>
+
+QuietPlay checks for updates by itself and shows **Update now** when one is ready. Updates only
+replace the app files that changed (usually a few megabytes), are signed and checked before they
+are applied, and restore the previous version if anything goes wrong.
+
+On a version older than 2.2.16? Open **Settings → Updates → Check for updates**. Version 2.2.1 can
+run [QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.20/QuietPlayUpdater.exe); version
+2.2.0 needs the installer once. [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
+
+## Requirements
+
+Windows 10 or 11 (64-bit). Setup installs everything QuietPlay needs. The internet is only used
+for lyrics, cover art, recommendations, online search and downloads; your music plays offline.
+Mac and Linux: see the [platform guide](PLATFORMS.md).
+
+## Privacy
+
+Your library, playlists, history and settings stay on your PC (`%APPDATA%\QuietPlay`). Mixes,
+radio and stats are worked out on your PC. Online features send only what they need (for example
+a song name to find its lyrics) and each can be turned off in Settings.
+
+## Help
 
 | | |
 | --- | --- |
-| **Home** | One **Made for you** box with your local mixes, new songs to preview or download and full 50–60-song playlists, then your whole library with Play, Shuffle, genre filter and sorting. Recommendations stay loaded as you move between tabs. |
-| **Discover** | Personalized 50–60-song playlists with previews and Download & save, expanded online recommendations with Show more, Made for you, time-of-day mix, On repeat, Because you played…, Forgotten favorites, Deep cuts, genre mixes, plus **Artists you might like** (picked from what listeners of your favorite artists also play) and **New from your artists**, with 30-second previews. |
-| **Radio and autoplay** | Song radio and artist mixes use the songs you actually play after each other. When a list ends, autoplay keeps going with similar songs. Smart shuffle never repeats an artist back to back. |
-| **Your listening** | Listening time, top songs, artists and genres, minutes per day, favorite hour and streak, for 7 days, 30 days, a year or all time. Every song has its own listening stats. |
-| **Recently played** | Every play, grouped by day, with what you finished and what you skipped. |
-| **Search** | Finds songs, artists, albums and playlists as you type, ignores accents and punctuation, and still finds "jak jonson" when you misspell it. Ctrl+K plays anything instantly. |
-| **Lyrics** | Synced lyrics that follow the song, saved with your files when possible, with a per-song timing adjustment. |
-| **Library care** | Finds duplicate copies of songs and keeps the best one, reconnects songs you moved, tidies up empty and copied playlists, finds missing covers, gives each artist one genre checked against MusicBrainz, Deezer and Apple (with a review screen to change any of them), and lets you set the genre or album for many songs at once. |
-| **Playlists** | Create, reorder, pin, import and export (M3U8 or JSON), and undo deletes. |
-| **Playback** | Crossfade, queue, speed control, live EQ, normalization, sleep timer, output that follows the device your PC is using (or a device you choose), mini player, media keys, taskbar buttons and Ctrl+Alt shortcuts that work from any app, even in games. |
-| **Look and feel** | Black, grey, light, midnight, colorful, high-contrast and custom themes, a real-audio visualizer and reduced motion. |
-| **OBS** | Guided OBS setup, a now-playing overlay and separate stream audio. |
+| How do I…? | [User guide](USER_GUIDE.md) · [FAQ](FAQ.md) |
+| Something isn't working | [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml) |
+| I have an idea | [Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml) |
 
-![QuietPlay 2.2.4 Your listening: listening time, finish rate, daily minutes, top songs and top artists](assets/quietplay-2.2.4-stats.jpg)
-
-*Demonstration statistics; your listening information stays on your PC.*
-
-Reopening restores the song and position you left off at, and waits for you to
-press Play.
-
-## Optional Online Search and Downloads
-
-The search bar can also show online results. Downloads use the bundled spotDL
-companion, which reads Spotify metadata and matches audio from other providers.
-It does not download protected Spotify audio or give you rights to a recording;
-only save music you have permission to download.
-If a song cannot be downloaded from your chosen source, QuietPlay tries
-YouTube Music, YouTube, SoundCloud and Bandcamp, then a broader search, before
-reporting it as failed. When Spotify cannot provide song details, searches and
-Spotify song links use Apple's public music catalogue instead.
-[Download guide](USER_GUIDE.md#search-and-download-music).
-
-## Discover and Full Playlists
-
-Discover recommends songs and complete **50–60-song playlists** from your listening.
-Open a playlist to see every song, download individual songs, or **Download & save**
-the whole mix. Catalog previews appear when a preview is available.
-
-| Discover recommendations | Open a full playlist |
-| --- | --- |
-| ![QuietPlay 2.2.4 Discover with recommended playlists and songs](assets/quietplay-2.2.4-discover.jpg) | ![QuietPlay 2.2.4 complete 60-song playlist with individual downloads and Download and save 60 songs](assets/quietplay-2.2.4-playlist.jpg) |
-
-| Downloads | Updates |
-| --- | --- |
-| ![QuietPlay 2.2.4 Downloads panel with a playlist download in progress and finished songs](assets/quietplay-2.2.4-downloads.jpg) | ![QuietPlay 2.2.4 Update center showing the app is up to date](assets/quietplay-2.2.4-updates.jpg) |
-
-*All pictures use fictional demonstration data. Click a picture to view it larger.*
-
-## New in 2.2.19
-
-- **Taste quiz for new listeners:** three quick, skippable questions (genres,
-  a few artists, moods). Retake it any time from the Search page.
-- **Starter picks on Home:** songs and playlists to start with, from Deezer's
-  genre editors and the artists you pick, each with Save & download.
-- **Fixes:** Settings buttons no longer split over two lines in narrow windows,
-  and playlists say 2000s and 2010s instead of 00s and 10s.
-
-### New in 2.2.18
-
-- **Search that fits the app:** mood cards show artwork from your own songs,
-  and the search panel uses QuietPlay's colours in every theme.
-- **More on each mood page:** your songs, then 5 to 10 editors' playlists that
-  fit your taste (save and download any of them), then new songs to try.
-- **Fixes:** the Downloads panel no longer runs off the edge with long playlist
-  names, and the search panel no longer reopens over a page.
-
-### New in 2.2.17
-
-- **New search:** click the search box for moods, recent searches, quick picks
-  and a tip for pasting Spotify playlist, album or song links.
-- **Mood mixes:** say how you feel ("kinda down", "need energy for the gym") or
-  pick one of 11 moods. Mixes come from your library, picked with Deezer's
-  editorial mood playlists and your own listening, plus new songs to try.
-- **Search page:** browse by genre and quick picks such as Surprise me, Never
-  played and Forgotten favorites.
-- **Up to 100 online search results**, **Save & download** for recommended
-  playlists, **faster volume**, **smooth pause** and a **damaged songs** check.
-
-### New in 2.2.16
-
-- **Update progress bars work:** the update screen shows a moving bar while
-  checking, real download progress and a verifying step, and the updater
-  window's bar moves while it installs.
-- **Band names stay whole:** "The Mamas & the Papas" and similar bands are no
-  longer split into two artists.
-- **Smaller fixes:** "01 Artist - Title" file names lose the track number, and
-  damaged files say they can't be played.
-
-### New in 2.2.15
-
-- **Next works offline:** fixed **Next**, shuffle, Add to queue and mixes
-  stopping with "End of the list" after QuietPlay started, most often while
-  offline.
-
-### New in 2.2.14
-
-- **Works offline:** recommendations no longer retry nonstop while you are
-  offline. Home shows that you are offline, keeps what you had, and catches up
-  when you reconnect.
-- **No more crackling:** a larger audio buffer keeps sound smooth when the app
-  is busy, with an extra-safe buffer for Bluetooth headphones and speakers.
-- **Hands-free warning:** if Windows plays through a headset's phone-call
-  connection, QuietPlay tells you which output to choose instead.
-
-### New in 2.2.13
-
-- **Settings → Navidrome:** the Navidrome add-on gets its own Settings tab with
-  connection, library, streaming quality, sharing and storage options.
-- **Automatic reconnect:** when your server comes back online, its songs return
-  to your library on their own.
-- **Streaming quality** from original down to 96 kbps, plus switches for what
-  is sent to your server (plays, now playing, likes).
-
-### New in 2.2.12
-
-- **Navidrome add-on (optional):** play music from your own Navidrome or other
-  Subsonic-compatible server. Tick it during setup, or install it any time in
-  **Settings → Advanced → Add-ons**. It stays off unless you turn it on.
-- **Mixed or separate:** server songs can join your library or stay on their
-  own Navidrome page with albums, artists, playlists and search.
-- **Seamless offline:** when the server is off or you sign out, its songs leave
-  your library quietly; your listening history stays for recommendations.
-
-### New in 2.2.11
-
-- **More cover art:** when MusicBrainz is unavailable or finds nothing,
-  QuietPlay looks for the same song and album on Apple Music, then Deezer.
-- **Cleaner titles:** songs added while still downloading no longer show a
-  "[qp-…]" download tag in their title. Your files are not changed.
-
-### New in 2.2.9
-
-- **Retry failed downloads** from the Downloads panel; songs already saved are skipped.
-- **Collapse Made for you** to one line so your songs come first on smaller
-  screens. QuietPlay remembers your choice.
-- **Clearer output setting:** "Follow Windows (System default)", with a short
-  explanation of what your choice does.
-
-### New in 2.2.8
-
-- **Plays where your PC plays:** with Output set to System default, playback
-  follows the device Windows is using. Connect headphones or a speaker and the
-  music moves there, keeping your place; disconnect it and it moves back.
-- **No manual refresh:** the output list in Settings updates by itself when
-  devices are connected or removed.
-- **Missing device, no silence:** if the device you chose is not connected,
-  QuietPlay uses your PC's current device and switches back when yours returns.
-
-### New in 2.2.7
-
-- **Downloads that keep trying:** if a song fails on your chosen source,
-  QuietPlay tries YouTube Music, YouTube, SoundCloud and Bandcamp, then a
-  broader search. Only songs that fail everywhere are reported.
-- **Fixed YouTube Music downloads**, which could not start in earlier versions.
-- **Works when Spotify is down:** searches and Spotify song links fall back to
-  Apple's public music catalogue, preferring the original recording over covers
-  and remixes. Album and playlist links still need Spotify.
-
-### New in 2.2.4
-
-- **Made for you on Home:** one box brings together your local mixes, new songs
-  and full 50–60-song recommended playlists, with your songs right below.
-  Click a recommended song to preview it; open a playlist to download and save it.
-- **Faster, steadier Home:** recommendations stay loaded when you switch tabs
-  instead of reloading, and rows remember where you scrolled.
-- **Reliable playlist downloads:** fixed recommended playlists failing with
-  "Could not get client token". Playlists keep their order, and one song that
-  cannot be found no longer stops the rest.
-- **Redesigned Downloads, Update center and updater window**, with clear progress
-  for active and finished downloads and one clear update action.
-
-### Official Updater (2.2.2 and Later)
-
-- **Official updater:** signed release manifests, changed-file downloads,
-  progress and cancellation, **Update and restart**, startup checks and recovery.
-  Future updates reuse existing app files instead of reinstalling the full app.
-  [How to update](#updates-and-support).
-
-### Playlist Features (2.2.1 and Later)
-
-- **Full personalized playlists:** Discover builds playlists of **50–60 different
-  songs** from your listening habits when enough recommendations are available.
-  Open every song, preview tracks, or **Download & save** the whole playlist.
-- **More recommendations:** a larger pool of related artists, picks from your
-  favorite artists, and **Show more** for additional song suggestions.
-- **Complete playlist search:** paste a Spotify playlist or album link to see
-  all returned songs. **Download all** queues the complete collection.
-
-[Personalized playlist guide](USER_GUIDE.md#personalized-playlists) |
-[Release notes](CHANGELOG.md#2219---taste-quiz-and-starter-picks)
-
-## In Development
-
-The following features are **not included in the 2.2.19 installer**:
-
-- **Custom OBS overlays:** six visual color pickers, background transparency,
-  fonts, artwork placement, borders, sizing, visible details and presets. A live
-  preview uses the same renderer as OBS, and small sources scale to fit.
-  [Overlay customization guide](USER_GUIDE.md#overlay-customization-unreleased).
-Nothing here requires an account or uploads your music. Follow the
-[unreleased changelog](CHANGELOG.md) for development progress.
-
-## Data and Privacy
-
-- Your library, playlists, history and settings stay on your PC
-  (`%APPDATA%\QuietPlay`). Nothing you play is uploaded.
-- Mixes, radio, autoplay and stats are calculated on your PC.
-- When turned on, lyrics (LRCLIB), cover art and genres (MusicBrainz, Deezer,
-  Apple) receive the song details they need. Suggestions (**Artists you might
-  like**, **New from your artists**) send only the names of your most-played
-  artists to Deezer's and Apple's public music catalogs. Each can be turned off
-  in Settings.
-
-## Updates and Support
-
-**QuietPlay 2.2.19 includes the official file updater.** It checks official stable
-releases in the background, but downloads and installs only when you ask.
-
-1. Open **Settings → Updates → Check for updates**.
-2. Choose **Download changed files** (**Download update** from 2.2.4). The update
-   screen shows the download size.
-3. Choose **Update and restart**, then approve. QuietPlay saves and closes,
-   updates changed app files, checks startup and reopens.
-
-Each release manifest is signed with QuietPlay's release key. The updater checks
-that signature, the package size and SHA-256 hashes before applying files. A
-failed or interrupted update restores the previous app. Your music, library,
-playlists, history and settings stay in place. This release-key signature is
-separate from Windows Authenticode; the app is still not Windows code-signed,
-and Windows security checks remain enabled.
-
-**Already on 2.2.16, 2.2.17 or 2.2.18:** use the app's update screen to reach 2.2.19
-with about **8.0 MB** of changed files; from **2.2.7 to 2.2.15** it is about **23.2 MB**. From
-**2.2.2, 2.2.3 or 2.2.4** it is about **40.2 MB**. Version **2.2.1** can run
-**[QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.19/QuietPlayUpdater.exe)**
-from the official 2.2.19 release for a direct update of about **40.3 MB**.
-Version **2.2.0** needs one manual 2.2.19 setup to enable future file updates.
-A full setup remains available for new PCs, repairs or versions without a
-matching update package.
-
-| Need help with | Where to go |
-| --- | --- |
-| Getting started | [User guide](USER_GUIDE.md) and [FAQ](FAQ.md) |
-| An installation question | [Ask for help](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=help.yml) |
-| Something broken | [Report a bug](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml) |
-| An idea | [Request a feature](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=feature_request.yml) |
-
-Feedback is public: don't attach music files, passwords or unredacted logs.
-[Feedback guide](CONTRIBUTING.md). This repository hosts downloads,
-documentation and feedback; the app's source is private.
+Please don't attach music files, passwords or unedited logs; issues are public.
+This repository hosts downloads, documentation and feedback; the app's source is private.
 
 ## Credits
 
-Created and product-directed by **Cooper W.** Engineering and product design
-developed in collaboration with **OpenAI Codex**; the 2.2 redesign was developed
-in collaboration with **Claude** by Anthropic.
-
-QuietPlay is independent, is not affiliated with Spotify or Apple, and is not
-endorsed by OpenAI or Anthropic. Third-party notices and licenses are included
-in the installed app under *Release Evidence*.
-
+Created and product-directed by **Cooper W.**, developed in collaboration with **OpenAI Codex** and
+**Claude** by Anthropic. QuietPlay is independent and not affiliated with Spotify, Apple, Deezer,
+OpenAI or Anthropic. Third-party notices are included in the installed app under *Release Evidence*.

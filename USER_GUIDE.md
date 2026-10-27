@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.19** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.20** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -62,10 +62,9 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
 ## Find and Play
 
-- **Home** starts with one **Made for you** box: **Your mixes** (local mixes
-  you can play straight away), **New songs for you** and **Playlists for you**.
-  Use the left/right arrows to scroll each row; rows remember where you were.
-  The arrow at the right of the box header collapses it to one line.
+- **Home** starts with **Made for you**: pick **Mixes** (local mixes you can
+  play straight away), **New songs** or **Playlists** with the tabs next to the
+  title. Use the left/right arrows to scroll the row; QuietPlay remembers the tab.
   Click a recommended song to preview it, or use its download button. Open a
   recommended playlist to see every song, preview, download a song, or
   **Download & save** the full mix. **See all** opens Discover, and the refresh
@@ -89,7 +88,7 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
   **Save & download** it), then **New songs for this mood**. Use **Save as
   playlist** to keep your mix. Mixes work offline with saved mood data.
 - **Starter picks** (from 2.2.19) are for new listeners. A short taste quiz asks
-  for genres, a few artists and moods (skip any step), then Home shows songs
+  for genres, a few artists, how many new artists to mix in and whether to skip explicit songs (skip any step), then Home shows songs
   and playlists to start with, each with **Save & download**. Retake the quiz
   from the **Search** page, or hide Starter picks with the **×** on Home.
 - Recommended playlists on Home and Discover have **Save & download**, which
@@ -250,7 +249,7 @@ add-on is optional and off by default.
    **Settings → Advanced → Add-ons** and choose **Install**.
 2. Open **Settings → Navidrome** (it appears once the add-on is installed), enter
    your server address, username and password, then choose **Connect**.
-3. Open **Navidrome** in the sidebar to browse **Albums**, **Artists**,
+3. Choose **Open Navidrome** in Settings → Navidrome to browse **Albums**, **Artists**,
    **Playlists** and **Search**. Right-click a song to queue, like or dislike it.
 
 **Settings → Navidrome** has every add-on option:
@@ -276,14 +275,19 @@ server returns. Your listening history is kept for recommendations.
 
 - Bass, Mid and Treble sliders change sound live. Normalization and
   ReplayGain even out loudness. Speed changes keep pitch.
-- **Settings → Audio** picks the output device and visualizer style.
+- **Settings** is in the sidebar (Audio opens first); close it with the **×** at the top right.
+- **Settings → Audio** picks the output device; **Settings → Appearance** picks the visualizer style.
   **Follow Windows (System default)** follows the device Windows is using as you connect and
   disconnect headphones or speakers, keeping your place. A specific device is
   used while it is connected; otherwise QuietPlay uses your PC's current device.
-  The list updates by itself.
+  The list updates by itself. When you connect headphones or speakers that Windows does not
+  switch to, QuietPlay asks whether to play there.
 - The **mini player** (button at the bottom right) is a small always-on-top
   window with adjustable opacity.
-- **Sleep timer** pauses after 15–90 minutes or at the end of the song.
+- **Sleep timer:** the moon button in the player bar pauses after 15–90 minutes or at the end of
+  the song. It lights up while a timer runs.
+- **Queue:** open the queue and use the **×** on an upcoming song to take it out of this
+  play-through. Nothing is deleted or disliked.
 - Media keys, headset buttons and the taskbar thumbnail buttons control
   playback. Repair them in Settings → Integrations if they stop responding.
 
@@ -304,7 +308,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.19 installer**. The existing download still has the basic
+in the current 2.2.20 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -364,10 +368,13 @@ them off there too. Press **F1** to see every shortcut.
 1. Open **Settings → Updates → Check for updates**. QuietPlay also checks in
    the background and shows a notice when an official stable update is available.
 2. Review the available version and changed-file download size.
-3. Choose **Download changed files** (**Download update** from 2.2.4). You can
-   cancel while downloading.
-4. When verification finishes, choose **Update and restart** and approve.
-   QuietPlay closes, updates its changed app files, checks startup and reopens.
+3. Choose **Update now** (from 2.2.20; earlier versions show **Download update**,
+   then **Update and restart**). You can cancel while downloading.
+4. QuietPlay verifies the download, closes, updates its changed app files,
+   checks startup and reopens on its own.
+
+From 2.2.20 a notice also appears above the player when an update is ready:
+**Update now** does everything in one click, **Later** hides it until the next version.
 
 The update replaces changed files, not the whole app installation. It may remove
 obsolete files that belonged to the previous release. Unchanged runtime files
@@ -382,18 +389,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.19
+### Updating to 2.2.20
 
-Use the update screen above. From **2.2.16, 2.2.17 or 2.2.18** the download is about **8.0 MB**,
+Use the update screen above. From **2.2.16 to 2.2.19** the download is about **8.0 MB**,
 from **2.2.7 to 2.2.15** about **23.2 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.19 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.20 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.19 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.20 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 
