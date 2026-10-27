@@ -2,9 +2,9 @@
 
 [QuietPlay downloads](README.md#get-quietplay) | [User guide](USER_GUIDE.md) | [FAQ](FAQ.md)
 
-## Install QuietPlay 2.2.20
+## Install QuietPlay 2.2.21
 
-Download **QuietPlay-2.2.20-Windows-Setup.exe** from the
+Download **QuietPlay-2.2.21-Windows-Setup.exe** from the
 [official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/latest)
 and run it, over the existing app if you already have one. Version 2.2.1 and
 later can also update from **Settings → Updates** without the full installer. Setup includes QuietPlay, its Python runtime, playback

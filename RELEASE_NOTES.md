@@ -1,3 +1,18 @@
+# QuietPlay 2.2.21
+
+QuietPlay 2.2.21 shows more of Made for you at a glance.
+
+- **Mixes in a grid:** the Mixes tab in Made for you lays your mixes out in two or three rows instead of one long row, so you can see most of them without scrolling. The other mixes are still one arrow away.
+- Includes everything from 2.2.20: one-click updates, faster search and recommendations, queue removal, the sleep timer button, Settings in the sidebar, audio that follows Windows and the in-app VB-CABLE install.
+
+**Already on 2.2.16 to 2.2.20:** open **Settings → Updates → Check for updates**, then **Update now** (about **8.0 MB**); on 2.2.20 the notice above the player does it in one click. **On 2.2.7 to 2.2.15:** the same steps (about **23.2 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.3 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.3 MB**. **On 2.2.0:** install `QuietPlay-2.2.21-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.20
 
 QuietPlay 2.2.20 makes updating one click, makes the app noticeably faster, and makes Settings easier to find.

@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.20** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.21** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -64,7 +64,8 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
 - **Home** starts with **Made for you**: pick **Mixes** (local mixes you can
   play straight away), **New songs** or **Playlists** with the tabs next to the
-  title. Use the left/right arrows to scroll the row; QuietPlay remembers the tab.
+  title. Mixes show in two or three rows; use the left/right arrows to see more.
+  QuietPlay remembers the tab.
   Click a recommended song to preview it, or use its download button. Open a
   recommended playlist to see every song, preview, download a song, or
   **Download & save** the full mix. **See all** opens Discover, and the refresh
@@ -308,7 +309,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.20 installer**. The existing download still has the basic
+in the current 2.2.21 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -389,18 +390,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.20
+### Updating to 2.2.21
 
-Use the update screen above. From **2.2.16 to 2.2.19** the download is about **8.0 MB**,
+Use the update screen above. From **2.2.16 to 2.2.20** the download is about **8.0 MB**,
 from **2.2.7 to 2.2.15** about **23.2 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.20 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.21 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.20 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.21 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.20.
+These features are not included in 2.2.21.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,14 @@ These features are not included in 2.2.20.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.21 - Mixes in a Grid
+
+Released October 26, 2026 for Windows 10/11 (64-bit).
+
+- Made for you → Mixes shows three rows (two for 4 to 8 mixes) instead of one.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.20.
 
 ## 2.2.20 - One-Click Updates and a Faster App
 
