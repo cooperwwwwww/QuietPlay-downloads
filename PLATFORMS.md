@@ -2,12 +2,12 @@
 
 [QuietPlay](README.md) | [Downloads](README.md#get-quietplay) | [User guide](USER_GUIDE.md)
 
-**QuietPlay 2.2.23 is a Windows app.** Mac, Linux and Chromebook users can keep
+**QuietPlay 2.2.24 is a Windows app.** Mac, Linux and Chromebook users can keep
 using the experimental **1.54.1 Beta** packages from its
 [release page](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v1.54.1-development).
 Those packages have the previous interface and are not updated to 2.x.
 
-## Windows (QuietPlay 2.2.23)
+## Windows (QuietPlay 2.2.24)
 
 Windows 10 or 11, Intel/AMD 64-bit, with the Microsoft Edge WebView2 Runtime
 (included with Windows 11; setup installs it when missing). Use
@@ -72,7 +72,7 @@ hardware verification. [Google's file-sharing guide](https://support.google.com/
 
 ## Feature Differences
 
-| Feature | Windows (2.2.23) | Experimental Mac / Linux (1.54.1 Beta) |
+| Feature | Windows (2.2.24) | Experimental Mac / Linux (1.54.1 Beta) |
 | --- | --- | --- |
 | Local music, playlists, lyrics, live EQ and real-audio visualizer | Available | Included in native build targets |
 | In-app search and optional spotDL downloads | Bundled | Native bundled companion; provider availability can vary |

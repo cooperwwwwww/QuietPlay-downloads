@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.23** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.24** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -43,8 +43,9 @@ Control, antivirus or an administrator blocks it, stop and keep protections on.
 Your library, playlists, likes, listening history, lyrics and artwork caches
 and settings are stored in `%APPDATA%\QuietPlay`. Upgrades keep them.
 
-- **Settings → Library → Library data**: back up, restore, export or import
-  your library, playlists and settings.
+- **Settings → Library → Library data**: back up or export your library, playlists and
+  settings. To bring a backup or an export back (from 2.2.24), open **Settings → Playback →
+  Import your music → Other ways** and choose **Restore a backup** or **Import a library export**.
 - **Settings → Library → Listening history**: see your stats, export, or clear history.
 - QuietPlay never deletes your music files. Removing songs only removes them
   from the library; they are listed under **Removed songs** and can be restored.
@@ -323,7 +324,7 @@ server returns. Your listening history is kept for recommendations.
   disconnect headphones or speakers, keeping your place. A specific device is
   used while it is connected; otherwise QuietPlay uses your PC's current device.
   The list updates by itself. When you connect headphones or speakers that Windows does not
-  switch to, QuietPlay asks whether to play there.
+  switch to, QuietPlay asks whether to play there, within about a second (from 2.2.24).
 - The **mini player** (button at the bottom right) is a small always-on-top
   window with adjustable opacity.
 - **Sleep timer:** the moon button in the player bar pauses after 15–90 minutes or at the end of
@@ -350,7 +351,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.23 installer**. The existing download still has the basic
+in the current 2.2.24 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -407,8 +408,8 @@ them off there too. Press **F1** to see every shortcut.
 
 ### Official File Updates (2.2.2 and Later)
 
-1. Open **Settings → Updates → Check for updates**. QuietPlay also checks in
-   the background and shows a notice when an official stable update is available.
+1. Open **Settings → Updates → Check for updates**. QuietPlay also checks by itself as it opens
+   (from 2.2.24) and shows a notice when an official stable update is available.
 2. Review the available version and changed-file download size.
 3. Choose **Update now** (from 2.2.20; earlier versions show **Download update**,
    then **Update and restart**). You can cancel while downloading.
@@ -417,6 +418,7 @@ them off there too. Press **F1** to see every shortcut.
 
 From 2.2.20 a notice also appears above the player when an update is ready:
 **Update now** does everything in one click, **Later** hides it until the next version.
+From 2.2.24 there is no confirmation box: Update now downloads, installs and restarts on its own.
 
 The update replaces changed files, not the whole app installation. It may remove
 obsolete files that belonged to the previous release. Unchanged runtime files
@@ -431,18 +433,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.23
+### Updating to 2.2.24
 
-Use the update screen above. From **2.2.16 to 2.2.22** the download is about **8.1 MB**,
-from **2.2.7 to 2.2.15** about **23.3 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
+Use the update screen above. From **2.2.7 to 2.2.23** the download is about **23.3 MB**
+(the official updater gets the new logo this time), and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.23 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.24 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.23 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.24 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

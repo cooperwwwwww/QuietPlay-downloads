@@ -8,9 +8,9 @@
 
 No account. No subscription. Nothing you play leaves your computer.
 
-<a id="get-quietplay"></a><a href="https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.23/QuietPlay-2.2.23-Windows-Setup.exe"><img src="assets/download-windows.svg" alt="Download QuietPlay 2.2.23 for Windows" width="340"></a>
+<a id="get-quietplay"></a><a href="https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.24/QuietPlay-2.2.24-Windows-Setup.exe"><img src="assets/download-windows.svg" alt="Download QuietPlay 2.2.24 for Windows" width="340"></a>
 
-Version 2.2.23 · [What's new](#new-in-2223) · [Help](FAQ.md) · [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
+Version 2.2.24 · [What's new](#new-in-2224) · [Help](FAQ.md) · [Report a problem](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/new?template=bug_report.yml)
 
 </div>
 
@@ -18,7 +18,7 @@ Version 2.2.23 · [What's new](#new-in-2223) · [Help](FAQ.md) · [Report a prob
 
 <a id="install-quietplay"></a>
 
-1. **Click the button above.** Your browser downloads `QuietPlay-2.2.23-Windows-Setup.exe`.
+1. **Click the button above.** Your browser downloads `QuietPlay-2.2.24-Windows-Setup.exe`.
 2. **Open the file.** If Windows says *"Windows protected your PC"*, choose **More info**, check the
    file name, then **Run anyway**. This shows up because QuietPlay is new and not code-signed yet;
    [why this happens](#windows-security-notice).
@@ -38,7 +38,7 @@ the app. One click, and your music, playlists and settings stay in place.
 | **Your listening** | **Search, moods and quick picks** |
 | ![Your listening: time, top songs and top artists](assets/quietplay-stats.jpg) | ![Search page with moods and quick picks](assets/quietplay-search.jpg) |
 
-*Screenshots of QuietPlay 2.2.23 with a demo library of well-known songs.*
+*Screenshots of QuietPlay 2.2.24 with a demo library of well-known songs.*
 
 ## What it does
 
@@ -59,24 +59,21 @@ the app. One click, and your music, playlists and settings stay in place.
 
 Only download music you have permission to save.
 
-## New in 2.2.23
+## New in 2.2.24
 
-- **Import your music, the way Spotify does it:** in **Settings → Playback → Import your music**,
-  press **Get started**. TuneMyMusic opens in your browser: choose the app your music is in now
-  (Spotify, Apple Music, YouTube Music, Amazon Music, Tidal, Deezer, SoundCloud and more), sign in
-  there, pick your songs and choose **Export to file**. Drop the file into QuietPlay and its
-  recommendations learn your taste. Nothing is downloaded.
+- **One-click updates, ready at launch:** QuietPlay checks while it opens; **Update now** downloads,
+  installs and restarts on its own.
+- **Smooth audio while recommendations refresh,** and new headphones or speakers noticed within
+  about a second.
+- **Previews keep working** after recommendations have been open a while.
+- **One place to bring things in:** Settings → Playback → **Import your music** (backups too).
+- **The new black-and-white logo** on shortcuts and the taskbar.
+
+### New in 2.2.23
+
+- **Import your music, the way Spotify does it,** with TuneMyMusic.
   [How to](USER_GUIDE.md#bring-your-taste-from-other-apps)
-- **More new songs on Home:** up to 90 (was 36).
-
-### New in 2.2.22
-
-- **About twice as many recommendations,** up to eight "Because you play" playlists and a new
-  "Fresh faces" playlist.
-- **Made for you fills the whole row** in three rows at every window size.
-- **No duplicate downloads:** songs already in your library say **In your library** and are never
-  downloaded again.
-- **Small windows:** the queue opens over the page instead of squeezing it.
+- **More new songs on Home:** up to 90.
 
 ### New in 2.2.20
 
@@ -96,14 +93,14 @@ Only download music you have permission to save.
 
 ## Windows security notice
 
-QuietPlay 2.2.23 is not Windows code-signed yet, so Microsoft Defender SmartScreen may show
+QuietPlay 2.2.24 is not Windows code-signed yet, so Microsoft Defender SmartScreen may show
 **Windows protected your PC**. That warning means Windows doesn't recognize the app yet; it doesn't
 say the file is harmful.
 
 ![How to check the Windows warning: More info, check the file name, then Run anyway](assets/windows-security-guide.svg)
 
-1. Make sure you downloaded `QuietPlay-2.2.23-Windows-Setup.exe` from
-   [the official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.23). You can
+1. Make sure you downloaded `QuietPlay-2.2.24-Windows-Setup.exe` from
+   [the official release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.24). You can
    [compare its checksum](FAQ.md#check-the-downloaded-file).
 2. Choose **More info**, check the file name, then **Run anyway** only if Windows offers it.
 3. If there is no **Run anyway**, or you see Smart App Control or a malware warning, stop and
@@ -118,7 +115,7 @@ replace the app files that changed (usually a few megabytes), are signed and che
 are applied, and restore the previous version if anything goes wrong.
 
 On a version older than 2.2.16? Open **Settings → Updates → Check for updates**. Version 2.2.1 can
-run [QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.23/QuietPlayUpdater.exe); version
+run [QuietPlayUpdater.exe](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/download/v2.2.24/QuietPlayUpdater.exe); version
 2.2.0 needs the installer once. [All versions](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
 ## Requirements

@@ -1,3 +1,22 @@
+# QuietPlay 2.2.24
+
+QuietPlay 2.2.24 is smoother and quicker, with true one-click updates.
+
+- **One-click updates, ready at launch:** QuietPlay checks for updates while it opens, so the notice is there as soon as the window is. Press **Update now** and it downloads, installs and restarts on its own, with no extra steps or confirmation box. The same button is in **Settings → Updates**.
+- **No more audio breaking up while recommendations refresh:** rebuilding Made for you now takes about a second instead of tying up the computer, so playback stays smooth when you refresh starter picks, songs or playlists.
+- **New headphones and speakers are noticed right away:** QuietPlay asks whether to play there within about a second of connecting them.
+- **Previews keep working:** song previews in recommendations no longer stop playing after the recommendations have been open for a while.
+- **One place to bring things in:** **Settings → Playback → Import your music**. Restoring a QuietPlay backup or a library export is now under **Other ways** there. Dropping a file anywhere while importing goes to the import, and no "Drop to add to your library" box stays on screen.
+- **The new black-and-white logo** on QuietPlay's shortcuts, the taskbar and the official updater.
+
+**Already on 2.2.16 to 2.2.23:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **23.3 MB** this time, because the official updater gets the new logo too). **On 2.2.7 to 2.2.15:** the same steps (about **23.3 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.4 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.4 MB**. **On 2.2.0:** install `QuietPlay-2.2.24-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.23
 
 QuietPlay 2.2.23 imports your music the way Spotify does.

@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.23.
+These features are not included in 2.2.24.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,22 @@ These features are not included in 2.2.23.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.24 - One-Click Updates and Smooth Audio
+
+Released October 28, 2026 for Windows 10/11 (64-bit).
+
+- Update now downloads, installs and restarts without a confirmation box, and QuietPlay checks for
+  updates as it opens so the notice is ready with the window.
+- Rebuilding Made for you takes about a second instead of minutes of CPU, so audio no longer breaks
+  up while recommendations refresh.
+- New playback devices are noticed within about a second (Windows change notifications).
+- Expired preview links are replaced with fresh ones, so previews keep playing.
+- Import your music is the one place to bring things in; backups and library exports are restored
+  from Other ways there. A file dropped while importing no longer leaves the drop box on screen.
+- The black-and-white logo in QuietPlay.exe and the official updater.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.23.
 
 ## 2.2.23 - Import Your Music
 
