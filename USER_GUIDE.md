@@ -2,14 +2,14 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.25** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.26** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
 
 [Install and open](#install-and-open) · [Your data](#your-data-on-this-pc) ·
 [Add music](#add-existing-music) · [Find and play](#find-and-play) ·
-[Discover and radio](#discover-radio-and-autoplay) · [Taste from other apps](#bring-your-taste-from-other-apps) · [Your listening](#your-listening) ·
+[Discover and radio](#discover-radio-and-autoplay) · [Online music](#online-music-artists-and-charts) · [Taste from other apps](#bring-your-taste-from-other-apps) · [Your listening](#your-listening) ·
 [Playlists](#playlists) · [Library care](#library-care) · [Lyrics](#lyrics) ·
 [Search and download](#search-and-download-music) · [Navidrome](#navidrome-add-on) · [Audio and mini player](#audio-and-mini-player) ·
 [OBS](#obs) · [Settings](#settings) · [Shortcuts](#keyboard-shortcuts) · [Updates and help](#updates-and-help)
@@ -193,6 +193,37 @@ in QuietPlay, so you'll see them in **Because you play…** playlists and in new
 artists. Each source is listed in Settings with **Remove**. Export files are read on your PC; only
 the names of the songs and artists are kept.
 
+## Online Music, Artists and Charts
+
+From **2.2.26** QuietPlay has an online catalog, like Spotify's. Catalog data comes from Deezer's public
+catalog and Apple's iTunes Search; artist bios come from Wikipedia and link to their article.
+
+- **Search** shows **Artists**, **Albums** and **Playlists** tabs above the online songs. Open any of them.
+- **Artist pages:** **Follow**, fans, popular songs, the discography (albums, singles, compilations),
+  **Fans also like**, playlists featuring the artist, and **About** (the Wikipedia bio). Your library's
+  artist pages show these below your own songs; **Full artist page** opens the rest.
+- **Album and playlist pages** list every song. Click a cover to hear a 30-second preview. Songs you have
+  say **In library**; **Download** gets one song and **Save & download** saves the whole list as a playlist
+  (songs you already have are added, not downloaded again).
+- **Charts and new music** (Search page → **Charts and new music**) has the Top 50, New & notable, top
+  albums, top artists and popular playlists.
+- **Release Radar** on Home lists releases from the last month by artists you follow or play most.
+- **Recommended songs** at the bottom of your playlists suggests songs that fit them.
+- **Your year in music** (Your listening → the button next to the time periods) recaps your year.
+
+### Notifications
+
+The **bell** in the top bar shows new releases from your artists, finished downloads and available
+updates the moment they happen; the number shows how many are new.
+
+### Offline and Online
+
+QuietPlay notices when you lose or get back your internet connection. While offline, an **Offline** pill
+and a note show at the top; your library, mixes, moods and pages you've opened still work, and
+recommendations, online search and downloads come back on their own when you're connected.
+**Work offline** (in the bell menu and Settings → Playback → Listening and recommendations) stops
+QuietPlay from using the internet at all until you turn it off or choose **Go online**.
+
 ## Your Listening
 
 **Your listening** in the sidebar shows listening time, plays, how many songs
@@ -331,7 +362,10 @@ server returns. Your listening history is kept for recommendations.
   the song. It lights up while a timer runs.
 - **Queue:** open the queue and use the **×** on an upcoming song to take it out of this
   play-through. Nothing is deleted or disliked.
-- **Up next** (from 2.2.25): Now playing lists the next five songs; click one to play it.
+- **Up next** (from 2.2.25): Now playing lists the next five songs; click one to play it. In the queue
+  (from 2.2.26), drag the songs under **Next from …** into any order, or press **Mix up** to shuffle them.
+- **Delete from this PC** (from 2.2.26, in any song's menu) moves the file to the Recycle Bin and takes
+  the song out of your library. **Remove from library** keeps the file.
 - Point at a name cut off with "…" to see it in full, and click the page you're on in the sidebar
   again to jump back to the top.
 - Pages and panels ease in with short animations. They turn off when Windows is set to reduce
@@ -356,7 +390,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.25 installer**. The existing download still has the basic
+in the current 2.2.26 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -438,18 +472,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.25
+### Updating to 2.2.26
 
-Use the update screen above. From **2.2.24** the download is about **8.1 MB**,
+Use the update screen above. From **2.2.24 or 2.2.25** the download is about **8.1 MB**,
 from **2.2.7 to 2.2.23** about **23.3 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.25 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.26 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.25 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.26 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

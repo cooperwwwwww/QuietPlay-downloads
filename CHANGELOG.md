@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.25.
+These features are not included in 2.2.26.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,23 @@ These features are not included in 2.2.25.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.26 - Online Music
+
+Released November 9, 2026 for Windows 10/11 (64-bit).
+
+- Online catalog: artists, albums and playlists in search; artist pages with a Wikipedia bio, popular
+  songs, discography, related artists and playlists; album, playlist and chart pages; follow artists.
+- Release Radar on Home, and real-time notifications (new releases, finished downloads, updates).
+- Offline and online modes, and Work offline.
+- Recommended songs under your playlists; Your year in music.
+- Downloads fall back through YouTube, YouTube Music, SoundCloud, Piped and Bandcamp; online search
+  also uses Apple's iTunes catalog.
+- Up next can be reordered and mixed up; Delete from this PC (to the Recycle Bin).
+- Fixed: the mini player's volume slider; its way back to the song time now shows a clock.
+- A tip when Discord is running while Stream audio is on (Discord hears both copies).
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.25.
 
 ## 2.2.25 - Smoother and Nicer
 

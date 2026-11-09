@@ -1,3 +1,28 @@
+# QuietPlay 2.2.26
+
+QuietPlay 2.2.26 brings online music, Spotify-style: artists, albums, playlists and charts, a Release Radar, live notifications, and proper offline and online modes.
+
+- **Search artists, albums and playlists:** search results have Artists, Albums and Playlists tabs next to the songs.
+- **Artist pages:** Follow, fans, popular songs, the discography (albums, singles, compilations), Fans also like, playlists featuring the artist, and a bio from Wikipedia. Your library's artist pages show these below your own songs.
+- **Album, playlist and chart pages:** every song with a 30-second preview and Download. Songs you have say **In library**, and **Save & download** never downloads them again. **Charts and new music** has the Top 50, New & notable, top albums, top artists and popular playlists.
+- **Release Radar** on Home: new releases from the last month by artists you follow or play most.
+- **Notifications as they happen:** a bell in the top bar shows new releases from your artists, finished downloads and available updates, with an unread count.
+- **Offline and online modes:** QuietPlay notices when you lose or get back your connection. Offline, your library, mixes, moods and pages you've opened still work; recommendations, online search and downloads come back on their own. **Work offline** (in the bell menu and Settings → Playback) stops all internet use.
+- **Recommended songs under your playlists,** based on what's in them, and **Your year in music** on Your listening, a recap of your minutes, top artist and top songs.
+- **More downloads succeed:** downloads try YouTube, YouTube Music, SoundCloud, Piped and Bandcamp until one has the song, and online search also checks Apple's iTunes catalog, so more songs turn up.
+- **Up next you can edit:** drag the songs coming next into any order, or **Mix up** to shuffle them.
+- **Delete from this PC:** in any song's menu. The file goes to the Recycle Bin and the song leaves your library.
+- **Fixed:** the mini player's volume slider now works; in volume view, a clock button takes you back to the song time.
+- **Sharing your screen on Discord?** With Stream audio on, Discord hears the music twice; QuietPlay now tells you once if Discord is running.
+
+**Already on 2.2.16 to 2.2.25:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **8.1 MB** from 2.2.24 and 2.2.25, **23.3 MB** from 2.2.16 to 2.2.23). **On 2.2.7 to 2.2.15:** the same steps (about **23.3 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.4 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.4 MB**. **On 2.2.0:** install `QuietPlay-2.2.26-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Catalog data comes from Deezer's public catalog and Apple's iTunes Search; artist bios come from Wikipedia (CC BY-SA) and link to their article. Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.25
 
 QuietPlay 2.2.25 looks and feels smoother, and its recommendations stop suggesting songs you already have.
