@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.24.
+These features are not included in 2.2.25.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,20 @@ These features are not included in 2.2.24.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.25 - Smoother and Nicer
+
+Released October 29, 2026 for Windows 10/11 (64-bit).
+
+- Recommendations leave out songs already in the library, matched like the duplicate-download
+  guard (remasters, featured artists, "The").
+- Transitions for pages, Settings sections, the Now playing panel, new songs' covers and titles,
+  covers loading, button presses and toggles; off with reduced motion.
+- Up next in Now playing lists the next five songs; click one to play it.
+- Cut-off names show in full on hover; clicking the current page scrolls back to the top.
+- The window has its own icon.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.24.
 
 ## 2.2.24 - One-Click Updates and Smooth Audio
 

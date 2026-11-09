@@ -1,3 +1,20 @@
+# QuietPlay 2.2.25
+
+QuietPlay 2.2.25 looks and feels smoother, and its recommendations stop suggesting songs you already have.
+
+- **Recommendations skip songs you already have:** New songs, songs from your artists and every Made for you playlist now leave out songs in your library, even when the names differ a little (remasters, featured artists, "The").
+- **Smooth transitions:** pages slide in gently, Settings sections ease in, the Now playing panel slides in from the side, and a new song's cover and title fade in. Covers fade in as they load, buttons press in slightly, and like, shuffle and repeat give a small pop. Everything turns off when Windows is set to reduce animations, or with reduced motion in QuietPlay's settings.
+- **Up next shows five songs:** Now playing lists the next five songs instead of one; click one to play it.
+- **Small conveniences:** point at any name cut off with "…" to see it in full, and click the page you're on in the sidebar to jump back to the top.
+
+**Already on 2.2.16 to 2.2.24:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **8.1 MB** from 2.2.24, **23.3 MB** from 2.2.16 to 2.2.23). **On 2.2.7 to 2.2.15:** the same steps (about **23.3 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.4 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.4 MB**. **On 2.2.0:** install `QuietPlay-2.2.25-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.24
 
 QuietPlay 2.2.24 is smoother and quicker, with true one-click updates.
