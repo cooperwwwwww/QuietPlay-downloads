@@ -1,3 +1,22 @@
+# QuietPlay 2.2.27
+
+QuietPlay 2.2.27 brings a Home page like Spotify's, with far more recommendations, an About the artist card in Now playing, genres to browse, and more places to find music.
+
+- **A new Home:** a greeting, filter chips (**All**, **Music for you**, **New music**, **Your songs**), quick access to Liked Songs, your playlists and mixes, and about 20 rows of cards. Rows include **Made for you**, **Recommended for today** (about 100 songs you don't have yet), **Jump back in**, **Your top artists**, **More from artists you love**, **Because you listen to…**, **More like…**, **Release Radar**, **Albums you might like**, **New & notable**, **Top songs right now**, **Popular playlists**, **Top albums**, **Popular artists** and **Your favorite albums**. Point at a card and press play.
+- **About the artist** in Now playing: the artist's photo, fans, **Follow** and their bio (with **Read more** and the Wikipedia link), plus **Credits** for the song.
+- **Browse all** in Search: colorful genre tiles, each opening a page of the genre's artists and playlists.
+- **More places to find music:** online search also shows songs from **Audius** (artists upload their own music) and **Bandcamp**. When YouTube Music, YouTube, SoundCloud, Piped and Bandcamp don't have a song, the download tries **Audius**, using only a close match (same title and artist, no remix or cover), tagged with its cover and saved in your chosen format.
+- **Rows always line up:** every row of cards has same-size cards and scrolls a page at a time, and grids never end with a short row.
+- **Fixed:** recommendations no longer stop short when Deezer's catalog asks QuietPlay to slow down.
+
+**Already on 2.2.16 to 2.2.26:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **8.2 MB** from 2.2.24 to 2.2.26, **23.4 MB** from 2.2.16 to 2.2.23). **On 2.2.7 to 2.2.15:** the same steps (about **23.4 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.4 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.4 MB**. **On 2.2.0:** install `QuietPlay-2.2.27-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Catalog data comes from Deezer's public catalog and Apple's iTunes Search; more search results come from Audius and Bandcamp; artist bios come from Wikipedia (CC BY-SA) and link to their article. Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.26
 
 QuietPlay 2.2.26 brings online music, Spotify-style: artists, albums, playlists and charts, a Release Radar, live notifications, and proper offline and online modes.

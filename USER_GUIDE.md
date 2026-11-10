@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.26** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.27** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -63,10 +63,16 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
 ## Find and Play
 
-- **Home** starts with **Made for you**: pick **Mixes** (local mixes you can
-  play straight away), **New songs** or **Playlists** with the tabs next to the
-  title. Each tab shows three rows that fill the window; use the left/right arrows to see more.
-  QuietPlay remembers the tab.
+- **Home** (from 2.2.27) works like Spotify's. It starts with a greeting and four chips: **All**,
+  **Music for you**, **New music** and **Your songs** (your full song list). Below are quick-access tiles
+  for Liked Songs, your playlists and mixes (point at one and press play), then rows of cards:
+  **Made for you**, **Recommended for today** (about 100 songs you don't have yet), **Jump back in**,
+  **Your top artists**, **More from artists you love**, **Because you listen to…**, **More like…**,
+  **Release Radar**, **Albums you might like**, **New & notable**, **Top songs right now**, **Popular
+  playlists**, **Top albums**, **Popular artists** and **Your favorite albums**. Click a song card to hear
+  a preview, and use the arrows to see more of a row. The personal rows are prepared in the background
+  after QuietPlay opens and refreshed every few hours. QuietPlay remembers the chip you picked.
+- **Made for you** on Discover still has **Mixes**, **New songs** and **Playlists**.
   Click a recommended song to preview it, or use its download button. Open a
   recommended playlist to see every song, preview, download a song, or
   **Download & save** the full mix. **See all** opens Discover, and the refresh
@@ -196,7 +202,8 @@ the names of the songs and artists are kept.
 ## Online Music, Artists and Charts
 
 From **2.2.26** QuietPlay has an online catalog, like Spotify's. Catalog data comes from Deezer's public
-catalog and Apple's iTunes Search; artist bios come from Wikipedia and link to their article.
+catalog and Apple's iTunes Search; from 2.2.27 search also shows songs from Audius and Bandcamp. Artist
+bios come from Wikipedia and link to their article.
 
 - **Search** shows **Artists**, **Albums** and **Playlists** tabs above the online songs. Open any of them.
 - **Artist pages:** **Follow**, fans, popular songs, the discography (albums, singles, compilations),
@@ -210,6 +217,11 @@ catalog and Apple's iTunes Search; artist bios come from Wikipedia and link to t
 - **Release Radar** on Home lists releases from the last month by artists you follow or play most.
 - **Recommended songs** at the bottom of your playlists suggests songs that fit them.
 - **Your year in music** (Your listening → the button next to the time periods) recaps your year.
+- **About the artist** (from 2.2.27) in the Now playing panel, below Up next: the artist's photo, fans,
+  **Follow** and their bio (**Read more** shows all of it). Click the photo to open the artist page.
+  **Credits** below it lists the song's artists, album, genre and year.
+- **Browse all** (from 2.2.27) on the Search page: genre tiles, each opening a page of the genre's
+  popular artists and playlists.
 
 ### Notifications
 
@@ -307,8 +319,10 @@ Downloads, with more under **Show advanced**.
 ### If a Download Fails
 
 If a song cannot be downloaded from your chosen source, QuietPlay tries
-YouTube Music, YouTube, SoundCloud and Bandcamp, then a broader search, before
-reporting it as failed. When Spotify cannot provide song details, searches and
+YouTube Music, YouTube, SoundCloud and Bandcamp, then a broader search, then
+(from 2.2.27) Audius, before reporting it as failed. From Audius, QuietPlay only uses a close
+match (same title and artist, no remix, cover or live version unless you asked for one), tags it
+with its cover and saves it in the format you chose. When Spotify cannot provide song details, searches and
 Spotify song links use Apple's public music catalogue instead.
 Songs that already downloaded are not fetched again. Use **Retry** on a failed
 song in the Downloads panel to try it again. Album and playlist links
@@ -390,7 +404,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.26 installer**. The existing download still has the basic
+in the current 2.2.27 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -472,18 +486,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.26
+### Updating to 2.2.27
 
-Use the update screen above. From **2.2.24 or 2.2.25** the download is about **8.1 MB**,
-from **2.2.7 to 2.2.23** about **23.3 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.2 MB**.
+Use the update screen above. From **2.2.24 to 2.2.26** the download is about **8.2 MB**,
+from **2.2.7 to 2.2.23** about **23.4 MB**, and from **2.2.2, 2.2.3 or 2.2.4** about **40.4 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.26 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.27 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.26 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.27 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.26.
+These features are not included in 2.2.27.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,22 @@ These features are not included in 2.2.26.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.27 - A Spotify-style Home
+
+Released November 10, 2026 for Windows 10/11 (64-bit).
+
+- Home like Spotify's: greeting, filter chips, quick-access tiles and about 20 rows of cards, including
+  Recommended for today (about 100 songs), More from artists you love, Because you listen to, More
+  like, top artists, albums, charts and popular playlists.
+- About the artist (photo, fans, Follow, bio) and Credits in the Now playing panel.
+- Browse all genres on the Search page, with a page per genre.
+- Search also shows songs from Audius and Bandcamp; downloads try Audius when no other source has
+  the song (close matches only, tagged with the cover, in your chosen format).
+- Rows of cards line up (same-size cards, one page per scroll) and grids never end with a short row.
+- Fixed: recommendations stopping short when Deezer asked QuietPlay to slow down.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.26.
 
 ## 2.2.26 - Online Music
 
