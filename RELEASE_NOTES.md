@@ -1,3 +1,22 @@
+# QuietPlay 2.2.28
+
+QuietPlay 2.2.28 downloads the original song, not the clean version with the curse words muted or bleeped.
+
+- **Originals, not clean edits:** downloads used to pick the official music video's audio, which is often the censored cut, because YouTube Music's song search had stopped returning results. QuietPlay now finds the album track again and, when a song has both, takes the explicit original over the clean edition.
+- **No clean uploads by mistake:** uploads labelled clean, censored, radio edit, edited or bleeped are never picked, unless that word is part of the song's real title.
+- **Search and Audius too:** online search shows the original when a song is listed twice, and the Audius fallback skips clean versions.
+- **Prefer clean versions?** Turn on **Skip explicit songs** in **Settings → Search & Downloads → Advanced download options**.
+
+Songs you downloaded before stay as they are; download one again to get the original.
+
+**Already on 2.2.16 to 2.2.27:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **25.0 MB** from 2.2.27, **25.2 MB** from 2.2.24 to 2.2.26, **40.4 MB** from 2.2.16 to 2.2.23). **On 2.2.7 to 2.2.15:** the same steps (about **40.4 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.4 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.4 MB**. **On 2.2.0:** install `QuietPlay-2.2.28-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Catalog data comes from Deezer's public catalog and Apple's iTunes Search; more search results come from Audius and Bandcamp; artist bios come from Wikipedia (CC BY-SA) and link to their article. Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.27
 
 QuietPlay 2.2.27 brings a Home page like Spotify's, with far more recommendations, an About the artist card in Now playing, genres to browse, and more places to find music.

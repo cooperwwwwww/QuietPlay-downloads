@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.27.
+These features are not included in 2.2.28.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,17 @@ These features are not included in 2.2.27.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.28 - Original Versions
+
+Released November 19, 2026 for Windows 10/11 (64-bit).
+
+- Downloads get the original recording, not the clean (muted or bleeped) edition: the album track is
+  preferred over the music video, the explicit edition over the clean one, and uploads labelled clean,
+  censored or radio edit are never picked. YouTube Music's song search works again for downloads.
+- Online search shows the original when a song is listed twice; Audius downloads skip clean versions.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.27.
 
 ## 2.2.27 - A Spotify-style Home
 
