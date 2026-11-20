@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.28.
+These features are not included in 2.2.29.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,19 @@ These features are not included in 2.2.28.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.29 - Smart Shuffle
+
+Released November 20, 2026 for Windows 10/11 (64-bit).
+
+- Smart shuffle (the shuffle button's third state): learns from skips for the session (skipped songs don't
+  come back; skipped genres and artists come up less for about an hour), reorders what's coming up after a
+  skip, and mixes in songs from your library that fit.
+- Shuffle and autoplay don't pick songs heard in the last few hours, played this session or skipped this
+  session while something else is left.
+- Autoplay chooses freshly from many more similar songs each time, instead of the same picks all day.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.28.
 
 ## 2.2.28 - Original Versions
 

@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.28** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.29** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -126,10 +126,18 @@ lookups supply songs and related artists for online recommendations.
   or dismiss it. Artist pages show popular songs you're missing too.
   (Settings → Search & Downloads → **Suggest new songs**.)
 - **Song radio** and **Artist mix** start from songs you usually play together.
-- **Autoplay** (Settings → Playback) keeps playing similar songs when a list ends.
+- **Autoplay** (Settings → Playback) keeps playing similar songs when a list ends. From 2.2.29 it chooses
+  freshly from many similar songs each time, and leaves out songs you heard in the last 6 hours or skipped.
 - **Crossfade** (Settings → Playback) blends each song into the next over 3 to
   12 seconds. Songs shorter than three times the crossfade play in full.
-- **Shuffle** plays recently heard songs last and avoids the same artist twice in a row.
+- **Shuffle** plays recently heard songs last and avoids the same artist twice in a row. From 2.2.29
+  shuffle and autoplay don't pick a song you heard in the last few hours, already played this session or
+  skipped this session, while there's something else to play.
+- **Smart shuffle** (from 2.2.29): press the shuffle button a second time (Off → Shuffle → Smart shuffle,
+  marked ✦; a third press turns it off). It learns as you listen: a song you skip doesn't come back this
+  session, each skip makes that genre and artist less likely for about an hour and each song you finish
+  makes them more likely again, what's coming up reorders when you skip, and after every few songs it
+  mixes in a song from your library that fits. Albums and playlists played in order are not changed.
 - **Dislike** keeps a song out of shuffle, autoplay and mixes. **Often skipped**
   in Discover lists songs you keep skipping.
 
@@ -413,7 +421,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.28 installer**. The existing download still has the basic
+in the current 2.2.29 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -495,18 +503,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.28
+### Updating to 2.2.29
 
-Use the update screen above. From **2.2.27** the download is about **25.0 MB**, from **2.2.24 to 2.2.26** about **25.2 MB**,
+Use the update screen above. From **2.2.28** the download is about **8.2 MB**, from **2.2.24 to 2.2.27** about **25.2 MB**,
 and from **2.2.2 to 2.2.23** about **40.4 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.28 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.29 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.28 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.29 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 
