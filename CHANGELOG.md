@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.29.
+These features are not included in 2.2.30.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,18 @@ These features are not included in 2.2.29.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.30 - A Better Up Next
+
+Released November 20, 2026 for Windows 10/11 (64-bit).
+
+- Fixed: long song names pushed the Up next card past the Now playing panel (with a sideways scrollbar).
+- Up next: right-click menu, × to remove a song, song lengths, a Queue link; Smart shuffle marks the songs
+  it added and shows what it's playing less of, with Reset.
+- New keys: S (shuffle, Smart shuffle, off), R (repeat), M (mute).
+- Very long album, playlist and song names stop at two lines, with the full name on hover.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.29.
 
 ## 2.2.29 - Smart Shuffle
 

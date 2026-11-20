@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.29** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.30** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -393,7 +393,10 @@ server returns. Your listening history is kept for recommendations.
   the song. It lights up while a timer runs.
 - **Queue:** open the queue and use the **×** on an upcoming song to take it out of this
   play-through. Nothing is deleted or disliked.
-- **Up next** (from 2.2.25): Now playing lists the next five songs; click one to play it. In the queue
+- **Up next** (from 2.2.25): Now playing lists the next five songs; click one to play it. From 2.2.30,
+  right-click one for its menu, point at it and press **×** to take it out of Up next, and press **Queue**
+  to open the full queue; each song shows its length. With Smart shuffle on, songs it added are marked ✦
+  and a line shows what it's playing less of, with **Reset**. In the queue
   (from 2.2.26), drag the songs under **Next from …** into any order, or press **Mix up** to shuffle them.
 - **Delete from this PC** (from 2.2.26, in any song's menu) moves the file to the Recycle Bin and takes
   the song out of your library. **Remove from library** keeps the file.
@@ -421,7 +424,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.29 installer**. The existing download still has the basic
+in the current 2.2.30 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -458,6 +461,9 @@ Integrations, Updates and Advanced (Gaming Mode, caches, diagnostics).
 | Left / Right | Back or ahead 5 seconds |
 | Ctrl+Up / Ctrl+Down | Volume |
 | L | Like the playing song |
+| S | Shuffle, then Smart shuffle, then off |
+| R | Repeat all, repeat this song, off |
+| M | Mute or unmute |
 | Ctrl+K | Quick play |
 | Ctrl+F | Search |
 | Ctrl+J | Jump to the playing song |
@@ -503,18 +509,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.29
+### Updating to 2.2.30
 
-Use the update screen above. From **2.2.28** the download is about **8.2 MB**, from **2.2.24 to 2.2.27** about **25.2 MB**,
+Use the update screen above. From **2.2.28 or 2.2.29** the download is about **8.2 MB**, from **2.2.24 to 2.2.27** about **25.2 MB**,
 and from **2.2.2 to 2.2.23** about **40.4 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.29 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.30 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.29 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.30 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 

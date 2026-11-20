@@ -1,3 +1,20 @@
+# QuietPlay 2.2.30
+
+QuietPlay 2.2.30 fixes the Up next card, makes it more useful, and adds keyboard shortcuts for shuffle, repeat and mute.
+
+- **Fixed:** long song names no longer push the Up next card past the edge of the Now playing panel (which also showed a sideways scrollbar). They end in "…" instead.
+- **A better Up next:** right-click a song for its menu, point at it and press **×** to take it out of Up next, see each song's length, and open the full queue with **Queue**. With Smart shuffle on, songs it added are marked ✦ and a line shows what it's playing less of right now, with **Reset**.
+- **New keys:** **S** turns on Shuffle, then Smart shuffle, then off; **R** goes through Repeat all, Repeat this song and off; **M** mutes and unmutes. They're listed under **F1** and don't fire while you're typing.
+- **Very long names** of albums, playlists and the playing song stop at two lines; point at them to see the whole name.
+
+**Already on 2.2.16 to 2.2.29:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates** (about **8.2 MB** from 2.2.28 or 2.2.29, **25.2 MB** from 2.2.24 to 2.2.27, **40.4 MB** from 2.2.16 to 2.2.23). **On 2.2.7 to 2.2.15:** the same steps (about **40.4 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.4 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.5 MB**. **On 2.2.0:** install `QuietPlay-2.2.30-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Catalog data comes from Deezer's public catalog and Apple's iTunes Search; more search results come from Audius and Bandcamp; artist bios come from Wikipedia (CC BY-SA) and link to their article. Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.29
 
 QuietPlay 2.2.29 adds Smart shuffle and stops playing the same songs over and over.
