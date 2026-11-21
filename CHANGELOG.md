@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.30.
+These features are not included in 2.2.31.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,19 @@ These features are not included in 2.2.30.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.31 - One Home, Far More Music
+
+Released November 21, 2026 for Windows 10/11 (64-bit).
+
+- Home and Discover merged: listening stats, every mix and library genres moved to Home.
+- About ten times more recommendations: playlists for top artists, library genres, 20 moods and every
+  decade, the most popular playlists, and a radio of new songs for each top artist. Rows load on scroll.
+- New Downloaded songs tab (Alt+D) with Play/Shuffle, genre filter and sort.
+- Smart shuffle is the only shuffle and on by default; the button and S turn it on and off.
+- Fixed: the player bar squeezed the song name on narrow windows; listening stats wrapped unevenly.
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.30.
 
 ## 2.2.30 - A Better Up Next
 

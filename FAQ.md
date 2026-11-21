@@ -36,15 +36,15 @@ not turn off Windows security. Code signing is planned.
 ## Windows Protected Your PC
 
 This is usually a **Microsoft Defender SmartScreen** reputation warning.
-QuietPlay 2.2.30 is not Windows code-signed. The warning is a reason to inspect
+QuietPlay 2.2.31 is not Windows code-signed. The warning is a reason to inspect
 the file; it is not proof that the file is safe or malicious.
 
-![Illustrated two-step Windows warning guide for the QuietPlay 2.2.30 installer](assets/windows-security-guide.svg)
+![Illustrated two-step Windows warning guide for the QuietPlay 2.2.31 installer](assets/windows-security-guide.svg)
 
 ### If You See More Info
 
-1. Confirm you intentionally downloaded **QuietPlay-2.2.30-Windows-Setup.exe**
-   from [the official 2.2.30 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.30).
+1. Confirm you intentionally downloaded **QuietPlay-2.2.31-Windows-Setup.exe**
+   from [the official 2.2.31 release](https://github.com/cooperwwwwww/QuietPlay-downloads/releases/tag/v2.2.31).
    Compare its SHA-256 with **SHA256SUMS.txt** on that release if you want to
    verify the file's identity. A checksum is not a safety guarantee.
 2. Select **More info**, then check the app filename and publisher. This build
@@ -142,7 +142,7 @@ For a specific destination playlist, use the download panel (cloud icon at the
 top). Individual tracks can fail; completed downloads are kept.
 [Download guide](USER_GUIDE.md#download-a-complete-playlist-or-album).
 
-Discover also offers full **50–60-song personalized playlists** when enough
+Home also offers full **50–60-song personalized playlists** when enough
 matches are available, with **Download & save** for the whole playlist.
 [Personalized playlist guide](USER_GUIDE.md#personalized-playlists).
 
@@ -175,7 +175,7 @@ Showing a song title does not grant permission to broadcast the recording.
 ## Can I Customize the OBS Overlay?
 
 The current release has basic overlay options in Streaming settings. A larger
-appearance editor is implemented in development, **not in the 2.2.30 download**:
+appearance editor is implemented in development, **not in the 2.2.31 download**:
 six color pickers, transparency, fonts, artwork placement and sizes, borders,
 visible details, presets, reset and a live preview. It saves locally and does
 not change the audio route or your OBS scene.
@@ -186,7 +186,7 @@ not change the audio route or your OBS scene.
 On your PC, from your own listening: what you play, finish, skip, like and
 dislike, which songs you play one after another, and the time of day you
 listen. Nothing about your listening is uploaded. Dislike a song, or review
-**Often skipped** in Discover, to steer them.
+**Often skipped** on Home, to steer them.
 
 Online recommendations send the names of your most-played artists to Deezer's
 and Apple's public catalogs to find new songs and related artists. Ranking and
@@ -214,8 +214,8 @@ restart** and approve. The official updater downloads a matching changed-file
 package, verifies its signed manifest and hashes, backs up the old files and
 checks startup. Failed or interrupted updates restore the previous app.
 
-**2.2.0** needs one manual 2.2.30 setup to gain this updater. **2.2.1** can instead
-run `QuietPlayUpdater.exe` from the official 2.2.30 release to download about
+**2.2.0** needs one manual 2.2.31 setup to gain this updater. **2.2.1** can instead
+run `QuietPlayUpdater.exe` from the official 2.2.31 release to download about
 40 MB of changed files. No uninstall is needed. New PCs and damaged or unsupported
 installations can use the full setup. Windows security checks remain enabled.
 
@@ -351,4 +351,4 @@ Yes. Home starts with **Made for you**, with tabs for your local mixes, new
 songs and full 50–60-song recommended playlists, and your songs right below.
 Click a recommended song to preview it, or use its download button. Open a
 playlist to see all songs and download one song or download and save the full
-mix. **See all** opens Discover. Recommendations stay loaded when you switch tabs.
+mix. Since 2.2.31 Discover is part of Home. Recommendations stay loaded when you switch tabs.

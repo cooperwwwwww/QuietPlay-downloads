@@ -2,14 +2,14 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.30** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.31** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
 
 [Install and open](#install-and-open) · [Your data](#your-data-on-this-pc) ·
 [Add music](#add-existing-music) · [Find and play](#find-and-play) ·
-[Discover and radio](#discover-radio-and-autoplay) · [Online music](#online-music-artists-and-charts) · [Taste from other apps](#bring-your-taste-from-other-apps) · [Your listening](#your-listening) ·
+[Mixes and radio](#mixes-radio-and-autoplay) · [Online music](#online-music-artists-and-charts) · [Taste from other apps](#bring-your-taste-from-other-apps) · [Your listening](#your-listening) ·
 [Playlists](#playlists) · [Library care](#library-care) · [Lyrics](#lyrics) ·
 [Search and download](#search-and-download-music) · [Navidrome](#navidrome-add-on) · [Audio and mini player](#audio-and-mini-player) ·
 [OBS](#obs) · [Settings](#settings) · [Shortcuts](#keyboard-shortcuts) · [Updates and help](#updates-and-help)
@@ -63,8 +63,12 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 
 ## Find and Play
 
-- **Home** (from 2.2.27) works like Spotify's. It starts with a greeting and four chips: **All**,
-  **Music for you**, **New music** and **Your songs** (your full song list). Below are quick-access tiles
+- **Home** (from 2.2.27) works like Spotify's. From 2.2.31 it also has everything that was on Discover
+  (your listening stats, every mix and your library's genres) and about ten times more recommendations:
+  playlists with each of your top artists, for your genres, for 20 moods and activities and for every
+  decade, the most popular playlists, and a radio of new songs for each of your top artists. Rows further
+  down load as you scroll to them. It starts with a greeting and filters: **All**, **Made for you**,
+  **Playlists** and **New music**, plus a **Downloaded songs** button. Below are quick-access tiles
   for Liked Songs, your playlists and mixes (point at one and press play), then rows of cards:
   **Made for you**, **Recommended for today** (about 100 songs you don't have yet), **Jump back in**,
   **Your top artists**, **More from artists you love**, **Because you listen to…**, **More like…**,
@@ -72,13 +76,12 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
   playlists**, **Top albums**, **Popular artists** and **Your favorite albums**. Click a song card to hear
   a preview, and use the arrows to see more of a row. The personal rows are prepared in the background
   after QuietPlay opens and refreshed every few hours. QuietPlay remembers the chip you picked.
-- **Made for you** on Discover still has **Mixes**, **New songs** and **Playlists**.
-  Click a recommended song to preview it, or use its download button. Open a
-  recommended playlist to see every song, preview, download a song, or
-  **Download & save** the full mix. **See all** opens Discover, and the refresh
-  button fetches new picks. Recommendations stay loaded when you switch tabs.
-- **Your songs** below the box lists your whole library with **Play** and
-  **Shuffle**. Filter by genre and sort by recently added, title, artist and more.
+- Click a recommended song to preview it. Open a recommended playlist (marked **New**) to see every song,
+  preview, download a song, or **Download & save** the full mix. Recommendations stay loaded when you
+  switch tabs.
+- **Downloaded songs** (from 2.2.31, in the sidebar, or **Alt+D**) lists every song you've downloaded with
+  **Play** and **Shuffle**. Filter by genre and sort by recently added, title, artist and more. Opening a
+  genre under **Your genres** on Home shows its songs here.
 - **Search** (Ctrl+F or the search bar) finds songs, artists, albums and
   playlists, ranks the best matches first, ignores accents and punctuation,
   and shows similar spellings when nothing matches exactly.
@@ -99,7 +102,7 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
   for genres, a few artists, how many new artists to mix in and whether to skip explicit songs (skip any step), then Home shows songs
   and playlists to start with, each with **Save & download**. Retake the quiz
   from the **Search** page, or hide Starter picks with the **×** on Home.
-- Recommended playlists on Home and Discover have **Save & download**, which
+- Recommended playlists on Home have **Save & download**, which
   adds the playlist to your playlists and downloads every song into it.
 - **Ctrl+K** opens quick play: type and press Enter to play a song or run a command.
 - Right-click any song for Play next, Add to queue, Add to playlist, Song
@@ -109,12 +112,12 @@ Untagged files named like `Artist - Title.mp3` are read as artist and title.
 - **Recently played** has a Songs view and a **History** view of every play by
   day, showing what you finished and what you skipped.
 
-## Discover, Radio and Autoplay
+## Mixes, Radio and Autoplay
 
 Your listening signals and rankings are calculated on your PC. Optional catalog
 lookups supply songs and related artists for online recommendations.
 
-- **Discover** has Made for you, a time-of-day mix, On repeat, Because you
+- **Home** (Discover until 2.2.31) has Made for you, a time-of-day mix, On repeat, Because you
   played…, Forgotten favorites, Deep cuts, New to you, Never skipped, Recently
   added, genre mixes and your top artist's essentials. Mixes refresh daily.
   Save any mix as a playlist.
@@ -133,19 +136,19 @@ lookups supply songs and related artists for online recommendations.
 - **Shuffle** plays recently heard songs last and avoids the same artist twice in a row. From 2.2.29
   shuffle and autoplay don't pick a song you heard in the last few hours, already played this session or
   skipped this session, while there's something else to play.
-- **Smart shuffle** (from 2.2.29): press the shuffle button a second time (Off → Shuffle → Smart shuffle,
-  marked ✦; a third press turns it off). It learns as you listen: a song you skip doesn't come back this
+- **Smart shuffle** (from 2.2.29): from 2.2.31 it is the only shuffle and it's on by default; the shuffle
+  button (marked ✦) and **S** turn it on and off, and off stays off. It learns as you listen: a song you skip doesn't come back this
   session, each skip makes that genre and artist less likely for about an hour and each song you finish
   makes them more likely again, what's coming up reorders when you skip, and after every few songs it
   mixes in a song from your library that fits. Albums and playlists played in order are not changed.
 - **Dislike** keeps a song out of shuffle, autoplay and mixes. **Often skipped**
-  in Discover lists songs you keep skipping.
+  on Home lists songs you keep skipping.
 
 ### Personalized Playlists
 
 Available in QuietPlay **2.2.1 and later**; also on Home since **2.2.3**.
 
-1. Open **Home → Made for you → Playlists for you**, or **Discover → Playlists picked for you**. QuietPlay ranks recommendations
+1. Open **Home → Made for you → Playlists for you**, or the **Playlists** filter on Home. QuietPlay ranks recommendations
    from your plays, completed listens, likes, recent listening, skips and
    dislikes, then combines them with related-artist catalog results.
 2. Choose a playlist to see its complete list of **50–60 different songs**.
@@ -424,7 +427,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.30 installer**. The existing download still has the basic
+in the current 2.2.31 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -461,7 +464,7 @@ Integrations, Updates and Advanced (Gaming Mode, caches, diagnostics).
 | Left / Right | Back or ahead 5 seconds |
 | Ctrl+Up / Ctrl+Down | Volume |
 | L | Like the playing song |
-| S | Shuffle, then Smart shuffle, then off |
+| S | Smart shuffle on or off |
 | R | Repeat all, repeat this song, off |
 | M | Mute or unmute |
 | Ctrl+K | Quick play |
@@ -509,18 +512,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.30
+### Updating to 2.2.31
 
-Use the update screen above. From **2.2.28 or 2.2.29** the download is about **8.2 MB**, from **2.2.24 to 2.2.27** about **25.2 MB**,
+Use the update screen above. From **2.2.28 to 2.2.30** the download is about **8.2 MB**, from **2.2.24 to 2.2.27** about **25.2 MB**,
 and from **2.2.2 to 2.2.23** about **40.4 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.30 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.31 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.30 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.31 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 
