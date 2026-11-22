@@ -2,7 +2,7 @@
 
 ## Unreleased - OBS Customization
 
-These features are not included in 2.2.31.
+These features are not included in 2.2.32.
 
 ### OBS Overlay Appearance
 
@@ -17,6 +17,16 @@ These features are not included in 2.2.31.
 - A sandboxed preview using the actual OBS renderer, even when the overlay
   server is off. Small browser sources scale the complete card instead of
   clipping its text. Existing saved colors and visibility choices are preserved.
+
+## 2.2.32 - Playlist Folders
+
+Released November 22, 2026 for Windows 10/11 (64-bit).
+
+- Playlist folders (requested in issue #3): New folder, drag playlists in or use Move to folder, open and
+  close folders in Playlists and the sidebar, play or shuffle a whole folder, rename and delete (playlists
+  are kept).
+- Signed changed-file packages support direct upgrades from 2.2.1 to 2.2.4,
+  2.2.7 to 2.2.9, and 2.2.11 to 2.2.31.
 
 ## 2.2.31 - One Home, Far More Music
 

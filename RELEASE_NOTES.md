@@ -1,3 +1,19 @@
+# QuietPlay 2.2.32
+
+QuietPlay 2.2.32 adds playlist folders, as requested in [issue #3](https://github.com/cooperwwwwww/QuietPlay-downloads/issues/3).
+
+- **Playlist folders:** in **Playlists**, press **New folder**, then drag playlists onto it, or right-click any playlist and choose **Move to folder**. Folders show in Playlists and in the sidebar, open and close with a click, and remember how you left them.
+- **Play a whole folder:** **Play** and **Shuffle** on a folder play every playlist in it; its menu also has **Add to queue**, **Rename** and **Delete folder**.
+- **Safe to tidy:** deleting a folder keeps its playlists. To take a playlist out of a folder, drag it onto **Playlists** in the sidebar or choose **Remove from** in **Move to folder**.
+
+**Already on 2.2.16 to 2.2.31:** the **Update now** notice above the player does it in one click, or open **Settings → Updates → Check for updates**. About **8.2 MB** from 2.2.28 to 2.2.31, **25.2 MB** from 2.2.24 to 2.2.27, **40.4 MB** from 2.2.16 to 2.2.23. **On 2.2.7 to 2.2.15:** the same steps (about **40.4 MB**). **On 2.2.2, 2.2.3 or 2.2.4:** the same steps, with **Download changed files** (about **40.4 MB**). Your music, library, playlists and settings stay in place.
+
+**On 2.2.1:** run `QuietPlayUpdater.exe` from this release for a direct changed-file upgrade of about **40.5 MB**. **On 2.2.0:** install `QuietPlay-2.2.32-Windows-Setup.exe` once over the existing app to enable file updates. Full setup is available for new PCs and repairs.
+
+Catalog data comes from Deezer's public catalog and Apple's iTunes Search; more search results come from Audius and Bandcamp; artist bios come from Wikipedia (CC BY-SA) and link to their article. Windows 10/11, 64-bit. Official release manifests are signed and every changed file's SHA-256 is checked. QuietPlay is still not Windows Authenticode-signed, so Windows may show a SmartScreen warning; see the [Windows security guide](https://github.com/cooperwwwwww/QuietPlay-downloads/blob/main/FAQ.md#windows-protected-your-pc). Verify downloads with `SHA256SUMS.txt`. Only download music you have permission to save. The OBS appearance editor remains unreleased.
+
+---
+
 # QuietPlay 2.2.31
 
 QuietPlay 2.2.31 puts Home and Discover on one page with far more music to explore, adds a Downloaded songs tab, and makes Smart shuffle the shuffle.

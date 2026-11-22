@@ -2,7 +2,7 @@
 
 [QuietPlay](README.md) | [FAQ](FAQ.md) | [Downloads](https://github.com/cooperwwwwww/QuietPlay-downloads/releases)
 
-This guide is for **QuietPlay 2.2.31** on Windows. Sections marked in development
+This guide is for **QuietPlay 2.2.32** on Windows. Sections marked in development
 describe upcoming features, not the current download.
 
 ## Jump to a Topic
@@ -268,6 +268,19 @@ and songs that go well with it.
   playlists and radios the previous version saved automatically. A backup is
   saved before anything is deleted.
 
+### Playlist Folders
+
+From 2.2.32 you can group playlists into folders, like in Spotify.
+
+- On the **Playlists** page, press **New folder** and give it a name.
+- Drag a playlist onto a folder, in Playlists or in the sidebar, or right-click a playlist and choose
+  **Move to folder**. A playlist is in one folder at a time.
+- Click a folder to open or close it; QuietPlay remembers how you left it.
+- **Play** and **Shuffle** on a folder play every playlist in it. Right-click a folder for **Add to queue**,
+  **Rename** and **Delete folder**.
+- To take a playlist out, drag it onto **Playlists** in the sidebar (or the drop area that appears while
+  you drag), or choose **Move to folder → Remove from…**. Deleting a folder keeps its playlists.
+
 ## Library Care
 
 Settings → Library:
@@ -427,7 +440,7 @@ Showing a song title doesn't grant permission to broadcast the recording.
 ### Overlay Customization (Unreleased)
 
 The following controls are implemented in the development build and are **not
-in the current 2.2.31 installer**. The existing download still has the basic
+in the current 2.2.32 installer**. The existing download still has the basic
 overlay options in Streaming settings.
 
 Open **Settings → Streaming → Overlay appearance** in the upcoming build:
@@ -512,18 +525,18 @@ Backups are retained for the two most recent update transactions.
 The release signature is separate from Windows Authenticode; QuietPlay is still
 not Windows code-signed, and Windows security warnings and blocks still apply.
 
-### Updating to 2.2.31
+### Updating to 2.2.32
 
-Use the update screen above. From **2.2.28 to 2.2.30** the download is about **8.2 MB**, from **2.2.24 to 2.2.27** about **25.2 MB**,
+Use the update screen above. From **2.2.28 to 2.2.31** the download is about **8.2 MB**, from **2.2.24 to 2.2.27** about **25.2 MB**,
 and from **2.2.2 to 2.2.23** about **40.4 MB**.
 A bar shows the check, the download, verification and, in the updater window, each file as it is installed. It reuses the unchanged runtime
 files, so no full installer is needed for a healthy installation.
 
 ### First Upgrade From an Older Version
 
-- **2.2.0:** download the official **2.2.31 Windows Setup** and run it over the
+- **2.2.0:** download the official **2.2.32 Windows Setup** and run it over the
   existing installation once. Do not uninstall first. This enables file updates.
-- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.31 release**,
+- **2.2.1:** download **QuietPlayUpdater.exe** from the official **2.2.32 release**,
   run it, choose **Download changed files**, then **Update and restart**. This
   transfers about 40 MB instead of the full setup. Full setup is also available.
 
